@@ -1,0 +1,151 @@
+<include  file ="Public/centerhead"/>
+<div class="center-left">
+    <div class="pi">
+        <div class="cl-div  ">
+            <a href="__APP__/Center/index"><div class="cl-index cl-title">我的首页</div></a>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="cl-div  hasnenu ">
+            <div class="cl-trade cl-title">交易中心</div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="cl-set-info" style="display: none;">
+            <ul>
+                <li><a href="__APP__Trade/recharge">充值记录</a></li>
+                <li><a href="__APP__Trade/record">交易记录</a></li>
+                <li><a href="__APP__Trade/recive">收到礼物</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="cl-div  ">
+            <a href="__APP__/FriendList/index"><div class="cl-care cl-title">我的关注</div></a>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="cl-div ">
+            <a href="__APP__/Message/index"><div class="cl-notice cl-title">消息中心</div></a>
+        </div>
+    </div>
+    <!-- <div class="pi">
+         <div class="cl-div ">
+             <a href="/centeros.php?ptype=treasure"><div class="cl-treasure cl-title">我的财富</div></a>
+         </div>
+     </div>-->
+
+    <div class="pi">
+        <div class="cl-div hasnenu">
+            <div class="cl-setting cl-title cl-focus">我的设置</div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="cl-set-info hidden">
+            <!--ul>
+                <li><a href="centeros.php?ptype=info">基本资料</a></li>
+                <li><a href="centeros.php?ptype=mportrait">修改头像</a></li>
+                <li><a href="centeros.php?ptype=mpass">修改密码</a></li>
+                <li><a href="centeros.php?ptype=mphone">绑定手机</a></li>
+            </ul-->
+            <ul>
+                <li><a href="__APP__/Personinfo/info">基本资料</a></li>
+                <li><a href="__APP__/Personinfo/avatar">修改头像</a></li>
+                <li><a href="__APP__/Personinfo/passwd">修改密码</a></li>
+                <li><a href="__APP__/Personinfo/myphone">绑定手机</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!--main-->
+<div class="inmiddle">
+    <?php
+        $current_page="info";
+        include_once('./include/personal_tpl/center-info.php');
+        include_once('./include/personal_tpl/menu_left.php');
+    ?>
+
+    <script src="/js/sea.js"></script>
+    <script>
+        seajs.use("ajax/userinfo");
+        seajs.use("ajax/jqueryform");
+    </script>
+
+    <div class="center-right">
+        <div class="cr-basics" style="">
+            <div class="cr-title">基本资料</div>
+            <table id="info-table">
+                <tr  class="cr-hline">
+                    <td class="n-type">昵称：</td> <td class="" colspan="3"><input type="text" name="aliasname" id="aliasname"   value="<?php echo $user['nickname']?>"/></td>
+                </tr>
+                <tr class="cr-hline">
+                    <td  class="n-type"> <span>性别：</span></td> <td colspan="3">
+                        <em><input class="inputnoborder" type="radio" name="gender" value='0' id="female" <?php echo $femalechecked?>><label for="female">女</label><input type="radio" class="inputnoborder" name="gender" value='1' id="male" <?php echo $malechecked?>><label for="male">男</label></em>
+                    </td>
+                </tr>
+                <tr class="cr-hline">
+                    <td class="n-type">所在地：</td>
+                    <td> <select name="province" id="province"></select></td>
+                    <td><select name="city"  id="city"></select></td>
+                    <td> <input type="radio" name="issecret" id="" value="1">保密 <input type="radio" name="issecret" value="2" />公开</td>
+                </tr>
+                <script language="javascript" src="/js/PCASClass.js"></script>
+                <script language="javascript" src="/skin/ym/js/birthday.js"></script>
+
+                <script>new PCAS("province","city","<?php echo $user['province']?>","<?php echo $user['city']?>");</script>
+                <tr class="cr-hline">
+                    <td class="n-type">生日：</td>
+                    <td>  <select id="year"  name="year" rel="<?php echo (int)$birthday_year?>"></select>
+                    <td> <select id="month" name="month" rel="<?php echo (int)$birthday_month?>"></select> </td>
+                    <td> <select id="day" name="day" rel="<?php echo (int)$birthday_day?>"></select></td></td>
+                </tr>
+                <tr class="cr-hline">
+                    <td  class="n-type"> <td colspan="3"><button id="submits">保存</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--main-->
+<script>
+    function birthday_selected(year,month,day){
+        var count=$("#year option").length;
+        for(var i=0;i<count;i++){
+            if($("#year").get(0).options[i].text == year)
+            {
+                $("#year").get(0).options[i].selected = true;
+                break;
+            }
+        }
+        var count=$("#month option").length;
+        for(var i=0;i<count;i++){
+            if($("#month").get(0).options[i].text == month)
+            {
+                $("#month").get(0).options[i].selected = true;
+                break;
+            }
+        }
+        var count=$("#day option").length;
+        for(var i=0;i<count;i++){
+            if($("#day").get(0).options[i].text == day) {
+                $("#day").get(0).options[i].selected = true;
+                break;
+            }
+        }
+    }
+    birthday_selected(<?php echo (int)$birthday_year?>,<?php echo (int)$birthday_month?>,<?php echo (int)$birthday_day?>);
+
+    $(function() {
+        $.ms_DatePicker({
+            YearSelector: "#year",
+            MonthSelector: "#month",
+            DaySelector: "#day"
+        });
+    });
+    </script></div>
+
+
+<!--main-->
+
+<include file="Public/footer" />
+
+</body>
+</html>

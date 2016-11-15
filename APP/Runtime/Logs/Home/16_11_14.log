@@ -1,0 +1,446 @@
+[ 2016-11-14T11:22:21+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'c100@qq.com' LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2016-11-14T11:22:30+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2016-11-14T11:22:34+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-14T11:22:39+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-14T11:22:40+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-14T11:22:41+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-14T11:22:42+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-14T11:23:41+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-14T11:23:41+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2016-11-14T11:23:42+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-14T11:23:42+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='c100@qq.com' ) LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-14T16:56:26+08:00 ] ::1 /kedo/index.php/Home/Login/checkUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+ERR: 非法操作:checkUser
+
+[ 2016-11-14T16:56:49+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-14T17:15:56+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-11-14T17:27:23+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+
+[ 2016-11-14T17:28:03+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-11-14T17:28:21+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-11-14T17:28:50+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+
+[ 2016-11-14T17:30:39+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-11-14T17:30:45+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-11-14T17:30:51+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+
+[ 2016-11-14T18:35:39+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001294s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test123' LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-14T18:36:00+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-11-14T18:41:49+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test@qq.com' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-14T18:41:56+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test123@qq.com' LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-14T18:42:39+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+
+[ 2016-11-14T18:42:47+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test123@qq.com' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-14T18:44:15+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test@qq.com' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2016-11-14T18:44:25+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test@qq.com' ) LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-14T19:10:05+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-14T19:10:28+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8] Undefined variable: timer E:\xampp\htdocs\kedo\APP\Home\Controller\LoginController.class.php 第 103 行.
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e',NULL,'1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0367s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined variable: timer E:\xampp\htdocs\kedo\APP\Home\Controller\LoginController.class.php 第 115 行.
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES (NULL,'1')
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES (NULL,'1')
+
+[ 2016-11-14T19:13:09+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+
+[ 2016-11-14T19:15:48+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-14T19:19:30+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-14T19:19:40+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0129s ]
+
+[ 2016-11-14T19:20:31+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-14T19:36:43+08:00 ] ::1 /kedo/index.php/Home/Login/indexverify
+ERR: 非法操作:indexverify
+
+[ 2016-11-14T19:39:48+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-14T19:40:06+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+
+[ 2016-11-14T19:40:22+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+
+[ 2016-11-14T19:40:28+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+
+[ 2016-11-14T19:40:40+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-11-14T19:41:12+08:00 ] ::1 /kedo/index.php/Home/Login/reg
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e','2016-11-14 19:41:12','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0015s ]
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 19:41:12','1')
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 19:41:12','1')
+
+[ 2016-11-14T19:42:11+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@' LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2016-11-14T19:42:18+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-14T19:42:51+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-14T19:43:27+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+ERR: 非法操作:regUser
+
+[ 2016-11-14T19:49:46+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-11-14T19:50:02+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+ERR: 非法操作:regUser
+
+[ 2016-11-14T19:50:25+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test0001','e10adc3949ba59abbe56e057f20f883e','2016-11-14 19:50:24','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0091s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0016s ]
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 19:50:24','1')
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 19:50:24','1')
+
+[ 2016-11-14T19:53:26+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-14T19:53:56+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-14T19:54:10+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e','2016-11-14 19:54:10','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0018s ]
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 19:54:10','1')
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 19:54:10','1')
+
+[ 2016-11-14T19:59:27+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '' LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-14T19:59:44+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '' LIMIT 1   [ RunTime:0.0128s ]
+
+[ 2016-11-14T20:03:11+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-14T20:03:11+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-11-14T20:04:51+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2016-11-14T20:05:06+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-14T20:05:22+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-11-14T20:05:26+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e','2016-11-14 20:05:26','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0016s ]
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 20:05:26','1')
+ERR: 1364:Field 'userid' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `bu_user_packs` (`createDT`,`status`) VALUES ('2016-11-14 20:05:26','1')
+
+[ 2016-11-14T20:07:22+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-14T20:07:37+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e','2016-11-14 20:07:37','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0012s ]
+
+[ 2016-11-14T20:09:36+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-14T20:09:55+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-14T20:09:57+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e','2016-11-14 20:09:57','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0014s ]
+SQL: INSERT INTO `bu_user_packs` (`createDT`,`status`,`userid`) VALUES ('2016-11-14 20:09:57','1','11120') [ RunTime:0.0012s ]
+

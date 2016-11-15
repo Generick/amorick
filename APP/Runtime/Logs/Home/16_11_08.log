@@ -1,0 +1,892 @@
+[ 2016-11-08T10:33:53+08:00 ] ::1 /kedo/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 51 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 118 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 313 行.
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 381 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:35:20+08:00 ] ::1 /kedo/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 51 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 118 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 313 行.
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 381 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:37:09+08:00 ] ::1 /kedo/index.php/Home/Square/square.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 202 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:37:12+08:00 ] ::1 /kedo/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 51 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 118 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 313 行.
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 381 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:37:14+08:00 ] ::1 /kedo/index.php/Home/Square/square.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 202 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:37:23+08:00 ] ::1 /kedo/index.php/Home/Square/square
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 202 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:39:21+08:00 ] ::1 /kedo/index.php/Home/Square/square
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 202 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:39:24+08:00 ] ::1 /kedo/index.php/Home/Square/square
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 202 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 224 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:40:21+08:00 ] ::1 /kedo/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 51 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 118 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 313 行.
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 381 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:40:24+08:00 ] ::1 /kedo/index.php/Home/Square/square.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant numbers - assumed 'numbers' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 200 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+NOTIC: [8] Use of undefined constant onlineTime - assumed 'onlineTime' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\79b1f2d991e056af6091325645f5ef70.php 第 222 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:40:25+08:00 ] ::1 /kedo/index.php/Home/Mall/mall
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:40:27+08:00 ] ::1 /kedo/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T10:40:50+08:00 ] ::1 /kedo/index.php/Home/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-08T10:42:06+08:00 ] ::1 /kedo/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 51 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 118 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Use of undefined constant image - assumed 'image' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 272 行.
+NOTIC: [8] Use of undefined constant nickName - assumed 'nickName' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 279 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 285 行.
+NOTIC: [8] Undefined index: city D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 313 行.
+NOTIC: [8] Undefined index: userid D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 381 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Use of undefined constant online - assumed 'online' D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 473 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: activelmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 532 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+NOTIC: [8] Undefined index: spenderlmg D:\xampp\htdocs\kedo\APP\Runtime\Cache\Home\a59b5e3d0bfe1e0eebc9ef04a084f7b9.php 第 560 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-08T14:00:06+08:00 ] ::1 /kedo/index.php/Home/center/center.html
+ERR: 非法操作:center
+
+[ 2016-11-08T14:00:44+08:00 ] ::1 /kedo/index.php/Home/Center/center
+ERR: 非法操作:center
+
+[ 2016-11-08T14:01:50+08:00 ] ::1 /kedo/index.php/Home/Center/css/centeros.css
+ERR: 非法操作:css
+
+[ 2016-11-08T14:01:50+08:00 ] ::1 /kedo/index.php/Home/Center/css/login.css
+ERR: 非法操作:css
+
+[ 2016-11-08T14:01:50+08:00 ] ::1 /kedo/index.php/Home/Center/css/index.css
+ERR: 非法操作:css
+
+[ 2016-11-08T14:01:50+08:00 ] ::1 /kedo/index.php/Home/Center/css/icons.css
+ERR: 非法操作:css
+
+[ 2016-11-08T14:02:29+08:00 ] ::1 /kedo/index.php/Home/Center/css/login.css
+ERR: 非法操作:css
+
+[ 2016-11-08T14:02:29+08:00 ] ::1 /kedo/index.php/Home/Center/css/icons.css
+ERR: 非法操作:css
+
+[ 2016-11-08T14:02:29+08:00 ] ::1 /kedo/index.php/Home/Center/css/index.css
+ERR: 非法操作:css
+

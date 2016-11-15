@@ -1,0 +1,127 @@
+<include  file ="Public/centerhead"/>
+<div class="center-left">
+    <div class="pi">
+        <div class="cl-div  ">
+            <a href="__APP__/Center/index"><div class="cl-index cl-title">我的首页</div></a>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="cl-div  hasnenu  cl-focus">
+            <div class="cl-trade cl-title">交易中心</div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="cl-set-info" style="display: none;">
+            <ul>
+                <li><a href="__APP__Trade/recharge">充值记录</a></li>
+                <li><a href="__APP__Trade/record">交易记录</a></li>
+                <li><a href="__APP__Trade/recive">收到礼物</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="cl-div  ">
+            <a href="__APP__/FriendList/index"><div class="cl-care cl-title">我的关注</div></a>
+        </div>
+    </div>
+    <div class="pi">
+        <div class="cl-div ">
+            <a href="__APP__/Message/index"><div class="cl-notice cl-title">消息中心</div></a>
+        </div>
+    </div>
+    <!-- <div class="pi">
+         <div class="cl-div ">
+             <a href="/centeros.php?ptype=treasure"><div class="cl-treasure cl-title">我的财富</div></a>
+         </div>
+     </div>-->
+
+    <div class="pi">
+        <div class="cl-div hasnenu">
+            <div class="cl-setting cl-title">我的设置</div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="cl-set-info hidden">
+            <!--ul>
+                <li><a href="centeros.php?ptype=info">基本资料</a></li>
+                <li><a href="centeros.php?ptype=mportrait">修改头像</a></li>
+                <li><a href="centeros.php?ptype=mpass">修改密码</a></li>
+                <li><a href="centeros.php?ptype=mphone">绑定手机</a></li>
+            </ul-->
+            <ul>
+                <li><a href="__APP__/Personinfo/info">基本资料</a></li>
+                <li><a href="__APP__/Personinfo/avatar">修改头像</a></li>
+                <li><a href="__APP__/Personinfo/passwd">修改密码</a></li>
+                <li><a href="__APP__/Personinfo/myphone">绑定手机</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<!--main-->
+<div class="inmiddle">
+    <?php
+    $current_page="recive";
+    include_once('./include/personal_tpl/center-info.php');
+    include_once('./include/personal_tpl/menu_left.php');
+    function getmonth(){
+        $monlist="";
+        $time = time();
+        $month = date('m',$time);
+        for($m=1;$m<13;$m++){
+            if($m==$month){
+                $monlist.="<option selected = 'selected'>".$m."</option>";
+            }else{
+                $monlist.="<option>".$m."</option>";
+            }
+        }
+        return $monlist;
+    }
+    ?>
+
+    <div class="center-right">
+        <div calass="cr-bind-phone" >
+            <div class="re-title-area"><span class="re-title">收到礼物</span>
+                <div class="recharge-search"><span class="research-condition">查询条件</span>
+                    <select name="research-year" id="research-year">
+                        <option>2016</option>
+                    </select>
+                    &nbsp;年&nbsp;
+                    <select name="research-month" id="research-month">
+                        <?php echo  getmonth();?>
+                    </select>
+                    &nbsp;月&nbsp;
+                    <button class="re-search-button small-button">查询</button>
+                </div>
+                <div class="research-table">
+                    <table id="conTable"    style="border-collapse:collapse;" border="1">
+                        <tr  class="fir">
+                            <th style="width: 152px;">赠送者</th>
+                            <th style="width: 200px;">赠送时间</th>
+                            <th style="width: 240px;">获得礼物</th>
+                            <th style="width: 362px;">消费蚪币</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="nexts"> </div>
+        </div>
+    </div>
+
+
+    <script>
+        seajs.use("ajax/recive");
+    </script>
+</div>
+
+
+<!--main-->
+
+<include file="Public/footer"/>
+
+</body>
+</html>
+
+
+
+
+
