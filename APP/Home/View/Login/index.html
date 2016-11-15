@@ -109,7 +109,7 @@
 		<div class="rlbox" id="tab_login_content" style="display: block;">
 			<div class="regbox logbox">
 				<!--form id="login_form2" onsubmit="return false;"-->
-				<form method="post" name="login" onsubmit="return false;">
+				<form method="post" id="login_form2" name="login" onsubmit="return false;">
 					<div class="regmail lip">
 						<div class="border_center topb">
 							<input type="text" id="tcuser" placeholder="帐号(邮箱号)"
