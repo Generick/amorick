@@ -52,7 +52,7 @@
                 <?php if($_SESSION['userid']!= ''): ?><ul class="nav navbar-nav navbar-right hidden-sm afHdNavR">
                         <li class="logName"><a href="<?php echo U('Center/index');?>" class="ellipsis"><?php echo ($user['nickname']); ?></a></li>
                         <li class="glyphicon glyphicon-menu-down"><a href=""></a></li>
-                        <li class=""><a href="/login.php?action=logout&amp;type=html">退出<span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="<?php echo U('Login/logout');?>">退出<span class="sr-only">(current)</span></a></li>
                         <li class="glyphicon glyphicon-envelope"><a href=""></a></li>
                     </ul>
                  <?php else: ?>

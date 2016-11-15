@@ -190,3 +190,161 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
 
+[ 2016-11-15T15:54:18+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-15T15:54:35+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test001@qq.com','test001','e10adc3949ba59abbe56e057f20f883e','2016-11-15 15:54:35','1','0','test001@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0017s ]
+SQL: INSERT INTO `bu_user_packs` (`createDT`,`status`,`userid`) VALUES ('2016-11-15 15:54:35','1','11121') [ RunTime:0.0037s ]
+
+[ 2016-11-15T15:55:02+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-15T15:57:19+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-15T16:48:32+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-15T16:48:40+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-15T16:48:47+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-15T16:49:01+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-15T17:28:54+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '东方时尚' LIMIT 1   [ RunTime:0.0135s ]
+
+[ 2016-11-15T17:30:02+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '水电费' LIMIT 1   [ RunTime:0.0135s ]
+
+[ 2016-11-15T17:30:11+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '好方法' LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2016-11-15T17:30:28+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = ' ' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-15T17:30:39+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '刚刚' LIMIT 1   [ RunTime:0.0136s ]
+
+[ 2016-11-15T17:31:40+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '坎坎坷坷' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-15T17:31:42+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001630s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '坎坎坷坷' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-11-15T17:33:41+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '梵蒂冈地方' LIMIT 1   [ RunTime:0.0136s ]
+
+[ 2016-11-15T17:33:57+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '梵蒂冈地方' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-15T17:33:58+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = '梵蒂冈地方' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-15T17:35:35+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-15T17:37:10+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'tyu' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-15T17:37:47+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'fgf' LIMIT 1   [ RunTime:0.0129s ]
+
+[ 2016-11-15T17:37:59+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-11-15T17:39:00+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-15T17:39:54+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0010s ]
+

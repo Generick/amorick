@@ -123,6 +123,8 @@ class LoginController extends Controller{
 		$str['result'] = $result;
 		$str['packs_result'] = $packs_result;
 		if ($result) {
+			$_SESSION['userid'] = (int)$result;
+			$str['url'] = U('Index/index');
 			$this->ajaxReturn($str);
 		}else{
 			$this->ajaxReturn(0);
@@ -155,10 +157,10 @@ class LoginController extends Controller{
 
 		//注销登录
 		//只注销用户信息，在session中的也注销
-		$user = M("user");
-		$user -> where("userid='{$_SESSION['openid']['userid']}'") -> setField('status',1);
+		//$_SESSION['userid'] == '';
+		$_SESSION = array();
+		session_destroy();
 
-		cookie('user',null);
 		$url = U("Index/index");
 		header("Location: {$url}");
 		exit(0);

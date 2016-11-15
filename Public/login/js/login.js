@@ -14,7 +14,6 @@ function refreshRegCode () {
 }
 
 function selectTagLoginBox(showContent){
-	//console.log('00');
 	refreshCode();
 	refreshRegCode();
 	$('#tab_login_content').hide();
@@ -28,11 +27,14 @@ function selectTagLoginBox(showContent){
 login.prototype = {
 	signin:function(){
 		if ($('#tcuser').val() ==  '') {
-			alert('请输入账号邮箱号!');
+			console.log('null');
 		}else if($('#password').val() == ''){
-			alert('请输入密码!');
+			// $('#password').parent().siblings('.error').html("请输入密码!").show();
+			// $('#password').focus();
+			console.log('null');
 		}else if($('#login_vaildcode').val() == ''){
-			alert("请输入验证码!");
+			$('.log_yzm .error').html('请输入验证码!').show();
+			$('#login_vaildcode').focus();
 		}else{
 			var user = $('#tcuser').val();
 			var pwd = $('#password').val();
@@ -60,14 +62,24 @@ login.prototype = {
 			});
 		}
 	},
+	pwdNull:function(){
+		if($('#password').val() == ''){
+			$('#password').parent().siblings('.error').html("密码不能为空!").show();
+			$('#password').focus();
+		}else{
+			$('#password').parent().siblings('.error').hide();
+		}
+	},
 	signout:function(){
 		//alert("jjj");
 	},
 	checkUser:function(){
 		if ($('#tcuser').val() =='') {
-			alert('请输入用户名');
+			$('#tcuser').parent().siblings('.error').html("请输入账号/邮箱号").show();
+			//$('#tcuser').focus();
 		}else{
 			var username = $('#tcuser').val();
+			$('#tcuser').parent().siblings('.error').hide();
 			var url = window.location.href.split('index.html')[0];
 			$.ajax({
 				type:'post',
@@ -77,8 +89,11 @@ login.prototype = {
 				success:function(msg){
 					if (msg == 0) {
 						console.log('用户名不正确!');
+						$('#tcuser').parent().siblings('.error').html("用户名不正确!").show();
+						//$('#tcuser').focus();
 					}else{
 						console.log('ok');
+						$('#tcuser').parent().siblings('.oktip').show();
 					}
 				}
 			});
@@ -146,6 +161,7 @@ reg.prototype = {
 					console.log("注册失败");
 				}else{
 					console.log(msg);
+					window.location.href = msg.url;
 				}
 				//console.log(msg);
 			}
@@ -157,7 +173,6 @@ reg.prototype = {
 		var repwd = $('#reg_repassword').val();
 		if (pwd !== repwd) {
 			$('.regpw2 .error').html('两次密码不一致!').show();
-			//alert("两次密码不一致.");
 		}else{
 			$('.regpw2 .error').hide();
 		}
@@ -184,5 +199,8 @@ $(document).ready(function(){
 	});
 	$('#reg_repassword').blur(function(){
 		reg.samePassword();
+	});
+	$('#password').blur(function(){
+		login.pwdNull();
 	});
 });
