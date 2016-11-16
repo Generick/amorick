@@ -47,9 +47,8 @@ login.prototype = {
 				dataType:'json',
 				success:function(msg){
 					if (msg.code==0) {
-						console.log("登陆成功");
-						console.log(msg.url);
-						console.log(msg.userid);
+						//console.log(msg.url);
+						//console.log(msg.userid);
 						window.location.href = msg.url;
 					}else if(msg.code==1){
 						console.log("密码错误");

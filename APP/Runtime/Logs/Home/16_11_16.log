@@ -1,0 +1,39 @@
+[ 2016-11-16T10:07:04+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-16T10:07:14+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0131s ]
+
+[ 2016-11-16T10:07:25+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-16T10:07:48+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test002@qq.com' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-16T10:08:06+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: INSERT INTO `bu_user` (`username`,`nickname`,`password`,`createDT`,`status`,`accountfrom`,`email`,`avatar`,`gender`,`logins`) VALUES ('test002@qq.com','test002','e10adc3949ba59abbe56e057f20f883e','2016-11-16 10:08:06','1','0','test002@qq.com','46a920d47a9c287e627693554180598a','0','1') [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `bu_user_packs` [ RunTime:0.0016s ]
+SQL: INSERT INTO `bu_user_packs` (`createDT`,`status`,`userid`) VALUES ('2016-11-16 10:08:06','1','11122') [ RunTime:0.0042s ]
+
+[ 2016-11-16T10:08:11+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-16T10:08:48+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
