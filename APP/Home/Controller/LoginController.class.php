@@ -95,7 +95,9 @@ class LoginController extends Controller{
 		$str = array();
 		$timer=date('Y-m-d H:i:s');
 		$data['username'] = I('post.username');
-		$data['nickname'] = urlencode(I('post.nickname'));
+		$nickname = I('post.nickname');
+		$data['nickname'] = urlencode($nickname);
+		//$this->ajaxReturn($data['nickname']);exit;
 		$data['password'] = md5(I('post.password'));
 		$verifycode = I('post.verifycode');
 		if (!$this->checkedCode($verifycode)) {
@@ -143,8 +145,10 @@ class LoginController extends Controller{
 	}
 	//weixin login
 	function wxlogin(){
-		$dir = explode('Controller',__DIR__)[0];
-		require_once $dir.'\Common\wxlogin.php';
+		$dir = __DIR__;
+		$dir = explode('Controller',$dir);
+		$url = $dir[0];
+		require_once $url.'\Common\wxlogin.php';
 	}
 	//qq reg
 	function qqreg(){

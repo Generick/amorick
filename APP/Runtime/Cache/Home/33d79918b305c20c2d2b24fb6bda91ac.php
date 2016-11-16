@@ -17,7 +17,7 @@
 	<div class="login-box-global-css" id="loginbox" style="display: block;">
 		<div class="box_head">
 			<div style="position:relative">
-				<div class="box_close icons Stat 2_3" onclick="login.close()"></div>
+				<div class="box_close icons Stat 2_3" onclick="winclose()"></div>
 			</div>
 			<ul class="loginswitch">
 				<li id="tab_login" class="regsw"><a href="javascript:void(0)"

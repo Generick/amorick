@@ -13,6 +13,10 @@ function refreshRegCode () {
 	$('.yzmimg_reg').attr('src',window.location.href.split('index.html')[0]+'verify');
 }
 
+function winclose(){
+	return;
+}
+
 function selectTagLoginBox(showContent){
 	refreshCode();
 	refreshRegCode();
@@ -26,10 +30,14 @@ function selectTagLoginBox(showContent){
 
 login.prototype = {
 	signin:function(){
-		if ($('#tcuser').val() ==  '') {
+		$('#password .error').hide();
+		$('.log_yzm .error').hide();
+		if ($('#tcuser').val() == '') {
 			console.log('null');
+			$('#tcuser').parent().siblings('.error').html("请输入邮箱号/账号").show();
+			$('#tcuser').focus();
 		}else if($('#password').val() == ''){
-			// $('#password').parent().siblings('.error').html("请输入密码!").show();
+			$('#password').parent().siblings('.error').html("请输入密码!").show();
 			// $('#password').focus();
 			console.log('null');
 		}else if($('#login_vaildcode').val() == ''){
@@ -52,9 +60,11 @@ login.prototype = {
 						window.location.href = msg.url;
 					}else if(msg.code==1){
 						console.log("密码错误");
+						$('#password').parent().siblings('.error').html('密码错误！').show();
 						console.log(msg);
 					}else{
-						console.log('验证码错误');
+						//console.log('验证码错误');
+						$('.log_yzm .error').html('验证码错误！').show();
 					}
 					
 				}
@@ -97,6 +107,9 @@ login.prototype = {
 				}
 			});
 		}
+	},
+	close:function(){
+		return false;
 	},
 	qqlogin:function(){
 		var w=500;
@@ -141,6 +154,7 @@ reg.prototype = {
 		});
 	},
 	UserReg:function(){
+		$('.regcode .error').hide();
 		//console.log('userreg');
 		var username = $('#reg_email').val();
 		var nickname = $('#reg_nickname').val();
