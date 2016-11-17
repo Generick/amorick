@@ -51,40 +51,35 @@ class LoginController extends Controller{
 		$msg['password'] = md5(I('post.password'));
 		$msg['vaildcode'] = I('post.vaildcode');
 
-		// $str['url'] = U('Index/index');
-		// $str['code'] = 0;
-		// $this->ajaxReturn($str);exit;
-
 		if (!$this->checkedCode($msg['vaildcode'])) {
 			$str['code'] = 2;
 			$this->ajaxReturn($str);
 			exit();
 		}
 		//$this->ajaxReturn($msg);
-		//连接数据库
 		$user = M("bu_user");
-		//查询用户名为登录传来的值的数据
 		$result = $user -> where("username='{$msg['username']}'") -> find();
 		//$this->ajaxReturn($result);
-		//var_dump($result);exit;
 		if($result){
-			//判断密码
 			if($msg['password'] == $result['password']){
 				//$sessionId = session_id();
 				$_SESSION['userid'] = $result['userid'];
 				//var_dump($_SESSION['userid']);exit;
+				//返回数据
 				$str['url'] = U('Index/index');
 				$str['code'] = 0;
 				$str['userid']=$_SESSION['userid'];
 				//set cookie
 				if (I('post.checked') == "true") {
+					//remember login
+					//set cookie
 					$expiretime = time()+3600*24*365;
 					$cookieData = $_SESSION['userid'].','.$msg['username'];
 					$cookieData = $this->m_encrypt($cookieData);
-					//$cookieData = $this->m_decrypt($cookieData);
 					setcookie('KDUID',$cookieData,$expiretime,'/',$_SERVER['HTTP_HOST']);
 					$str['cookie'] = $cookieData;
 				}else{
+					//empty cookie
 					isset($_COOKIE['KDUID'])?setcookie('KDUID','',time()-3600,'/'):false;
 				}
 
@@ -98,12 +93,10 @@ class LoginController extends Controller{
 			//$this->display("Login/index");
 		}
 	}
-
+	// check cookie
 	function checkCookie(){
 		if (!isset($_COOKIE['KDUID'])) {
 			return false;
-			//$this->show('cookie is not exist');
-			//exit;
 		}else{
 			$cookieData = $_COOKIE['KDUID'];
 			$cookie_decode = $this->m_decrypt($cookieData);
@@ -111,7 +104,6 @@ class LoginController extends Controller{
 			$userid = $cookie_array[0];
 			$_SESSION['userid'] = $userid;
 			return true;
-			//$this->show($userid);
 		}
 		
 	}
