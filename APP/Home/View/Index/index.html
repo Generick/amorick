@@ -129,7 +129,7 @@
                                 <p class="text-center">人数：<span>{$rm.numbers}</span></p>
                             </div>
                             <div class="firB ellipsis">
-                                <p class="colorPin f16">{$rm.nickName}</p>
+                                <p class="colorPin f16">{$rm.nickName|urldecode}</p>
                                 <p class="clearfix f12 outer">
                                     <span class="glyphicon glyphicon-user"></span>
                                    <!-- <span> {$rm['onlineTime']/60000|ceil}</span>
@@ -166,7 +166,7 @@
                                         <p class="text-center">人数：<span>{$rm.numbers}</span></p>
                                     </div>
                                     <div class="hotB">
-                                        <span class="colorPin f14 f14">{$rm.nickName}</span>
+                                        <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <if condition="$rm.online eq '1'">
@@ -194,7 +194,7 @@
 
                                     </div>
                                     <div class="hotB">
-                                        <span class="colorPin f14">{$rm.nickName}</span>
+                                        <span class="colorPin f14">{$rm.nickName|urldecode}</span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span-->
                                             <span>
@@ -246,7 +246,7 @@
 
                                     </div>
                                     <div class="hotB">
-                                        <span class="colorPin f14 f14">{$rm.nickName}</span>
+                                        <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <if condition="$rm.online eq '1'">
@@ -301,7 +301,7 @@
                             </div>
                             <div class="recommB">
                                 <div class="clearfix">
-                                    <span class="color33 pull-left">{$tj[nickName]}</span>
+                                    <span class="color33 pull-left">{$tj[nickName]|urldecode}</span>
                                     <div class="color99 pull-right">
                                         <span class="glyphicon glyphicon-eye-open"></span>
                                         <span>{$tj.numbers}</span>
@@ -342,7 +342,7 @@
                             <!--img src="__PUBLIC__/images/girl01.png" alt=""/-->
                             <img src="{$zx.image}" alt=""/>
                             <div class="firB ellipsis">
-                                <p class="colorPin f16">{$zx.nickName}</p>
+                                <p class="colorPin f16">{$zx.nickName|urldecode}</p>
                                 <p class="clearfix f12 outer">
                                     <span class="glyphicon glyphicon-eye-open"></span>
                                     <span>{$zx.numbers}人</span>
@@ -372,7 +372,7 @@
                                 <a href="#" class="hotItem thumbnail">
                                     <img src="{$zx.image}" alt=""/>
                                     <div class="hotB">
-                                        <span class="colorPin f14">{$zx.nickName}</span>
+                                        <span class="colorPin f14">{$zx.nickName|urldecode}</span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <span class="glyphicon glyphicon-eye-open"></span>
@@ -423,7 +423,7 @@
                                     <img class="img-circle" src="__PUBLIC__/images/photo_title.jpg" alt=""/>
                                 </div>
                                 <div class="pull-left">
-                                    <div class="name">{$user['nickname']}</div>
+                                    <div class="name">{$user['nickname']|urldecode}</div>
                                     <div class="money">
                                         <span class="glyphicon glyphicon-bold img-circle"></span>
                                         <span class="moneyNum">{$user['coins']}</span>
@@ -510,7 +510,7 @@
                             <!--img class="pull-left fl" src="__PUBLIC__/images/photo_title.jpg" alt=""/-->
                             <img class="pull-left fl" src="{$gz['imagePrivate']}&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name">{$gz.nickName}</p>
+                                <p class="name">{$gz.nickName|urldecode}</p>
                                 <p class="ynLiv">{$a[$gz[online]]}</p>
                             </div>
                             <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$gz.totalpoint} fl"></div>
@@ -544,7 +544,7 @@
                         <a href="javascript:;">
                             <img class="pull-left fl" src="{$zb.avatar}&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name">{$zb.nickname}</p>
+                                <p class="name">{$zb.nickname|urldecode}</p>
                                 <p class="ynLiv">房间号{$zb.roomNumber}</p>
                             </div>
                             <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$zb.totalpoint} fl"></div>
@@ -574,7 +574,7 @@
                         <a href="javascript:;">
                             <img class="pull-left fl" src="{$zb.avatar}&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name">{$zb.nickname}</p>
+                                <p class="name">{$zb.nickname|urldecode}</p>
                                 <p class="ynLiv">{$zb.activelmg}</p>
                             </div>
                             <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$zb.spender} fl"></div>
@@ -605,7 +605,7 @@
                         <a href="javascript:;">
                             <img class="pull-left fl" src="{$fs.avatar}&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name">{$fs.nickname}</p>
+                                <p class="name">{$fs.nickname|urldecode}</p>
                                 <p class="ynLiv">{$fs.spenderlmg}</p>
                             </div>
                             <div class="pull-left fl spriteLev liverlevel-pic_liverlevel_{$fs.active}"></div>

@@ -47,16 +47,18 @@ login.prototype = {
 			var user = $('#tcuser').val();
 			var pwd = $('#password').val();
 			var vaildcode = $('#login_vaildcode').val();
+			var checked = $('#tcremember').is(':checked');
 			var url = window.location.href.split('index.html')[0];
 			$.ajax({
 				type:'post',
 				url:url+'login',
-				data:{'username':user,'password':pwd,'vaildcode':vaildcode},
+				data:{'username':user,'password':pwd,'vaildcode':vaildcode,'checked':checked},
 				dataType:'json',
 				success:function(msg){
 					if (msg.code==0) {
 						//console.log(msg.url);
 						//console.log(msg.userid);
+						console.log(msg);
 						window.location.href = msg.url;
 					}else if(msg.code==1){
 						console.log("密码错误");

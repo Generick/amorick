@@ -125,7 +125,7 @@
                                 <p class="text-center">人数：<span><?php echo ($rm["numbers"]); ?></span></p>
                             </div>
                             <div class="firB ellipsis">
-                                <p class="colorPin f16"><?php echo ($rm["nickName"]); ?></p>
+                                <p class="colorPin f16"><?php echo (urldecode($rm["nickName"])); ?></p>
                                 <p class="clearfix f12 outer">
                                     <span class="glyphicon glyphicon-user"></span>
                                    <!-- <span> <?php echo (ceil($rm['onlineTime']/60000)); ?></span>
@@ -158,7 +158,7 @@
                                         <p class="text-center">人数：<span><?php echo ($rm["numbers"]); ?></span></p>
                                     </div>
                                     <div class="hotB">
-                                        <span class="colorPin f14 f14"><?php echo ($rm["nickName"]); ?></span>
+                                        <span class="colorPin f14 f14"><?php echo (urldecode($rm["nickName"])); ?></span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <?php if($rm["online"] == '1'): echo (ceil($rm['onlineTime']/60000)); ?>分钟前开播
@@ -181,7 +181,7 @@
 
                                     </div>
                                     <div class="hotB">
-                                        <span class="colorPin f14"><?php echo ($rm["nickName"]); ?></span>
+                                        <span class="colorPin f14"><?php echo (urldecode($rm["nickName"])); ?></span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span-->
                                             <span>
@@ -227,7 +227,7 @@
 
                                     </div>
                                     <div class="hotB">
-                                        <span class="colorPin f14 f14"><?php echo ($rm["nickName"]); ?></span>
+                                        <span class="colorPin f14 f14"><?php echo (urldecode($rm["nickName"])); ?></span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <?php if($rm["online"] == '1'): echo (ceil($rm['onlineTime']/60000)); ?>分钟前开播
@@ -277,7 +277,7 @@
                             </div>
                             <div class="recommB">
                                 <div class="clearfix">
-                                    <span class="color33 pull-left"><?php echo ($tj[nickName]); ?></span>
+                                    <span class="color33 pull-left"><?php echo (urldecode($tj[nickName])); ?></span>
                                     <div class="color99 pull-right">
                                         <span class="glyphicon glyphicon-eye-open"></span>
                                         <span><?php echo ($tj["numbers"]); ?></span>
@@ -315,7 +315,7 @@
                             <!--img src="/kedo/Public/images/girl01.png" alt=""/-->
                             <img src="<?php echo ($zx["image"]); ?>" alt=""/>
                             <div class="firB ellipsis">
-                                <p class="colorPin f16"><?php echo ($zx["nickName"]); ?></p>
+                                <p class="colorPin f16"><?php echo (urldecode($zx["nickName"])); ?></p>
                                 <p class="clearfix f12 outer">
                                     <span class="glyphicon glyphicon-eye-open"></span>
                                     <span><?php echo ($zx["numbers"]); ?>人</span>
@@ -340,7 +340,7 @@
                                 <a href="#" class="hotItem thumbnail">
                                     <img src="<?php echo ($zx["image"]); ?>" alt=""/>
                                     <div class="hotB">
-                                        <span class="colorPin f14"><?php echo ($zx["nickName"]); ?></span>
+                                        <span class="colorPin f14"><?php echo (urldecode($zx["nickName"])); ?></span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <span class="glyphicon glyphicon-eye-open"></span>
@@ -385,7 +385,7 @@
                                     <img class="img-circle" src="/kedo/Public/images/photo_title.jpg" alt=""/>
                                 </div>
                                 <div class="pull-left">
-                                    <div class="name"><?php echo ($user['nickname']); ?></div>
+                                    <div class="name"><?php echo (urldecode($user['nickname'])); ?></div>
                                     <div class="money">
                                         <span class="glyphicon glyphicon-bold img-circle"></span>
                                         <span class="moneyNum"><?php echo ($user['coins']); ?></span>
@@ -470,7 +470,7 @@
                             <!--img class="pull-left fl" src="/kedo/Public/images/photo_title.jpg" alt=""/-->
                             <img class="pull-left fl" src="<?php echo ($gz['imagePrivate']); ?>&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name"><?php echo ($gz["nickName"]); ?></p>
+                                <p class="name"><?php echo (urldecode($gz["nickName"])); ?></p>
                                 <p class="ynLiv"><?php echo ($a[$gz[online]]); ?></p>
                             </div>
                             <div class="pull-left spriteLev liverlevel-pic_liverlevel_<?php echo ($gz["totalpoint"]); ?> fl"></div>
@@ -501,7 +501,7 @@
                         <a href="javascript:;">
                             <img class="pull-left fl" src="<?php echo ($zb["avatar"]); ?>&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name"><?php echo ($zb["nickname"]); ?></p>
+                                <p class="name"><?php echo (urldecode($zb["nickname"])); ?></p>
                                 <p class="ynLiv">房间号<?php echo ($zb["roomNumber"]); ?></p>
                             </div>
                             <div class="pull-left spriteLev liverlevel-pic_liverlevel_<?php echo ($zb["totalpoint"]); ?> fl"></div>
@@ -529,7 +529,7 @@
                         <a href="javascript:;">
                             <img class="pull-left fl" src="<?php echo ($zb["avatar"]); ?>&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name"><?php echo ($zb["nickname"]); ?></p>
+                                <p class="name"><?php echo (urldecode($zb["nickname"])); ?></p>
                                 <p class="ynLiv"><?php echo ($zb["activelmg"]); ?></p>
                             </div>
                             <div class="pull-left spriteLev liverlevel-pic_liverlevel_<?php echo ($zb["spender"]); ?> fl"></div>
@@ -557,7 +557,7 @@
                         <a href="javascript:;">
                             <img class="pull-left fl" src="<?php echo ($fs["avatar"]); ?>&h=60&w=60" alt=""/>
                             <div class="pull-left fl">
-                                <p class="name"><?php echo ($fs["nickname"]); ?></p>
+                                <p class="name"><?php echo (urldecode($fs["nickname"])); ?></p>
                                 <p class="ynLiv"><?php echo ($fs["spenderlmg"]); ?></p>
                             </div>
                             <div class="pull-left fl spriteLev liverlevel-pic_liverlevel_<?php echo ($fs["active"]); ?>"></div>

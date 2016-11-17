@@ -70,22 +70,50 @@ class LoginController extends Controller{
 		if($result){
 			//判断密码
 			if($msg['password'] == $result['password']){
+				//$sessionId = session_id();
 				$_SESSION['userid'] = $result['userid'];
 				//var_dump($_SESSION['userid']);exit;
 				$str['url'] = U('Index/index');
 				$str['code'] = 0;
 				$str['userid']=$_SESSION['userid'];
+				//set cookie
+				if (I('post.checked') == "true") {
+					$expiretime = time()+3600*24*365;
+					$cookieData = $_SESSION['userid'].','.$msg['username'];
+					$cookieData = $this->m_encrypt($cookieData);
+					//$cookieData = $this->m_decrypt($cookieData);
+					setcookie('KDUID',$cookieData,$expiretime,'/',$_SERVER['HTTP_HOST']);
+					$str['cookie'] = $cookieData;
+				}else{
+					isset($_COOKIE['KDUID'])?setcookie('KDUID','',time()-3600,'/'):false;
+				}
+
 				$this->ajaxReturn($str);
-				//$this -> redirect("Index/index");
 			}else{
 				$str['code'] = 1;
 				$this->ajaxReturn($str);
-				//$this->display("Login/index");
 			}
 		}else{
  
 			//$this->display("Login/index");
 		}
+	}
+
+	function checkCookie(){
+		if (!isset($_COOKIE['KDUID'])) {
+			return false;
+			//$this->show('cookie is not exist');
+			//exit;
+		}else{
+			$cookieData = $_COOKIE['KDUID'];
+			$cookie_decode = $this->m_decrypt($cookieData);
+			$cookie_array = explode(',',$cookie_decode);
+			$userid = $cookie_array[0];
+			$_SESSION['userid'] = $userid;
+			return true;
+			//$this->show($userid);
+		}
+		
 	}
 
 	//reg
@@ -134,7 +162,33 @@ class LoginController extends Controller{
 		//$this->ajaxReturn(0);
 	}
 
+	//encrypt
+	function m_encrypt($encryptData){
+		//echo "string";
+		$key = pack('H*', "bcb04b7e103a0cd8b54669051cef08bc55abe029fdebae5e1d417e2ffb2a00a3");
+        $key_size =  strlen($key);
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
 
+        $ciphertext = mcrypt_encrypt(MCRYPT_RIJNDAEL_128, $key,$encryptData, MCRYPT_MODE_CBC, $iv);
+        $ciphertext = $iv . $ciphertext;
+        $ciphertext_base64 = base64_encode($ciphertext);
+        return $ciphertext_base64;
+	}
+	//decrypt
+	function m_decrypt($decryptData){
+		//echo "string";
+		$key = pack('H*', "bcb04b7e103a0cd8b54669051cef08bc55abe029fdebae5e1d417e2ffb2a00a3");
+        $key_size =  strlen($key);
+        $iv_size = mcrypt_get_iv_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CBC);
+        $iv = mcrypt_create_iv($iv_size, MCRYPT_RAND);
+
+        $ciphertext_dec = base64_decode($decryptData);
+        $iv_dec = substr($ciphertext_dec, 0, $iv_size);
+        $ciphertext_dec = substr($ciphertext_dec, $iv_size);
+        $plaintext_dec = mcrypt_decrypt(MCRYPT_RIJNDAEL_128, $key,$ciphertext_dec, MCRYPT_MODE_CBC, $iv_dec);
+        return $plaintext_dec;
+	}
 	//qq login
 	function qqlogin(){
 		$dir = __DIR__;
@@ -164,6 +218,7 @@ class LoginController extends Controller{
 		//$_SESSION['userid'] == '';
 		$_SESSION = array();
 		session_destroy();
+		setcookie('KDUID','',time()-3600,'/');
 
 		$url = U("Index/index");
 		header("Location: {$url}");

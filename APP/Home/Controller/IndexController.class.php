@@ -8,10 +8,18 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        $userid = $_SESSION['userid'];
-        $user = M('bu_user');
-        $result = $user->where("userId='{$userid}'")->find();
-        $this->assign('user',$result);
+        $isCookie = R('Login/checkCookie');
+        if ($isCookie) {
+            $userid = $_SESSION['userid'];
+        }else{
+            $userid = $_SESSION['userid'];
+        }
+
+            $user = M('bu_user');
+            $result = $user->where("userId='{$userid}'")->find();
+            $this->assign('user',$result);
+            
+        
        // echo 'aa';
 
 /*
@@ -181,6 +189,7 @@ class IndexController extends Controller {
         //$this->display();
 
     }
+
 
 
 
