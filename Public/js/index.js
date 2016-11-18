@@ -1,3 +1,8 @@
+function winclose(){
+	$('.bgmask').hide();
+	$('#loginbox').hide();
+}
+
 function login(){
 	
 }
@@ -5,18 +10,24 @@ function reg(){
 
 }
 
+function getLoginUrl(){
+	var url0 = $('#url').val();
+	url1 = url0.split('index.html')[0];
+	//url2 = url1+'verify/'+Math.random();
+	return url1;
+}
 function refreshCode(){
-	$('.yzmimg_login').attr('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
+	var url = getLoginUrl();
+	var url1 = url+'verify/'+Math.random();
+	$('.yzmimg_login').attr('src',url1);
 	//var yzm_login = document.getElementsByClassName("yzmimg_login")[0].setAttribute('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
 }
 
 function refreshRegCode () {
-	document.getElementsByClassName("yzmimg_reg")[0].setAttribute('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
+	var url = getLoginUrl();
+	var url1 = url+'verify/'+Math.random();
+	document.getElementsByClassName("yzmimg_reg")[0].setAttribute('src',url1);
 	//$('.yzmimg_reg').attr('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
-}
-
-function winclose(){
-	history.go(-1);
 }
 
 function selectTagLoginBox(showContent){
@@ -50,7 +61,8 @@ login.prototype = {
 			var pwd = $('#password').val();
 			var vaildcode = $('#login_vaildcode').val();
 			var checked = $('#tcremember').is(':checked');
-			var url = window.location.href.split('index.html')[0];
+			//var url = window.location.href.split('index.html')[0];
+			var url = getLoginUrl();
 			$.ajax({
 				type:'post',
 				url:url+'login',
@@ -93,7 +105,8 @@ login.prototype = {
 		}else{
 			var username = $('#tcuser').val();
 			$('#tcuser').parent().siblings('.error').hide();
-			var url = window.location.href.split('index.html')[0];
+			//var url = window.location.href.split('index.html')[0];
+			var url = getLoginUrl();
 			$.ajax({
 				type:'post',
 				url:url+'checkedUser',
@@ -118,7 +131,8 @@ login.prototype = {
 	qqlogin:function(){
 		var w=500;
         var h=400;
-        var url = window.location.href.split('index.html')[0];
+        //var url = window.location.href.split('index.html')[0];
+        var url = getLoginUrl();
         //console.log(url);
 　　  	window.open(url+'qqlogin','snslogin','top='+(window.screen.height-h)/2+',left='+(window.screen.width-w)/2+',width='+w+',height='+h);
 	},
@@ -139,7 +153,8 @@ reg.prototype = {
 			$('#reg_email').focus();
 			return;
 		}
-		var url = window.location.href.split('index.html')[0];
+		//var url = window.location.href.split('index.html')[0];
+		var url = getLoginUrl();
 		$.ajax({
 			type:'post',
 			url:url+'checkedUser',
@@ -164,7 +179,8 @@ reg.prototype = {
 		var nickname = $('#reg_nickname').val();
 		var password = $('#reg_password').val();
 		var verifycode = $('#reg_vaildcode').val();
-		var url = window.location.href.split('index.html')[0];
+		//var url = window.location.href.split('index.html')[0];
+		var url = getLoginUrl();
 		$.ajax({
 			type:'post',
 			url:url+'regUser',
@@ -219,5 +235,20 @@ $(document).ready(function(){
 	});
 	$('#password').blur(function(){
 		login.pwdNull();
+	});
+	$('.login').click(function(){
+		$('.bgmask').show();
+		$('#loginbox').show();
+		refreshCode();
+	});
+	$('.bgmask').click(function(){
+		$('.bgmask').hide();
+		$('#loginbox').hide();
+	});
+	$('.Reg').click(function(){
+		$('.bgmask').show();
+		$('#loginbox').show();
+		selectTagLoginBox('tab_reg');
+		refreshRegCode();
 	});
 });

@@ -89,7 +89,8 @@ class IndexController extends Controller {
         $this->assign('fshyb',$data['data']);
         //  print_r($data);
 
-
+        $loginUrl = U('Login/index');
+        $this->assign('url',$loginUrl);
         $this->display();
     }
      //首页热门主播展示；
