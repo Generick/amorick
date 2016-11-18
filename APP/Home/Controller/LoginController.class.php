@@ -75,9 +75,9 @@ class LoginController extends Controller{
 					//set cookie
 					$expiretime = time()+3600*24*365;
 					$cookieData = $_SESSION['userid'].','.$msg['username'];
-					$cookieData = $this->m_encrypt($cookieData);
-					setcookie('KDUID',$cookieData,$expiretime,'/',$_SERVER['HTTP_HOST']);
-					$str['cookie'] = $cookieData;
+					$cookieEncrypt = $this->m_encrypt($cookieData);
+					setcookie('KDUID',$cookieEncrypt,$expiretime,'/',$_SERVER['HTTP_HOST']);
+					$str['cookie'] = $cookieEncrypt;
 				}else{
 					//empty cookie
 					isset($_COOKIE['KDUID'])?setcookie('KDUID','',time()-3600,'/'):false;

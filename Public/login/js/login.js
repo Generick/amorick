@@ -6,11 +6,13 @@ function reg(){
 }
 
 function refreshCode(){
-	$('.yzmimg_login').attr('src',window.location.href.split('index.html')[0]+'verify');
+	$('.yzmimg_login').attr('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
+	//var yzm_login = document.getElementsByClassName("yzmimg_login")[0].setAttribute('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
 }
 
 function refreshRegCode () {
-	$('.yzmimg_reg').attr('src',window.location.href.split('index.html')[0]+'verify');
+	document.getElementsByClassName("yzmimg_reg")[0].setAttribute('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
+	//$('.yzmimg_reg').attr('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
 }
 
 function winclose(){
@@ -58,7 +60,7 @@ login.prototype = {
 					if (msg.code==0) {
 						//console.log(msg.url);
 						//console.log(msg.userid);
-						console.log(msg);
+						//console.log(msg);
 						window.location.href = msg.url;
 					}else if(msg.code==1){
 						console.log("密码错误");

@@ -1,0 +1,34 @@
+[ 2016-11-18T09:49:18+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2016-11-18T09:49:27+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0014s ]
+
+[ 2016-11-18T09:49:35+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-18T09:50:11+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0015s ]
+
+[ 2016-11-18T09:50:21+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-18T10:02:48+08:00 ] ::1 /kedo/index.php/Home/Login/eval%20code%20(2)
+ERR: 非法操作:eval code (2)
+
