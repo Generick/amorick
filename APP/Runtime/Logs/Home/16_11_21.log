@@ -1,0 +1,53 @@
+[ 2016-11-21T09:50:31+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T09:51:36+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:01:52+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:01:59+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000880s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-21T10:02:15+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2016-11-21T10:02:17+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:02:27+08:00 ] ::1 /kedo/index.php/Home/Center/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-21T10:02:29+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:02:32+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:20:54+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:27:48+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:28:00+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:28:04+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:28:04+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-21T10:31:19+08:00 ] ::1 /kedo/index.php/Home/Index/__MOUDLE__/Login/verify
+ERR: 非法操作:__MOUDLE__
+

@@ -299,3 +299,18 @@ ERR: 非法操作:verify
 [ 2016-11-18T17:24:33+08:00 ] ::1 /kedo/index.php/Home/Index/verify
 ERR: 非法操作:verify
 
+[ 2016-11-18T17:56:50+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-18T17:58:34+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-18T18:00:38+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-18T18:08:10+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+
+[ 2016-11-18T18:36:11+08:00 ] ::1 /kedo/index.php/Home/Index/verify
+ERR: 非法操作:verify
+

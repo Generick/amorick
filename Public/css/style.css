@@ -260,7 +260,7 @@ body{
 	}
 	/*登陆后*/
 	.beforLog{
-		display:none; 
+		display:block; 
 	}
 	.AfterLog .imgR{
 		border:2px solid #e34052;

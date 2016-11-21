@@ -18,26 +18,26 @@ function getLoginUrl(){
 }
 function refreshCode(){
 	var url = getLoginUrl();
-	var url1 = url+'verify/'+Math.random();
+	var url1 = url+'verify/num/'+Math.random();
 	$('.yzmimg_login').attr('src',url1);
 	//var yzm_login = document.getElementsByClassName("yzmimg_login")[0].setAttribute('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
 }
 
 function refreshRegCode () {
 	var url = getLoginUrl();
-	var url1 = url+'verify/'+Math.random();
+	var url1 = url+'verify/num/'+Math.random();
 	document.getElementsByClassName("yzmimg_reg")[0].setAttribute('src',url1);
 	//$('.yzmimg_reg').attr('src',window.location.href.split('index.html')[0]+'verify/'+Math.random());
 }
 
 function selectTagLoginBox(showContent){
-	refreshCode();
-	refreshRegCode();
-	$('#tab_login_content').hide();
-	$('#tab_reg_content').hide();
 	$('.loginswitch #tab_login').removeClass('regsw');
 	$('.loginswitch #tab_reg').removeClass('regsw');
+	$('#tab_login_content').hide();
+	$('#tab_reg_content').hide();
 	$('.loginswitch #'+showContent).addClass('regsw');
+	refreshCode();
+	refreshRegCode();
 	$('#'+showContent+'_content').show();
 }
 
@@ -95,8 +95,10 @@ login.prototype = {
 			$('#password').parent().siblings('.error').hide();
 		}
 	},
-	signout:function(){
-		//alert("jjj");
+	show:function(){
+		$('.bgmask').show();
+		$('#loginbox').show();
+		refreshCode();
 	},
 	checkUser:function(){
 		if ($('#tcuser').val() =='') {
@@ -179,6 +181,10 @@ reg.prototype = {
 		var nickname = $('#reg_nickname').val();
 		var password = $('#reg_password').val();
 		var verifycode = $('#reg_vaildcode').val();
+		if (password.length<6) {
+			$('#reg_password').parent().siblings('.error').html("密码长度至少为6位").show();
+			return false;
+		}
 		//var url = window.location.href.split('index.html')[0];
 		var url = getLoginUrl();
 		$.ajax({
@@ -209,6 +215,20 @@ reg.prototype = {
 		}else{
 			$('.regpw2 .error').hide();
 		}
+	},
+	show:function(){
+		$('.bgmask').show();
+		$('#loginbox').show();
+		selectTagLoginBox('tab_reg');
+		refreshRegCode();
+	},
+	pwdLength:function(){
+		var pwd = $('#reg_password').val();
+		if (pwd.length <6) {
+			$('#reg_password').parent().siblings('.error').html("密码长度至少为6位").show();
+		}else{
+			$('#reg_password').parent().siblings('.error').hide();
+		}
 	}
 };
 
@@ -237,18 +257,18 @@ $(document).ready(function(){
 		login.pwdNull();
 	});
 	$('.login').click(function(){
-		$('.bgmask').show();
-		$('#loginbox').show();
-		refreshCode();
+		login.show();
 	});
 	$('.bgmask').click(function(){
 		$('.bgmask').hide();
 		$('#loginbox').hide();
 	});
 	$('.Reg').click(function(){
-		$('.bgmask').show();
-		$('#loginbox').show();
-		selectTagLoginBox('tab_reg');
-		refreshRegCode();
+		reg.show();
 	});
+	$('#btn_login').on('click',login.show);
+	$('.btn_login.regBtn').on('click',reg.show);
+	$('.btn_login.qqLog').on('click',login.qqlogin);
+	$('.btn_login.weChatLog').on('click',login.wxlogin);
+	$('#reg_password').on('blur',reg.pwdLength);
 });
