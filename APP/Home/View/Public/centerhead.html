@@ -4,6 +4,7 @@
     <link data-fixed="true" href="__PUBLIC__/center/css/centeros.css" rel="stylesheet">
     <link href="__PUBLIC__/center/css/icons.css" rel="stylesheet">
     <link href="__PUBLIC__/center/css/login.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-1.12.2.min.js"></script>
 </head>
 <body style="zoom: 1;">
 <div class="bgmask" style="display: none; height: 100%; z-index: 20002;"></div>
@@ -69,7 +70,7 @@
 
 <!--main-->
 <div class="inmiddle">
-    <script src="__PUBLIC__center/js/sea.js"></script>
+    <script src="__PUBLIC__/center/js/sea.js"></script>
     <script>
 
         seajs.config({
@@ -85,7 +86,7 @@
     <div class="center-info">
         <div class="info-left">
             <div class="c-photo">
-                <img src="{$user.avatar}" alt="HelloBaby">
+                <img src="{$Think.const._IMAGES_DOMAIN_}{$user.avatar}" alt="HelloBaby">
             </div>
 
             <div class="a-myname">

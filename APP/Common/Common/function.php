@@ -12,3 +12,4 @@ function password($password){
 	return md5('ke'.$password.'do');
 
 }
+define("_IMAGES_DOMAIN_","http://images.181show.com/");

@@ -57,7 +57,7 @@ img {
 .c-right .c-funds .c-funds-cz{width:42px;height: 19px;color: #fff;background: #F77599;font-size: 12px;float: left; padding-top: 4px; text-align: center; border-radius: 2px;cursor: pointer;line-height: 14px;}
 .c-funds-xd{float: left;  line-height: 22px;}
 .c-right .c-funds .c-funds-dh{float:left ;font-size: 12px;margin-left: 25px;  line-height: 22px;color: #FFBE4A}
-.hidden{display: none;}
+.hidden{display: block;}
 .center-left{width:348px;border: 1px #E3E3E3 solid; float: left;    margin-bottom: 30px;}
 .center-left .cl-div{width:348px;height: 60px;position: relative;background: #fff;color: #3F3F3F;font-size: 14px;border-bottom:1px #ccc solid;cursor: pointer}
 .center-left .cl-focus{background-color:#f77599;width:348px;height: 60px;position: relative;color: #fff;font-size: 14px;border-bottom:0;}

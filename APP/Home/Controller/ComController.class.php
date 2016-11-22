@@ -20,6 +20,11 @@ class ComController extends Controller {
         if(!$_SESSION['userid'] ){
             //$this -> display('Login/index');
             $this->redirect('Index/index');
+        }else{
+            $userid = $_SESSION['userid'];
+            $user = M("bu_user");
+            $res = $user ->cache('info',200)-> find($userid);
+            $this -> assign("user", $res);
         }
     }
 

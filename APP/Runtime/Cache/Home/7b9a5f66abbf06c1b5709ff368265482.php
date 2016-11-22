@@ -3,7 +3,8 @@
 <title>个人中心－蝌蚪TV</title>
 <link data-fixed="true" href="/kedo/Public/center/css/centeros.css" rel="stylesheet">
 <link href="/kedo/Public/center/css/icons.css" rel="stylesheet">
-<link href="/kedo/Public/center/css/login.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/kedo/Public/js/jquery-1.12.2.min.js"></script>
+<!--<link href="/kedo/Public/center/css/login.css" type="text/css" rel="stylesheet">-->
 </head>
 <body style="zoom: 1;">
 <div class="bgmask" style="display: none; height: 100%; z-index: 20002;"></div>
@@ -33,7 +34,7 @@
         </div>
         <div class="user clearFix">
         <div class="fl hd_hov">
-            <a class="username fl" href="/kedo/index.php/Home/Center/index"><?php echo ($use["nickName"]); ?></a>
+            <a class="username fl" href="/kedo/index.php/Home/Center/index"><?php echo ($user['nickname']); ?></a>
                         <a href="<?php echo U('Login/logout');?>" class="userout">退出</a>
                         <a class="expand fl" id="expand" href="javascript:;"></a>
         </div>
@@ -69,7 +70,7 @@
 
 <!--main-->
 <div class="inmiddle">
-    <script src="/kedo/Publiccenter/js/sea.js"></script>
+    <script src="/kedo/Public/center/js/sea.js"></script>
 <script>
 
     seajs.config({
@@ -85,7 +86,9 @@
 <div class="center-info">
     <div class="info-left">
         <div class="c-photo">
-            <img src="<?php echo ($user["avatar"]); ?>" alt="HelloBaby">
+            <img src="<?php echo (_IMAGES_DOMAIN_); echo ($user["avatar"]); ?>" alt="屠格涅夫">
+            <!--<img src="<?php echo ($user["avatar"]); ?>" alt="HelloBaby">-->
+
         </div>
 
         <div class="a-myname">
@@ -109,13 +112,13 @@
             </div>
             <div class="center-level sprite consumelevel-pic_consumelevel_1"></div>
         </div>
-        <div class="c-level-message">还差<?php echo ($user["differ"]); ?>经验升级</div>
+        <div class="c-level-message">还差<?php echo ($user1['spender']); ?>经验升级</div>
     </div>
     <div class="c-right">
         <div class="c-myfund">我的资产</div>
         <div class="c-funds">
-            <div class="c-funds-jb"><?php echo ($user["balance"]); ?></div>
-            <div class="c-funds-cz"><a href="/kedo/index.php/Home/Pay/index">充值</a></div>
+            <div class="c-funds-jb"><?php echo ($user1["Coins"]); ?></div>
+            <div class="c-funds-cz"><a href="/kedo/index.php/Home/Pay/pay">充值</a></div>
 
                     </div>
     </div>
@@ -133,13 +136,11 @@
 </div>
 
 
-
-
 <div class="center-left">
 
     <div class="pi">
         <div class="cl-div  cl-focus">
-            <a href="/kedo/index.php/Center/index"><div class="cl-index cl-title">我的首页</div></a>
+            <a href="<?php echo U('Center/index');?>"><div class="cl-index cl-title">我的首页</div></a>
         </div>
     </div>
     <div class="pi">
@@ -149,20 +150,20 @@
         </div>
         <div class="cl-set-info" style="display: none;">
             <ul>
-                <li><a href="/kedo/index.phpTrade/recharge">充值记录</a></li>
-                <li><a href="/kedo/index.phpTrade/record">交易记录</a></li>
-                <li><a href="/kedo/index.phpTrade/recive">收到礼物</a></li>
+                <li><a href="<?php echo U('Trade/recharge');?>">充值记录</a></li>
+                <li><a href="<?php echo U('Trade/record');?>">交易记录</a></li>
+                <li><a href="<?php echo U('Trade/recive');?>">收到礼物</a></li>
             </ul>
         </div>
     </div>
     <div class="pi">
         <div class="cl-div  ">
-            <a href="/kedo/index.php/FriendList/index"><div class="cl-care cl-title">我的关注</div></a>
+            <a href="<?php echo U('FriendList/index');?>"><div class="cl-care cl-title">我的关注</div></a>
         </div>
     </div>
     <div class="pi">
         <div class="cl-div ">
-            <a href="/kedo/index.php/Message/index"><div class="cl-notice cl-title">消息中心</div></a>
+            <a href="<?php echo U('Message/index');?>"><div class="cl-notice cl-title">消息中心</div></a>
         </div>
     </div>
    <!-- <div class="pi">
@@ -177,17 +178,12 @@
             <div class="arrow-down"></div>
         </div>
         <div class="cl-set-info hidden">
-            <!--ul>
-                <li><a href="centeros.php?ptype=info">基本资料</a></li>
-                <li><a href="centeros.php?ptype=mportrait">修改头像</a></li>
-                <li><a href="centeros.php?ptype=mpass">修改密码</a></li>
-                <li><a href="centeros.php?ptype=mphone">绑定手机</a></li>
-            </ul-->
+
             <ul>
-                <li><a href="/kedo/index.php/Personinfo/info">基本资料</a></li>
-                <li><a href="/kedo/index.php/Personinfo/avatar">修改头像</a></li>
-                <li><a href="/kedo/index.php/Personinfo/passwd">修改密码</a></li>
-                <li><a href="/kedo/index.php/Personinfo/myphone">绑定手机</a></li>
+                <li><a href="<?php echo U('Personinfo/info');?>">基本资料</a></li>
+                <li><a href="<?php echo U('Personinfo/avatar');?>">修改头像</a></li>
+                <li><a href="<?php echo U('Personinfo/passwd');?>">修改密码</a></li>
+                <li><a href="<?php echo U('Personinfo/myphone');?>">绑定手机</a></li>
             </ul>
         </div>
     </div>
