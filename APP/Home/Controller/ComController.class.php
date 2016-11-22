@@ -23,7 +23,7 @@ class ComController extends Controller {
         }else{
             $userid = $_SESSION['userid'];
             $user = M("bu_user");
-            $res = $user ->cache('info',200)-> find($userid);
+            $res = $user ->cache('info',10)-> find($userid);
             $this -> assign("user", $res);
         }
     }

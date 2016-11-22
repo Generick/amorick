@@ -8,10 +8,13 @@ use Think\Controller;
 class PersoninfoController extends ComController {
 	
 	public function info(){
-		//$userid = $_SESSION['openid']['userid'];
-		//$user = M("user");
-		//$res = $user -> find($userid);
-		//$this -> assign("user", $res);
+		$userid = $_SESSION['userid'];
+		$user = M("bu_user");
+		$res = $user -> find($userid);
+		$this -> assign("user", $res);
+		//$ab = S("info");
+		var_dump($res);
+		//$this->assign("user",$ab);
 		$this -> display();
 	}
 
@@ -20,26 +23,21 @@ class PersoninfoController extends ComController {
 
 	//加载用户头像页面
 	public function avatar(){
-		//$userid = $_SESSION['openid']['userid'];
-		//$user = M("user");
-		//$res = $user -> find($userid);
-		//$this -> assign("user", $res);
-		$user = S('info');
-		$this->assign('user',$user);
+		$userid = $_SESSION['userid'];
+		$user = M("bu_user");
+		$res = $user -> find($userid);
+		$this -> assign("user", $res);
+		//$user = S('info');
 		$this -> display();
 	}
 
 	function imgupload(){
-		define('_IMAGES_DOMAIN_','http://images.181show.com');
 		$dir = dirname(dirname(dirname(dirname(__FILE__))))."\Public\upload\\";
 
-		// $result['success'] = true;
-		// $this->ajaxReturn($result);
 		$result = array();
 		$result['success'] = false;
 		$success_num = 0;
 		$msg = '';
-		//$user=checklogin();
 		if(!file_exists($dir)){
 		    mkdir($dir,0755);
 		}
@@ -113,22 +111,18 @@ class PersoninfoController extends ComController {
 		// 	}
 		// }
 
-		// $result["userId"]	= $_POST["userId"];
-		// $result["username"]	= $_POST["username"];
 
 		$result['msg'] = $msg;
 		if ($success_num > 0)
 		{
 			$result['success'] = true;
 		}
-		//返回图片的保存结果（返回内容为json字符串）
-		//print json_encode($result);
+		//返回图片的保存结果,json
 		$this->ajaxReturn($result);
 
 	}
 
 	function uploadImg($imgurl){
-		define('_IMAGES_DOMAIN_','http://images.181show.com');
 		$zimg_upload_url = _IMAGES_DOMAIN_;
 	    $simg=$imgurl;
 

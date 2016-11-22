@@ -74,10 +74,11 @@
     <script src="__PUBLIC__/center/js/swfobject.js"></script>
     <script src="__PUBLIC__/center/js/fullAvatarEditor.js"></script>
     <script>
-        function avatarUploadComplete(){
-            console.log("<?php echo $user['userid'];?>");
-            $("#personavatar").attr("src","__CONTROLLER__/modavatar?uid=<?php echo $user['userid']?>&_t="+new Date().getTime());
-            window.location.reload();
+        function avatarUploadComplete(url){
+            $("#personavatar").attr("src",url);
+            $("#peravatar").attr("src",url);
+            //window.location.href = "__MODULE__/Center/index";
+            //window.location.reload();
         }
         
         $(function(){
@@ -114,7 +115,7 @@
                                 break;
                             case 5 :
                                 //console.log(msg.content.avatarUrls[0]);
-                                avatarUploadComplete();
+                                avatarUploadComplete(msg.content.avatarUrls);
                                 break;
 
                         }

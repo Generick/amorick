@@ -1,0 +1,126 @@
+[ 2016-11-22T10:01:14+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0132s ]
+
+[ 2016-11-22T10:01:33+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-11-22T10:01:39+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2016-11-22T10:01:44+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:01:45+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:05:04+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:13:36+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:13:36+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:13:37+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:13:37+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:14:53+08:00 ] ::1 /kedo/index.php/Home/Personinfo/%3C!--%2046a920d47a9c287e627693554180598a%20--%3E
+ERR: 非法操作:
+
+[ 2016-11-22T10:14:53+08:00 ] ::1 /kedo/index.php/Home/Personinfo/%3C!--%2046a920d47a9c287e627693554180598a%20--%3E
+ERR: 非法操作:
+
+[ 2016-11-22T10:15:18+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:36:32+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:42:49+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T10:53:42+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:02:57+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:11:47+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:13:02+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:17:14+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:17:14+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:17:40+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:18:57+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:18:57+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:26:15+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:26:59+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T11:27:03+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T13:19:11+08:00 ] ::1 /kedo/index.php/Home/Personinfo/imgupload?rndcode=1479791951750
+ERR: 1406:Data too long for column 'avatar' at row 1
+ [ SQL语句 ] : UPDATE `bu_user` SET `avatar`='http://images.181show.com/934a3f4e9c8bac9e9b99d7ac0a8da00a' WHERE ( userid = 11121 )
+
+[ 2016-11-22T13:19:44+08:00 ] ::1 /kedo/index.php/Home/Personinfo/46a920d47a9c287e627693554180598a
+ERR: 非法操作:46a920d47a9c287e627693554180598a
+
+[ 2016-11-22T13:19:48+08:00 ] ::1 /kedo/index.php/Home/Personinfo/imgupload?rndcode=1479791988657
+ERR: 1406:Data too long for column 'avatar' at row 1
+ [ SQL语句 ] : UPDATE `bu_user` SET `avatar`='http://images.181show.com/934a3f4e9c8bac9e9b99d7ac0a8da00a' WHERE ( userid = 11121 )
+
+[ 2016-11-22T13:32:39+08:00 ] ::1 /kedo/index.php/Home/Personinfo/934a3f4e9c8bac9e9b99d7ac0a8da00a
+ERR: 非法操作:934a3f4e9c8bac9e9b99d7ac0a8da00a
+
+[ 2016-11-22T13:38:58+08:00 ] ::1 /kedo/index.php/Home/Personinfo/934a3f4e9c8bac9e9b99d7ac0a8da00a
+ERR: 非法操作:934a3f4e9c8bac9e9b99d7ac0a8da00a
+
+[ 2016-11-22T14:45:04+08:00 ] ::1 /kedo/index.php/Home/Center/=%22/kedo/Public/js/jquery-1.12.2.min.js%22
+ERR: 非法操作:="
+
+[ 2016-11-22T14:46:06+08:00 ] ::1 /kedo/index.php/Home/Center/=%22/kedo/Public/js/jquery-1.12.2.min.js%22
+ERR: 非法操作:="
+
+[ 2016-11-22T14:46:44+08:00 ] ::1 /kedo/index.php/Home/Center/=%22/kedo/Public/js/jquery-1.12.2.min.js%22
+ERR: 非法操作:="
+
+[ 2016-11-22T17:52:33+08:00 ] ::1 /kedo/index.php/Home/Personinfo/createRandomCode
+ERR: 参数错误或者未定义:length
+
+[ 2016-11-22T17:52:46+08:00 ] ::1 /kedo/index.php/Home/Personinfo/createRandomCode/8
+ERR: 参数错误或者未定义:length
+
+[ 2016-11-22T17:53:29+08:00 ] ::1 /kedo/index.php/Home/Personinfo/createRandomCode(8)
+ERR: 非法操作:createRandomCode(8)
+

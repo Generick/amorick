@@ -86,7 +86,7 @@
 <div class="center-info">
     <div class="info-left">
         <div class="c-photo">
-            <img src="<?php echo (_IMAGES_DOMAIN_); echo ($user["avatar"]); ?>" alt="屠格涅夫">
+            <img id="personavatar" src="<?php echo (_IMAGES_DOMAIN_); ?>/<?php echo ($user["avatar"]); ?>" alt="屠格涅夫">
             <!--<img src="<?php echo ($user["avatar"]); ?>" alt="HelloBaby">-->
 
         </div>

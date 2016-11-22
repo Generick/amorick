@@ -384,7 +384,7 @@
                     <?php if($_SESSION['userid']!= ''): ?><div class="caption AfterLog">
                             <div class="row">
                                 <div class="pull-left imgR img-circle colorPin">
-                                    <img class="img-circle" src="/kedo/Public/images/photo_title.jpg" alt=""/>
+                                    <img class="img-circle" src="<?php echo (_IMAGES_DOMAIN_); ?>/<?php echo ($user["avatar"]); ?>" alt=""/>
                                 </div>
                                 <div class="pull-left">
                                     <div class="name"><?php echo (urldecode($user['nickname'])); ?></div>
