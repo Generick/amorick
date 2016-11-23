@@ -61,6 +61,12 @@ login.prototype = {
 			var pwd = $('#password').val();
 			var vaildcode = $('#login_vaildcode').val();
 			var checked = $('#tcremember').is(':checked');
+
+			var reg = /^[0-9a-z][_.0-9a-z-]{0,31}@([0-9a-z][0-9a-z-]{0,30}[0-9a-z]\.){1,4}[a-z]{2,4}$/;
+			if (!reg.test(user)) {
+				$('#tcuser').parent().siblings('.error').html("邮箱格式不正确.").show();
+				return;
+			}
 			//var url = window.location.href.split('index.html')[0];
 			var url = getLoginUrl();
 			$.ajax({
@@ -98,7 +104,7 @@ login.prototype = {
 	show:function(){
 		$('.bgmask').show();
 		$('#loginbox').show();
-		refreshCode();
+		selectTagLoginBox('tab_login');
 	},
 	checkUser:function(){
 		if ($('#tcuser').val() =='') {
@@ -106,6 +112,12 @@ login.prototype = {
 			//$('#tcuser').focus();
 		}else{
 			var username = $('#tcuser').val();
+			var reg = /^[0-9a-z][_.0-9a-z-]{0,31}@([0-9a-z][0-9a-z-]{0,30}[0-9a-z]\.){1,4}[a-z]{2,4}$/;
+
+			if (!reg.test(username)) {
+				$('#tcuser').parent().siblings('.error').html("邮箱格式不正确.").show();
+				return;
+			}
 			$('#tcuser').parent().siblings('.error').hide();
 			//var url = window.location.href.split('index.html')[0];
 			var url = getLoginUrl();
@@ -117,7 +129,7 @@ login.prototype = {
 				success:function(msg){
 					if (msg == 0) {
 						console.log('用户名不正确!');
-						$('#tcuser').parent().siblings('.error').html("用户名不正确!").show();
+						$('#tcuser').parent().siblings('.error').html("用户名不存在!").show();
 						//$('#tcuser').focus();
 					}else{
 						console.log('ok');
@@ -155,6 +167,12 @@ reg.prototype = {
 			$('#reg_email').focus();
 			return;
 		}
+
+		var reg = /^[0-9a-z][_.0-9a-z-]{0,31}@([0-9a-z][0-9a-z-]{0,30}[0-9a-z]\.){1,4}[a-z]{2,4}$/;
+		if (!reg.test(username)) {
+			$('#reg_email').parent().siblings('.error').html("邮箱格式不正确.").show();
+			return;
+		}
 		//var url = window.location.href.split('index.html')[0];
 		var url = getLoginUrl();
 		$.ajax({
@@ -176,6 +194,7 @@ reg.prototype = {
 	},
 	UserReg:function(){
 		$('.regcode .error').hide();
+		$('#reg_email').parent().siblings('.error').hide();
 		//console.log('userreg');
 		var username = $('#reg_email').val();
 		var nickname = $('#reg_nickname').val();
@@ -184,6 +203,12 @@ reg.prototype = {
 		if (password.length<6) {
 			$('#reg_password').parent().siblings('.error').html("密码长度至少为6位").show();
 			return false;
+		}
+
+		var reg = /^[0-9a-z][_.0-9a-z-]{0,31}@([0-9a-z][0-9a-z-]{0,30}[0-9a-z]\.){1,4}[a-z]{2,4}$/;
+		if (!reg.test(username)) {
+			$('#reg_email').parent().siblings('.error').html("邮箱格式不正确.").show();
+			return;
 		}
 		//var url = window.location.href.split('index.html')[0];
 		var url = getLoginUrl();
@@ -198,6 +223,8 @@ reg.prototype = {
 					$('.regcode .error').html('验证码错误').show();
 				}else if(msg == 0){
 					console.log("注册失败");
+				}else if(msg == 2){
+					$('.regnic .error').html("昵称中包含有不允许的文字.").show();
 				}else{
 					console.log(msg);
 					window.location.href = msg.url;
@@ -229,6 +256,21 @@ reg.prototype = {
 		}else{
 			$('#reg_password').parent().siblings('.error').hide();
 		}
+	},
+	nicknameCheck:function(){
+		var nickname = $('#reg_nickname').val();
+		var url = getLoginUrl();
+		$.ajax({
+			type:'post',
+			url:url+'nicknamecheck',
+			data:{'nickname':nickname},
+			dataType:'json',
+			success:function(msg){
+				if (msg ==1 ) {
+					$('.regnic .error').html("昵称中包含有不允许的文字.").show();
+				}
+			}
+		});
 	}
 };
 
@@ -271,4 +313,5 @@ $(document).ready(function(){
 	$('.btn_login.qqLog').on('click',login.qqlogin);
 	$('.btn_login.weChatLog').on('click',login.wxlogin);
 	$('#reg_password').on('blur',reg.pwdLength);
+	$('#reg_nickname').on('blur',reg.nicknameCheck);
 });

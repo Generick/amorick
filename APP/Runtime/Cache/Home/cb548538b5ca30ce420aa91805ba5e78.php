@@ -158,12 +158,12 @@
 
 	<div class="head-outer btline">
 		<div class="header clearFix">
-			<a class="hd_bg fl" href="#"></a>
+			<a class="hd_bg fl" href="/"></a>
 			<ul class="nav fl">
-				<li class="fl "><a href="/kedo/index.php/Home/Index/index">首页</a></li>
-				<li class="fl "><a href="/kedo/index.php/Home/Square/square">广场</a></li>
-				<li class="fl cu"><a href="/kedo/index.php/Home/Mall/mall">商城</a></li>
-				<li class="fl "><a href="/kedo/index.php/Home/Order/order">排行榜</a></li>
+				<li class="fl "><a href="<?php echo U('Index/index');?>">首页</a></li>
+				<li class="fl "><a href="<?php echo U('Square/square');?>">广场</a></li>
+				<li class="fl cu"><a href="<?php echo U('Mall/mall');?>">商城</a></li>
+				<li class="fl "><a href="<?php echo U('Order/order');?>">排行榜</a></li>
 			</ul>
 
 			<div class="input fl">
@@ -174,117 +174,182 @@
     <a  href="<?php echo U('Login/index');?>" class="log">登录</a><span class="reg">/注册</span>
 
 </div>
+
 		</div>
 	</div>
+
+
+
 	<div class="main-mall">
 		<div class="mall-top">
 			<div class="mall-top-title">
-				<a href="#" class="mselect"> 守护</a>
+				<a href="<?php echo U('Mall/mall');?>" class=""> 守护</a>
 			</div>
 			<div class="mall-top-title">
-				<a href="/kedo/index.php/Home/Mall/mall_prop" class=""> 道具</a>
+				<a href="<?php echo U('Mall/mall_prop');?>" class=""> 道具</a>
 			</div>
 			<div class="mall-top-title">
-				<a href="/kedo/index.php/Home/Mall/mall_ride" class=""> 座驾</a>
+				<a href="<?php echo U('Mall/mall_ride');?>" class="mselect"> 座驾</a>
 			</div>
 		</div>
 		<div class="clear"></div>
 
 		<!-- 道具-->
-
-		<div class="guard">
-			<div class="wrapper">
-				<div class="guardBg spriteGuard pic_shangcheng_banner"></div>
-				<div class="privilege">
-					<h4>守护特权说明</h4>
-					<ul class="gd_list clearFix">
-						<li class="fl bgBigLi firstBig">
-							<div class="guard_tit_bg"></div>
-							<div class="guardType">守护类型</div>
-							<ul class="gd_detail">
-								<li><span class="spriteGuard icon_huizhang"></span> <span>专属勋章</span>
-								</li>
-								<li><span class="spriteGuard icon_zuoyi"></span> <span>专属座位</span>
-								</li>
-								<li class="jinchang clearFix"><span
-									class="bg spriteGuard cion_jinchang fl"></span> <span
-									class="text fl">进场特效</span></li>
-								<li><span class="spriteGuard icon_messages"></span> <span>聊天特权</span>
-								</li>
-								<li class="last"><span class="spriteGuard icon_tichu"></span>
-									<span>房间特权</span></li>
-							</ul>
-						</li>
-
-						<li class="fl bgBigLi">
-							<div class="spriteGuard pic_shuoming_qingtong"></div>
-							<div class="kinds">
-								<h5>青铜级</h5>
-								<p>LV1-LV5</p>
-							</div>
-							<ul class="gd_detail">
-								<li class="firstDetail"><span
-									class="spriteGuard pic_guardlevel_qingtong"></span> <span
-									class="spriteGuard pic_shangcheng_qingtong"></span></li>
-								<li>聊天框 <span class="blue">蓝色</span> 昵称
-								</li>
-								<li>防普通禁言、踢出房间</li>
-							</ul>
-						</li>
-
-						<li class="fl bgBigLi">
-							<div class="spriteGuard pic_shouhu_baiyin"></div>
-							<div class="kinds">
-								<h5>白银级</h5>
-								<p>LV5-Lv10</p>
-							</div>
-							<ul class="gd_detail">
-								<li class="firstDetail"><span
-									class="spriteGuard pic_guardlevel_baiyin"></span> <span
-									class="spriteGuard pic_shangcheng_baiyin"></span></li>
-								<li>聊天框 <span class="violet">紫色</span> 昵称
-								</li>
-								<li>防普通禁言、踢出房间</li>
-							</ul>
-						</li>
-
-						<li class="fl bgBigLi">
-							<div class="spriteGuard pic_shuoming_huangjin"></div>
-							<div class="kinds">
-								<h5>黄金级</h5>
-								<p>LV10-LV15</p>
-							</div>
-							<ul class="gd_detail">
-								<li class="firstDetail"><span
-									class="spriteGuard pic_guardlevel_huangjin"></span> <span
-									class="spriteGuard pic_shangcheng_huangjin"></span></li>
-								<li>聊天框 <span class="orange">橙色</span> 昵称
-								</li>
-								<li>防普通禁言、踢出房间</li>
-							</ul>
-						</li>
-					</ul>
+		<div class="mall-list">
+			<pre></pre>
+			<div class="mall-car-box">
+				<div class="mall-car-top">蝌蚪骑士</div>
+				<div class="mall-car-mid mcar100 clearFix">
+					<img
+						src="http://img.kedo.tv/4e3b51a49b2ab9ffaded9d525ca03890?p=0&amp;w=164&amp;h=204">
 				</div>
-
+				<div class="mall-car-bot clearFix">
+					<span
+						style="display:inline-block;margin-right: 12px;margin-left: 10px;">0</span><span>蝌蚪币</span>
+				</div>
+				<div class="mall-car-but clearFix">
+					<button onclick="javascript:buy_car('','蝌蚪骑士','0')">购买</button>
+				</div>
+				<div class="mall-car-p">
+					<span></span>
+				</div>
+			</div>
+			<div class="mall-car-box">
+				<div class="mall-car-top">青蛙骑士</div>
+				<div class="mall-car-mid mcar100 clearFix">
+					<img
+						src="http://img.kedo.tv/992d9667913729472c1bc2e0d5d7df5d?p=0&amp;w=164&amp;h=204">
+				</div>
+				<div class="mall-car-bot clearFix">
+					<span
+						style="display:inline-block;margin-right: 12px;margin-left: 10px;">0</span><span>蝌蚪币</span>
+				</div>
+				<div class="mall-car-but clearFix">
+					<button onclick="javascript:buy_car('','青蛙骑士','0')">购买</button>
+				</div>
+				<div class="mall-car-p">
+					<span></span>
+				</div>
+			</div>
+			<div class="mall-car-box">
+				<div class="mall-car-top">青蛙国王</div>
+				<div class="mall-car-mid mcar100 clearFix">
+					<img
+						src="http://img.kedo.tv/ce16b40d15e649fb945253f79c8b9ea4?p=0&amp;w=164&amp;h=204">
+				</div>
+				<div class="mall-car-bot clearFix">
+					<span
+						style="display:inline-block;margin-right: 12px;margin-left: 10px;">0</span><span>蝌蚪币</span>
+				</div>
+				<div class="mall-car-but clearFix">
+					<button onclick="javascript:buy_car('','青蛙国王','0')">购买</button>
+				</div>
+				<div class="mall-car-p">
+					<span></span>
+				</div>
+			</div>
+			<div class="mall-car-box">
+				<div class="mall-car-top">青铜守护</div>
+				<div class="mall-car-mid mcar100 clearFix">
+					<img
+						src="http://img.kedo.tv/c5090ea391419bc128e90719325d62be?p=0&amp;w=164&amp;h=204">
+				</div>
+				<div class="mall-car-bot clearFix">
+					<span
+						style="display:inline-block;margin-right: 12px;margin-left: 10px;">0</span><span>蝌蚪币</span>
+				</div>
+				<div class="mall-car-but clearFix">
+					<button onclick="javascript:buy_car('','青铜守护','0')">购买</button>
+				</div>
+				<div class="mall-car-p">
+					<span></span>
+				</div>
+			</div>
+			<div class="mall-car-box">
+				<div class="mall-car-top">白银守护</div>
+				<div class="mall-car-mid mcar100 clearFix">
+					<img
+						src="http://img.kedo.tv/4dca91511800d2bd690ec6ae1b28a156?p=0&amp;w=164&amp;h=204">
+				</div>
+				<div class="mall-car-bot clearFix">
+					<span
+						style="display:inline-block;margin-right: 12px;margin-left: 10px;">0</span><span>蝌蚪币</span>
+				</div>
+				<div class="mall-car-but clearFix">
+					<button onclick="javascript:buy_car('','白银守护','0')">购买</button>
+				</div>
+				<div class="mall-car-p">
+					<span></span>
+				</div>
+			</div>
+			<div class="mall-car-box">
+				<div class="mall-car-top">黄金守护</div>
+				<div class="mall-car-mid mcar100 clearFix">
+					<img
+						src="http://img.kedo.tv/1497f33ec1602182291e91102a8f1126?p=0&amp;w=164&amp;h=204">
+				</div>
+				<div class="mall-car-bot clearFix">
+					<span
+						style="display:inline-block;margin-right: 12px;margin-left: 10px;">0</span><span>蝌蚪币</span>
+				</div>
+				<div class="mall-car-but clearFix">
+					<button onclick="javascript:buy_car('','黄金守护','0')">购买</button>
+				</div>
+				<div class="mall-car-p">
+					<span></span>
+				</div>
 			</div>
 		</div>
 
-		<div class="howUp">
-			<div class="wrapper">
-				<div class="spriteGuard pic_shangcheng_shengji"></div>
-			</div>
+		<div class="car_tip">
+			<h4>温馨提示：</h4>
+			<p>购买座驾将享受与别人不同的进场方式，让你处处彰显尊贵，同是购买坐骑将有机会获得限免道具，机会多多，赶快购买吧！</p>
+			<a href="javascript:;" class="growLev">消费物品成长等级 &gt;&gt;</a>
 		</div>
 
-		<div class="detail_start">
-			<div class="wrapper">
-				<div class="spriteGuard pic_shangcheng_kaitong"></div>
+
+		<div class="mall-buy-car" style="display: none">
+			<span class="clso"
+				style="display: inline-block;background: url(/skin/ym/images/guanbi-hover.png) no-repeat;width: 17px;height: 17px;position: absolute;right: 10px;top:10px;cursor: pointer"></span>
+			<div class="buy-car-left">
+				<div class="buy-car-top">
+					<img src="http://www.showself.com/img/shop/big/kenisaige_CCXR.png"
+						alt="炮车">
+				</div>
+				<div class="buy-car-top-bot">座驾有效期为购买之日起30日内,连续购买多个有效期将叠加</div>
+			</div>
+
+			<div class="buy-car-right">
+				<div class="mall-car-top buy-car-name">知名跑车(1个月)</div>
+				<table>
+					<tbody>
+						<tr>
+							<td>购买数量：</td>
+							<td><select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>应付全额：</td>
+							<td><span class="yfmoney">100</span> 蝌蚪笔</td>
+						</tr>
+						<tr>
+							<td>当前余额：</td>
+							<td><span class="curmoney">1837</span> 蝌蚪笔</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="buy-car-but">
+				<button onclick="buyok()">购买</button>
 			</div>
 		</div>
-
 	</div>
+	<!--div class="zhezhao"></-div-->
 
-
-	<div class="zhezhao"></div>
+<div class="zhezhao"></div>
 
 <div class="footer">
     <div class="wrapper">
@@ -306,5 +371,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>

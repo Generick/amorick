@@ -194,7 +194,7 @@
 
 
     <div class="center-right">
-
+        <input type="hidden" id="personUrl" value="<?php echo U('Personinfo/imgupload');?>">
         <div class="cr_portrait">
             <div class="cr-title">修改头像</div>
             <div class="modify-protrait">
@@ -220,9 +220,10 @@
         
         $(function(){
             swfobject.addDomLoadEvent(function () {
+                var personUrl = $('#personUrl').val();
                 var swf = new fullAvatarEditor("/kedo/Public/center/js/fullAvatarEditor.swf", "/kedo/Public/center/js/expressInstall.swf", "swfContainer", {
                         id : 'uploadavatarbtn',
-                        upload_url : '/kedo/index.php/Home/Personinfo/imgupload',	//上传接口
+                        upload_url : personUrl,	//上传接口
                         method : 'post',	//传递到上传接口中的查询参数的提交方式。更改该值时，请注意更改上传接口中的查询参数的接收方式
                         src_upload : 0,		//是否上传原图片的选项，有以下值：0-不上传；1-上传；2-显示复选框由用户选择
                         avatar_box_border_width : 1,
@@ -231,6 +232,7 @@
                         avatar_sizes_desc : '120*120像素'
                     }, function (msg) {
                         console.log(msg);
+                        console.log(personUrl);
                         switch(msg.code){
                             case 1 : break;//页面成功加载了组件！
                             case 2 : //已成功加载图片到编辑面板。

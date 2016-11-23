@@ -16,8 +16,9 @@ class IndexController extends Controller {
         }
 
             $user = M('bu_user');
-            $result = $user->where("userId='{$userid}'")->find();
+            $result = $user->join("bu_user_packs on bu_user.userId = bu_user_packs.userid")->where("bu_user.userId='{$userid}'")->find();
             $this->assign('user',$result);
+            //var_dump($result);
             
         
        // echo 'aa';

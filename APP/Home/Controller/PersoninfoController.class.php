@@ -80,38 +80,6 @@ class PersoninfoController extends ComController {
 			}
 		}
 
-		// $avatars = array("__avatar1");
-		// $avatars_length = count($avatars);
-		// for ( $i = 0; $i < $avatars_length; $i++ ){ 
-		// 	$avatar = $_FILES[$avatars[$i]];
-		// 	$avatar_number = $i + 1;
-		// 	if ( $avatar['error'] > 0 ){
-		// 		$msg .= $avatar['error'];
-		// 	}
-		// 	else{
-		// 		$savePath =  $dir."$filename.jpg";
-
-		//         if(move_uploaded_file($avatar["tmp_name"], $savePath)){
-		//             $success_num++;
-		//             $md5_fanmian=$this->uploadImg($savePath);
-		//             $result['avatarUrls'][$i] = _IMAGES_DOMAIN_."/".$md5_fanmian;
-		//             // global $db;
-		//             // $db->Execute("update bu_user set avatar='$md5_fanmian' where userId= $user[userId]");
-		//             // $_SESSION['login_info']['avatar']=$md5_fanmian;
-		//             // if($db->Affected_Rows()>0){
-		//             //     $result['message']=200;
-		//             // }else{
-		//             //     $result['message']=$savePath;
-		//             // }
-		//         }else{
-		//             $result['success'] = "error to load to local server!";
-		//         }
-
-
-		// 	}
-		// }
-
-
 		$result['msg'] = $msg;
 		if ($success_num > 0)
 		{

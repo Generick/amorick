@@ -108,8 +108,19 @@ class LoginController extends Controller{
 		
 	}
 
+	//nickname check
+	function nicknamecheck(){
+		$nickname = I('post.nickname');
+		$nickname_black_list = nickname_black_list();
+		if (in_array($nickname,$nickname_black_list)) {
+			$this->ajaxReturn(1);
+		}else{
+			$this->ajaxReturn(0);
+		}
+	}
 	//reg
 	function regUser(){
+		$nickname_black_list = nickname_black_list();
 		//$this->ajaxReturn(0);exit;
 		$data = array();
 		$str = array();
@@ -122,6 +133,11 @@ class LoginController extends Controller{
 		$verifycode = I('post.verifycode');
 		if (!$this->checkedCode($verifycode)) {
 			$this->ajaxReturn(1);exit;
+		}
+
+		//preg_match('/^[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/',$email)
+		if (in_array($nickname,$nickname_black_list)) {
+			$this->ajaxReturn(2);exit;
 		}
 
 		$data['createDT'] = $timer;
@@ -205,8 +221,7 @@ class LoginController extends Controller{
 	//退出登陆
 	public function logout(){
 
-		//注销登录
-		//只注销用户信息，在session中的也注销
+		//delete cookie,destory session
 		//$_SESSION['userid'] == '';
 		$_SESSION = array();
 		session_destroy();
