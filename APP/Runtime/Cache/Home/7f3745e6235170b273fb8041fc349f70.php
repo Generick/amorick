@@ -215,7 +215,7 @@
             $("#personavatar").attr("src",url);
             $("#peravatar").attr("src",url);
             //window.location.href = "/kedo/index.php/Home/Center/index";
-            //window.location.reload();
+            window.location.reload();
         }
         
         $(function(){

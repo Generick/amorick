@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>http://images.181show.com

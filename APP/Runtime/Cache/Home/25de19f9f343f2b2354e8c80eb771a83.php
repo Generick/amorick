@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>1J5J6OY1

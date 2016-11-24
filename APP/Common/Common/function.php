@@ -13,6 +13,10 @@ function password($password){
 
 }
 define("_IMAGES_DOMAIN_","http://images.181show.com");
+define('_REDIS_HOST_','112.124.58.61');//redis地址
+define('_REDIS_PWD_','foobareds');//redis地址
+define('_REDIS_KEYB_','loc');
+define('_COOKIE_DOMAIN_',$_SERVER['HTTP_HOST']);
 
 function nickname_black_list(){
 	return array("'",'"','-','|',',','admin','root','官方','客服','运营','管理','毛泽东','周恩来','刘少奇',

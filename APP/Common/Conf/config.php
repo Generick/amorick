@@ -14,7 +14,7 @@ return array(
             'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
 
             'SHOW_PAGE_TRACE'=>true,
-/*
+
 
             //define('_CDNDOMAIN_','');//cdn服务器
     //define('_INTERFACE_','http://10.1.1.17');//接口
@@ -28,7 +28,7 @@ return array(
     //define('_REDIS_PWD_','foobareds');//redis地址
     //define('_REDIS_KEYB_','loc');
 
-        */
+        
        // 'URL_HTML_SUFFIX' => 'html|shtml|xml|gif|tml|hml|',
    // 'SHOW_PAGE_TRACE'=>true,
 

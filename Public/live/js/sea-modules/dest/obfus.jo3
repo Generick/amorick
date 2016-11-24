@@ -1,0 +1,14 @@
+[FILES]
+anchor-anchor.js=script
+[OPTIONS]
+Backup=1
+DeleteComment=1
+DeleteWhiteSpace=0
+ChangeNames=0
+ChangeNamesInString=0
+Rewrite=0
+RenameFileSufix=
+Compres=1
+GeneratePrefix=
+HeaderFile=
+HeaderText=//////////////////////////////////////////////{br}// version 1.0.0.0.7524                     //{br}// http://www.kedo.tv                       //{br}//////////////////////////////////////////////

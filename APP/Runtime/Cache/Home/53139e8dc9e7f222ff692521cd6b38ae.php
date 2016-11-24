@@ -1,1 +1,0 @@
-<?php if (!defined('THINK_PATH')) exit();?>XJA75C86
