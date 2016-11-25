@@ -1,6 +1,24 @@
 define(function(require, exports, module) {
 	var tins = require("tins");
 	module.exports = {
+        sortBy : function (filed, rev, primer) {
+            rev = (rev) ? -1 : 1;
+            return function (x, y) {
+                x = x[filed];
+                y = y[filed];
+                if (typeof (primer) != 'undefined') {
+                    x = primer(x);
+                    y = primer(y);
+                }
+                if (x < y) {
+                    return rev * -1;
+                }
+                if (x > y) {
+                    return rev * 1;
+                }
+                return 1;
+            }
+        },
 		dialog : function(msg, ok,cancel){
 			var oks = '<a href="javascript:;" class="button button-highlight button-rounded oks">确定</a>';
 			var cacens = '<a href="javascript:;" class="button button-rounded button-tiny cancels">取消</a>';

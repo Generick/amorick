@@ -217,14 +217,14 @@
 /*鎺掕姒�*/
 .sprite_top {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(top.png);}
 
-.icon_shuzi_1 {width:56px; height:52px; background-position: -408px -2px}
-.icon_shuzi_2 {width:56px; height:52px; background-position: -350px -2px}
-.icon_shuzi_3 {width:56px; height:52px; background-position: -292px -2px}
-.icon_shuzi_4 {width:56px; height:52px; background-position: -234px -2px}
-.icon_shuzi_5 {width:56px; height:52px; background-position: -176px -2px}
-.icon_shuzi_6 {width:56px; height:52px; background-position: -118px -2px}
-.icon_shuzi_7 {width:56px; height:52px; background-position: -60px -2px}
-.icon_shuzi_8 {width:56px; height:52px; background-position: -2px -2px}
+.icon_shuzi_1 {width:39px; height:52px; background-position: -408px -2px}
+.icon_shuzi_2 {width:39px; height:52px; background-position: -350px -2px}
+.icon_shuzi_3 {width:39px; height:52px; background-position: -292px -2px}
+.icon_shuzi_4 {width:39px; height:52px; background-position: -234px -2px}
+.icon_shuzi_5 {width:39px; height:52px; background-position: -176px -2px}
+.icon_shuzi_6 {width:39px; height:52px; background-position: -118px -2px}
+.icon_shuzi_7 {width:39px; height:52px; background-position: -60px -2px}
+.icon_shuzi_8 {width:39px; height:52px; background-position: -2px -2px}
 
 
 

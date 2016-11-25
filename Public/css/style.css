@@ -201,7 +201,7 @@ body{
 }
 /*导航*/
 .hdNavR{
-	display:block; 
+	display:none; 
 }
 .hdNavL>li>a{
 	padding:17px 15px; 
@@ -260,7 +260,7 @@ body{
 	}
 	/*登陆后*/
 	.beforLog{
-		display:block; 
+		/*display:none; */
 	}
 	.AfterLog .imgR{
 		border:2px solid #e34052;
@@ -635,4 +635,8 @@ body{
 		}
 	
 	}
+/*首页排行榜触发事件引用CSS*/
+ .hidenss{
+	display: none ;
+}
 

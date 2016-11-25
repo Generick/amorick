@@ -37,11 +37,19 @@ define(function(require, exports, module) {
 			var token = UIF.handler.token;
 			var flashPath = UIF.handler.flash;
 			var roomNumber = UIF.handler.roomNumber;
-			content.push(' <div class="flash-area" style="width:640px;height:360px">');
+			if(UIF.skinType === "qqgame_build"){
+				content.push(' <div class="flash-area" style="width:568px;height:314px">');
+			}else{
+				content.push(' <div class="flash-area" style="width:640px;height:360px">');
+			}
 			content.push('<div id="mwin1">');
 			content.push(' <!--<![endif]-->');
-			content.push('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="360" id="player" name="player" align="middle">');
-			content.push('<param name="movie" value="/js/sea-modules/swf/record.swf?1467358510">');
+			if(UIF.skinType === "qqgame_build"){
+				content.push('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="568" height="314" id="player" name="player" align="middle">');
+			}else{
+				content.push('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="360" id="player" name="player" align="middle">');
+			}
+			content.push('<param name="movie" value="/js/sea-modules/swf/record.swf?'+UIF.version+'">');
 			content.push('<param name="flashvars" value="chat=1&amp;usernumber=' + roomNumber + '&amp;roomnumber=' + roomNumber + '&amp;c=' + token + '&amp;mtadd=' + flashPath
 					+ '">');
 			content.push('<param name="quality" value="high">');
@@ -49,8 +57,13 @@ define(function(require, exports, module) {
 			content.push('<param name="allowScriptAccess" value="always">');
 			content.push('<param name="allowfullscreen" value="true">');
 			content.push('<!--[if !IE]>-->');
-			content.push('<object type="application/x-shockwave-flash" data="/js/sea-modules/swf/record.swf?1467358510" id="player" name="player" width="640" height="360">');
-			content.push('<param name="movie" value="/js/sea-modules/swf/record.swf?1467358510">');
+			if(UIF.skinType == "qqgame_build"){
+				content.push('<object type="application/x-shockwave-flash" data="/js/sea-modules/swf/record.swf?'+UIF.version+'" id="player" name="player" width="568" height="314">');
+			}else{
+				content.push('<object type="application/x-shockwave-flash" data="/js/sea-modules/swf/record.swf?'+UIF.version+'" id="player" name="player" width="640" height="360">');
+			}
+			
+			content.push('<param name="movie" value="/js/sea-modules/swf/record.swf?'+UIF.version+'">');
 			content.push('<param name="flashvars" value="chat=1&amp;usernumber=' + userId + '&amp;roomnumber=' + roomNumber + '&amp;c=' + token + '&amp;mtadd=' + flashPath + '">');
 			content.push('<param name="quality" value="high">');
 			content.push('<param name="wmode" value="transparent">');
@@ -72,19 +85,32 @@ define(function(require, exports, module) {
 			var content = new Array;
 			var flashPath = UIF.handler.flash;
 			var roomNumber = UIF.handler.roomNumber;
-			content.push('<div class="flash-area" style="width:640px;height:360px">');
+			if(UIF.skinType == "qqgame_build"){
+				content.push(' <div class="flash-area" style="width:568px;height:314px">');
+			}else{
+				content.push('<div class="flash-area" style="width:640px;height:360px">');
+			}
 			content.push('<div id="mwin1">');
 			content.push(' <!--<![endif]-->');
-			content.push('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="360" id="player" name="player" align="middle">');
-			content.push('<param name="movie" value="/js/sea-modules/swf/player.swf?1467358060">');
+			if(UIF.skinType === "qqgame_build"){
+				content.push('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="568" height="314" id="player" name="player" align="middle">');
+			}else{
+				content.push('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="640" height="360" id="player" name="player" align="middle">');
+			}
+			content.push('<param name="movie" value="/js/sea-modules/swf/player.swf?'+UIF.version+'">');
 			content.push('<param name="flashvars" value="token=&amp;chat=1&amp;roomnumber=' + roomNumber + '&amp;fn=' + roomNumber + '&amp;mtadd=' + flashPath + '">');
 			content.push('<param name="quality" value="high">');
 			content.push('<param name="wmode" value="transparent">');
 			content.push('<param name="allowScriptAccess" value="always">');
 			content.push('<param name="allowfullscreen" value="true">');
 			content.push('<!--[if !IE]>-->');
-			content.push('<object type="application/x-shockwave-flash" data="/js/sea-modules/swf/player.swf?1467358060" id="player" name="player" width="640" height="360">');
-			content.push('<param name="movie" value="/js/sea-modules/swf/player.swf?1467358060">');
+			if(UIF.skinType === "qqgame_build"){
+				content.push('<object type="application/x-shockwave-flash" data="/js/sea-modules/swf/player.swf?'+UIF.version+'" id="player" name="player" width="568" height="314">');
+			}else{
+				content.push('<object type="application/x-shockwave-flash" data="/js/sea-modules/swf/player.swf?'+UIF.version+'" id="player" name="player" width="640" height="360">');
+			}
+			
+			content.push('<param name="movie" value="/js/sea-modules/swf/player.swf?'+UIF.version+'">');
 			content.push('<param name="flashvars" value="token=&amp;chat=1&amp;roomnumber=' + roomNumber + '&amp;fn=' + roomNumber + '&amp;mtadd=' + flashPath + '">');
 			content.push('<param name="quality" value="high">');
 			content.push('<param name="wmode" value="transparent">');
@@ -139,7 +165,7 @@ define(function(require, exports, module) {
 							var $nums = Tools.stringFormat("{0} 在线", e.numbers)
 							if (e.numbers == 0)
 								$nums = " 离线";
-							var ps = Tools.stringFormat($s, e.roomNumber, e.image, e.nickName, e.levelImg, e.nickName, $nums);
+							var ps = Tools.stringFormat($s, e.roomNumber, e.image, decodeURI(e.nickName), e.levelImg, decodeURI(e.nickName), $nums);
 							content.push(ps);
 						});
 					}

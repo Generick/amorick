@@ -58,7 +58,7 @@ define(function(require, exports, module) {
 				$(".live-info .self-name .s-else .s-position").text(this.anchors.city);
 			/** 主播昵称 */
 			if (this.anchors != null && this.anchors.nickname != null)
-				$(".live-info .self-name .anchor-info-names").text(this.anchors.nickname);
+				$(".live-info .self-name .anchor-info-names").text(decodeURI(this.anchors.nickname));
 			if (this.anchors != null && this.anchors.dc != null)
 				$(".lhaicha").text("\u5347\u7EA7\u8FD8\u5DEE" + this.anchors.dc + "\u7ECF\u9A8C\u503C");
 			if (this.anchors != null && this.anchors.nc != null) {

@@ -1036,19 +1036,32 @@ $(function() {
 		}
 	});
 
-	// 本场榜
-	$(".switch-area .sw-rank").click(function() {
-		if(!UIF.handler.login){
-			UIF.handler.loging();
-			return;
-		}
-		$(".rank-area").toggle();
-		if ($(".rank-area").is(":hidden")) {
-			$(this).addClass("sw-rank-hover").removeClass("sw-rank");
-		} else {
-			$(this).addClass("sw-rank").removeClass("sw-rank-hover");
-		}
-	});
+    // 本场榜
+    $(".switch-area .sw-rank").click(function() {
+        if(!UIF.handler.login){
+            UIF.handler.loging();
+            return;
+        }
+        $(".rank-area").toggle();
+        if ($(".rank-area").is(":hidden")) {
+            $(this).addClass("sw-rank-hover").removeClass("sw-rank");
+        } else {
+            $(this).addClass("sw-rank").removeClass("sw-rank-hover");
+        }
+    });
+    // 贵宾
+    $(".switch-area .sw-vip").click(function() {
+        if(!UIF.handler.login){
+            UIF.handler.loging();
+            return;
+        }
+        $(".visitant-record").toggle();
+        if ($(".visitant-record").is(":hidden")) {
+            $(this).addClass("sw-vip-hover").removeClass("sw-vip");
+        } else {
+            $(this).addClass("sw-vip").removeClass("sw-vip-hover");
+        }
+    });
 	
 	// 任务框
 	$(".switch-area .sw-rank").click(function() {

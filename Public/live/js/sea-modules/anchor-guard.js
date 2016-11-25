@@ -2,6 +2,7 @@
  * \u529F\u80FD\uFF1A\u5B88\u62A4
  * */
 define(function(require, exports, module) {
+	var swf = require("./anchor-swf");
 	var Tools = require('./anchor-tools');
 	module.exports = {
 		sfbox : $(".start-watch"),
@@ -24,25 +25,30 @@ define(function(require, exports, module) {
 		},
 		getGuardList : function(data) {
 			htm = "";
-			var n=0;
-            if (data != null) {
+			var n = 0;
+			if (data != null) {
+                data= data.sort(Tools.sortBy('grds',1));
 				$.each(data, function() {
-                    n++;
+					n++;
 					var _self = $(this);
 					_self[0].grds = _self[0].grds;
-					htm += '<li><div class="guardYou"><div class="gback glv1"><img src="/apis/avatar.php?uid=' + _self[0].userId +'" class="img2"/>\
-		                        <span class="img3">' + _self[0].days + '<br />\u5929</span>\
-		                        <img src="/static_data/images_css/guardbox/' + _self[0].levelImage + '" class="img1"/>\
+					htm += '<li><div class="guardYou"><div class="gback glv1"><img src="/apis/avatar.php?uid=' + _self[0].userId
+							+ '" class="img2"/>\
+		                        <span class="img3">' + _self[0].days
+							+ '<br />\u5929</span>\
+		                        <img src="/static_data/images_css/guardbox/' + _self[0].levelImage
+							+ '" class="img1"/>\
 		                        </div>\
-		                        <div class="gname"><a href="#"  title="' + _self[0].name + '">'+ _self[0].name + '</a></div></div></li>';
+		                        <div class="gname"><a href="#"  title="' + decodeURI(_self[0].name) + '">'
+							+ decodeURI(_self[0].name) + '</a></div></div></li>';
 				})
 			}
-            if(n<8){
-                for(var k=1;k<=6-n;k++){
-                    htm +='<li><div class="no-circle"></div></li>';
-                }
-            }
-            $(".gdnum").text(n+"/32");
+			if (n < 8) {
+				for (var k = 1; k <= 6 - n; k++) {
+					htm += '<li><div class="no-circle"></div></li>';
+				}
+			}
+			$(".gdnum").text(n + "/32");
 			$(".guard-main ul").html(htm);
 		},
 		changeEvent : function() {
@@ -64,20 +70,20 @@ define(function(require, exports, module) {
 			base.clz.on("click", function() {
 				base.sfbox.hide();
 			})
-            base.sta.on("click", function() {
-                if (!UIF.handler.login) {
-                    UIF.handler.loging();
-                    return;
-                }
-                base.sfbox.show();
-            })
-            base.contoiner.on("click", '.no-circle', function() {
-                if (!UIF.handler.login) {
-                    UIF.handler.loging();
-                    return;
-                }
-                base.sfbox.show();
-            })
+			base.sta.on("click", function() {
+				if (!UIF.handler.login) {
+					UIF.handler.loging();
+					return;
+				}
+				base.sfbox.show();
+			})
+			base.contoiner.on("click", '.no-circle', function() {
+				if (!UIF.handler.login) {
+					UIF.handler.loging();
+					return;
+				}
+				base.sfbox.show();
+			})
 
 			base.contoiner.on("mouseover", 'li .img1', function(ext) {
 				$(this).siblings(".img3").slideToggle(100);
@@ -88,15 +94,17 @@ define(function(require, exports, module) {
 		startWatch : function() {
 			var base = this;
 			base.startWatchBtn.on("click", function() {
-				UIF.handler.sendAddGuard({guardDT : base.changeTimeBtn.text()}, function(data) {
+				UIF.handler.sendAddGuard({
+					guardDT : base.changeTimeBtn.text()
+				}, function(data) {
 					var args = jQuery.parseJSON(data);
-					if(args != null && args.resultStatus == 200){//100:no money,101:nontime
+					if (args != null && args.resultStatus == 200) {//100:no money,101:nontime
 						Tools.dialog("\u5F00\u901A\u6210\u529F");
-					}else if(args.resultStatus == 100){
+					} else if (args.resultStatus == 100) {
 						Tools.dialog("余额不足");
-					}else{
-                        Tools.dialog(args.resultMessage);
-                    }
+					} else {
+						Tools.dialog(args.resultMessage);
+					}
 					base.sfbox.hide();
 				});
 			})
@@ -106,6 +114,12 @@ define(function(require, exports, module) {
 		},
 		clzTimelist : function() {
 			this.timeList.hide();
+		},
+		onMessage : function(data) {
+			swf.guardLevelup({
+				guardLevel : data.grds,
+				nickname : decodeURI(data.name)
+			});
 		}
 	}
 })

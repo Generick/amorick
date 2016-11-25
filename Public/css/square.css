@@ -53,7 +53,7 @@
 .order-title .order-title-h1{color: #000;font-size: 26px;font-weight: 700;margin-left: 14px;}
 .order-title-bg{background: url("../img/wenhao.png") no-repeat right bottom;width:18px;height: 18px;display: inline-block;margin-left: 13px;}
 .order-box{width:597px;height: 586px;background:#FFffff}
-.order-box-bg{width:554px;height: 624px;background: url("/img/order-box-bg.png") no-repeat; overflow: hidden; z-index:3; position:absolute; left: -6px;}
+.order-box-bg{width:554px;height: 624px;background: url("../img/order-box-bg.png") no-repeat; overflow: hidden; z-index:3; position:absolute; left: -6px;}
 .order-box-bg .order-box-content{background-color: #fff; width: 505px; margin-left: 25px; height: 541px; margin-top: 26px; border-radius: 8px; }
 .order-box-bg .orderItem{display:none; }
 .order-box-bg .orderItem.cur{display:block; }

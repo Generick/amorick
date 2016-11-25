@@ -45,6 +45,9 @@ define(function(require, exports, module) {
 				base.flushBuUsers();
 			});
 		},
+        welcome : function(data){
+            console.log(data+'进入');
+        },
 		addUsers : function(data) {
 			if (!UIF.handler.userList.containsKey(data.userId)) {
 				UIF.handler.userList.put(data.userId, data);
@@ -158,7 +161,7 @@ define(function(require, exports, module) {
 				scroll : 'bottom'
 			});
 		},
-		flushBuUsers : function() {
+		flushBuUsers : function(userlist) {
 			var base = this;
 			var lis = '<li data-cardid="{0}" class="anchor">\
 							<span class="ICON-noble-level ICON-nl-13"></span>\
@@ -166,7 +169,11 @@ define(function(require, exports, module) {
 							<span class="name" title="{2}">{3}</span>\
 					  </li>';
 			var hs = "";
-			var values = UIF.handler.userList.values();
+            if(userlist != null){
+                values = userlist
+            }else{
+                values = UIF.handler.userList.values();
+            }
 			for (var i = 0; i < values.length; i++) {
 				for (var j = 0; j < values.length; j++) {
 					if (parseInt(values[i].splev) > parseInt(values[j].splev)) {

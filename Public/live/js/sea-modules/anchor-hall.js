@@ -61,7 +61,7 @@ define(function(require, exports, module) {
 			var $html = "";
 			if (data != null) {
 				for (var i = 0; i < data.length; i++) {
-					$html += Tools.stringFormat(this.lihtml, data[i].userId, data[i].nickname, data[i].nickname, "\u8D21\u732E\u5EA6\uFF1A"+data[i].moneys);
+					$html += Tools.stringFormat(this.lihtml, data[i].userId, decodeURI(data[i].nickname), decodeURI(data[i].nickname), "\u8D21\u732E\u5EA6\uFF1A"+data[i].moneys);
 				}
 			}
 			$('#current_fan_top').html($html)
@@ -70,7 +70,7 @@ define(function(require, exports, module) {
 			if (data != null) {
 				var $html = "";
 				for (var i = 0; i < data.length; i++) {
-					$html += Tools.stringFormat(this.lihtml, data[i].userId, data[i].nickname, data[i].nickname, "\u8D21\u732E\u5EA6\uFF1A"+data[i].moneys);
+					$html += Tools.stringFormat(this.lihtml, data[i].userId, decodeURI(data[i].nickname), decodeURI(data[i].nickname), "\u8D21\u732E\u5EA6\uFF1A"+data[i].moneys);
 				}
 				if ($html != null && $html.length > 0)
 					$(bs).html($html);
@@ -80,7 +80,7 @@ define(function(require, exports, module) {
 			if (data != null) {
 				var $html = "";
 				for (var i = 0; i < data.length; i++) {
-					$html += Tools.stringFormat(this.lihtml, data[i].userId, data[i].name, data[i].name, "\u4EB2\u5BC6\u5EA6\uFF1A"+data[i].cohe);
+					$html += Tools.stringFormat(this.lihtml, data[i].userId, decodeURI(data[i].name), decodeURI(data[i].name), "\u4EB2\u5BC6\u5EA6\uFF1A"+data[i].cohe);
 				}
 				if ($html != null && $html.length > 0)
 					$(bs).html($html);

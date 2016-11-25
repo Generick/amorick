@@ -1,20 +1,23 @@
 
-<div class="bgmask" style="display: none; height: 100%; z-index: 20002;"></div>
-<div class="login-box-global-css" id="loginbox" style="display:none">
+<!-- login -->
+<input type="hidden" name="" id="url" value="{$url}">
+<div class="bgmask" style="height: 100%;z-index:20002;display: none;"></div>
+<div class="login-box-global-css" id="loginbox" style="display: none;">
     <div class="box_head">
         <div style="position:relative">
-            <div class="box_close icons Stat 2_3" onclick="login.close()"></div>
+            <div class="box_close icons Stat 2_3" onclick="winclose()"></div>
         </div>
         <ul class="loginswitch">
             <li id="tab_login" class="regsw"><a href="javascript:void(0)"
-                                                onclick="selectTagLoginBox('tab_login');changeVaildcodeLogin();"
+                                                onclick="selectTagLoginBox('tab_login');refreshCode();"
                                                 id="loginboxLoginbtn">登录</a></li>
             <li class="" id="tab_reg"><a href="javascript:void(0)"
-                                         onclick="selectTagLoginBox('tab_reg');changeVaildcode();"
+                                         onclick="selectTagLoginBox('tab_reg');refreshCode();"
                                          id="loginboxRegbtn">注册</a></li>
         </ul>
     </div>
     <div class="clear"></div>
+    <!-- 注册 -->
     <div class="rlbox" id="tab_reg_content" style="display: none;">
         <div class="regbox">
             <form id="registerForm" method="get" onsubmit="return false;">
@@ -67,33 +70,34 @@
                         <div class="checkCode"></div>
                     </div>
                     <div class="border_right topb"></div>
-                    <img title="点击图片切换验证码" class="yzmimg yzmimg_reg"
-                         onclick="changeVaildcode()">
+                    <img src="" class="yzmimg yzmimg_reg" onclick="refreshRegCode()">
                     <div class="oktip"></div>
-                    <div class="regdes" onclick="changeVaildcode()">刷新</div>
+                    <div class="regdes" onclick="refreshRegCode()">刷新</div>
                     <div class="error" style="display: none;"></div>
                 </div>
                 <p class="agree_p">
                     <label class="agree"> <input type="checkbox"
                                                  checked="true" id="agreement" class="icon_checked fl v-middle">
-                        我已阅读并同意 <a target="_blank" href="/news/4.html">网站使用协议</a>
+                        我已阅读并同意 <a target="_blank" href="#">网站使用协议</a>
                     </label>
                 </p>
                 <button class="Stat 2_1 regbtn" id="regsub" type="button">立即注册</button>
             </form>
             <div class="other_login_area">
-					<span class="other_log_qq"> <a
+                    <span class="other_log_qq"> <a
                             href="javascript:login.qqlogin()"></a>
-					</span> <span class="other_log_sina"> <a
+                    </span> <span class="other_log_sina"> <a
                     href="javascript:login.wxlogin()" class="Stat 2_2"></a>
-					</span>
+                    </span>
             </div>
         </div>
         <div></div>
     </div>
+    <!--登录-->
     <div class="rlbox" id="tab_login_content" style="display: block;">
         <div class="regbox logbox">
-            <form id="login_form2" onsubmit="return false;">
+            <!--form id="login_form2" onsubmit="return false;"-->
+            <form method="post" id="login_form2" name="login" onsubmit="return false;">
                 <div class="regmail lip">
                     <div class="border_center topb">
                         <input type="text" id="tcuser" placeholder="帐号(邮箱号)"
@@ -106,8 +110,8 @@
                 </div>
                 <div class="regpw lip">
                     <div class="border_center topb">
-                        <input type="password" placeholder="密码" id="tcpass"
-                               class="input210">
+
+                        <input type="password" id="password" name="pwd"  class="input210" placeholder="密码" />
                     </div>
                     <div class="border_right topb"></div>
                     <div class="oktip"></div>
@@ -122,9 +126,10 @@
                     </div>
                     <div class="border_right topb"></div>
                     <img class="yzmimg yzmimg_login" style="width: 65px;"
-                         alt="点击图片切换验证码" onclick="changeVaildcodeLogin()">
+                         alt="点击图片切换验证码" onclick="refreshCode();"
+                         src="__PUBLIC__/login/img/captcha.jpg">
                     <div class="oktip"></div>
-                    <div class="regdes" onclick="changeVaildcodeLogin()">刷新</div>
+                    <div class="regdes" onclick="refreshCode();">刷新</div>
                     <div class="error" style="display: none;"></div>
                     <div class="pwbar"></div>
                 </div>
@@ -137,12 +142,32 @@
                 <button id="loginsub" class="tcloginbtn" type="submit">登 录</button>
             </form>
             <div class="other_login_area">
-					<span class="other_log_qq"> <a
+                    <span class="other_log_qq"> <a
                             href="javascript:login.qqlogin()"></a>
-					</span> <span class="other_log_sina"> <a
+                    </span> <span class="other_log_sina"> <a
                     href="javascript:login.wxlogin()" class="Stat 2_2"></a>
-					</span>
+                    </span>
             </div>
         </div>
     </div>
 </div>
+<!-- login over -->
+
+
+<!-- 3 加载bootstrap的核心ＪＳ库 -->
+<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/boot.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.login').click(function(){
+            //$('.bgmask').show();
+            //$('.login-box-global-css').show();
+        });
+        $('.bgmask').click(function(){
+            //$('.login-box-global-css').hide();
+            // $('.bgmask').hide();
+        });
+    });
+</script>

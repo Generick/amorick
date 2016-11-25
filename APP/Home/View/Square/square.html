@@ -1,34 +1,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link href="__PUBLIC__/css/anchor-level.css" rel="stylesheet">
 <title>广场-蝌蚪直播</title>
-<meta property="qc:admins" content="105415766763547646">
-<meta name="description"
-	content="超人气视频直播互动娱乐社区，在这里你可以展示自己的才艺，也可以跟众多优秀的美女主播在线互动聊天、视频交友">
-<link data-fixed="true" href="__PUBLIC__/css/square.css" rel="stylesheet">
-<link href="__PUBLIC__/css/icons.css" rel="stylesheet">
-<link href="__PUBLIC__/css/login.css" type="text/css" rel="stylesheet">
-<link href="__PUBLIC__/css/index.css" rel="stylesheet">
-</head>
-<body style="zoom: 1;">
-<include file="Public/header" />
 
-	<div class="head-outer btline">
-		<div class="header clearFix">
-			<a class="hd_bg fl" href="/"></a>
-			<ul class="nav fl">
-				<li class="fl "><a href="__MODULE__/Index/index">首页</a></li>
-				<li class="fl cu"><a href="#">广场</a></li>
-				<li class="fl "><a href="__MODULE__/Mall/mall">商城</a></li>
-				<li class="fl "><a href="__MODULE__/Order/order">排行榜</a></li>
-			</ul>
+<include file="Public/head" />
 
-			<include file="Public/head" />
-		</div>
-	</div>
-
-
+<!--主体-->
 	<div class="main-square">
 		<div class="square-top">
 			<span class="cur-suqare-title">全部</span>
@@ -40,13 +17,13 @@
 		<ul class="squ_li clearFix">
 
 			<volist name="data" id="gc" offset="0" length="1">
-			<li class="fl squ_first"><a href="/10003.html" target="_blank">
+			<li class="fl squ_first"><a href="__APP__/1001.html" target="_blank">
 					<em class="sprite_big_box biankuang-blue"></em>
 				<img src="{$gc.image}&w=133&amp;h=194" alt="小蜜桃">
 				<span class="sprite_l pic_liverlevel_L_{$gc.totalpoint}"></span>
 					<i>当前人数:{$gc[numbers]}</i>
 					<div>
-						<p>{$gc.nickName}</p>
+						<p>{$gc.nickName|urldecode}</p>
 						<p>
 							<if condition="$gc.online eq '1'">
 								{$gc[onlineTime]/60000|ceil}分钟前开播
@@ -62,8 +39,9 @@
 
 			<volist name="data" id="gc" offset="1" >
 
-			<li class="fl "><a href="/10022.html" target="_blank"> <em
-					class="sprite_small_box biankuang_white_little "></em>
+			<li class="fl ">
+				<a href="{$gc.roomNumber}" target="_blank">
+					<em class="sprite_small_box biankuang_white_little "></em>
 				<!--img src="http://images.181show.com/f9ff6aff8fe39b7f1f019211e0428492?w=133&amp;h=194"
 					alt="Fantasy"-->
 				<img src="{$gc.image}"
@@ -71,7 +49,7 @@
 				<span class="sprite_s pic_liverlevel_S_{$gc.totalpoint}"></span>
 					<i>当前人数：{$gc.numbers}</i>
 					<div>
-						<p>{$gc.nickName}</p>
+						<p>{$gc.nickName|urldecode}</p>
 						<!--<p>{$gc[onlineTime]/60000|ceil}分钟前开播</p>-->
 						<p>
 							<if condition="$gc.online eq '1'">

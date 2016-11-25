@@ -1,388 +1,295 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>蝌蚪直播-最好玩的直播平台</title>
 
-    <link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet">
-    <link href="__PUBLIC__/css/style.css" rel="stylesheet">
-    <link href="__PUBLIC__/css/homeBg.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/login/css/login.css">
-    <!-- <script type="text/javascript" src="__PUBLIC__/login/css/login.js"></script> -->
-    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
-    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <include file="Public/head" />
     
-</head>
-<body style="padding-top:60px;">
-<!--导航-->
-<div class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand logo_head" href="#"></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav hdNavL">
-                <li class="active"><a href="{:U('Index/index')}">首页</a></li>
-                <li><a href="{:U('Square/square')}">广场</a></li>
-                <li><a href="{:U('Mall/mall')}">商城</a></li>
-                <li><a href="{:U('Order/order')}">排行</a></li>
-            </ul>
-
-            <form class="navbar-form navbar-left" role="search">
-                <!--<div class="form-group">
-                   <input type="text" class="form-control" placeholder="搜索">
-                   <button type="submit" class="btn btn-default glyphicon glyphicon-search"></button>
-                </div>-->
-                <div class="input-group search">
-                    <input type="text" class="form-control searchN" placeholder="输入房间号/频道号/ID">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default searchBtn" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                  </span>
-                </div>
-
-            </form>
-            <!--if condition="empty($_SESSION='2') eq true"-->
-                <if condition="$Think.session.userid neq ''">
-
-                    <ul class="nav navbar-nav navbar-right hidden-sm afHdNavR">
-                        <li class="logName"><a href="{:U('Center/index')}" class="ellipsis">{$user['nickname']}</a></li>
-                        <li class="glyphicon glyphicon-menu-down"><a href=""></a></li>
-                        <li class=""><a href="{:U('Login/logout')}">退出<span class="sr-only">(current)</span></a></li>
-                        <li class="glyphicon glyphicon-envelope"><a href=""></a></li>
-                    </ul>
-                 <else />
-                    <ul class="nav navbar-nav navbar-right hidden-sm hdNavR">
-                        <li><a href="{:U('Login/index')}" class="login" onclick="return false;">登录</a></li>
-                        <li class="hidden-xs"><a href="">|</a></li>
-                        <li class="hidden-lg hidden-md hidden-sm show-xs line"><a href=""></a></li>
-                        <li class="Reg"><a href="./" onclick="return false;">注册<span class="sr-only">(current)</span></a></li>
-                    </ul>
-                 </if>
-
-
-        </div><!--/.nav-collapse -->
-    </div>
-</div>
-
-
-<!--主体-->
-<div class="container main">
-    <div class="row clearFix outer">
-        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 mainLeft fl" role="main">
-            <div id="carousel-example-captions" class="carousel slide" data-ride="carousel" style="margin-bottom:30px;">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
-                    <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
-                    <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item">
-                        <img data-src="holder.js/1128x320/auto/#777:#777" alt="900x500" src="__PUBLIC__/images/banner1.jpg" data-holder-rendered="true"/>
+    <!--主体-->
+    <div class="container main">
+    	<div class="row clearFix outer">
+        	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 mainLeft fl" role="main">
+            	<div id="carousel-example-captions" class="carousel slide" data-ride="carousel" style="margin-bottom:30px;">
+					<ol class="carousel-indicators">
+                        <li data-target="#carousel-example-captions" data-slide-to="0" class=""></li>
+                        <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
+                        <li data-target="#carousel-example-captions" data-slide-to="2" class="active"></li>
+                    </ol>
+					<div class="carousel-inner" role="listbox">
+                        <div class="item">
+              				<img data-src="holder.js/1128x320/auto/#777:#777" alt="900x500" src="__PUBLIC__/images/banner1.jpg" data-holder-rendered="true"/>
+            			</div>
+                        <div class="item">
+              				<img data-src="holder.js/900x500/auto/#666:#666" alt="900x500" src="__PUBLIC__/images/banner2.jpg" data-holder-rendered="true"/>
+            			</div>
+                        <div class="item active">
+              				<img data-src="holder.js/900x500/auto/#555:#555" alt="900x500" src="__PUBLIC__/images/banner3.jpg" data-holder-rendered="true"/>
+            			</div>
                     </div>
-                    <div class="item">
-                        <img data-src="holder.js/900x500/auto/#666:#666" alt="900x500" src="__PUBLIC__/images/banner2.jpg" data-holder-rendered="true"/>
+					<a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
+                        <span class="icon-prev glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+					<a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
+                        <span class="icon-next glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    <div class="thumb-bar"></div>
+    			</div>
+    			
+                <!--热门主播-->
+                <div class="hotCon">
+                	<div class="page-header clearfix clearFix outer">
+                        <h4 class="pull-left fl">
+                        	<span class="glyphicon glyphicon-hot">HOT</span>
+                        	<span>热门主播</span>
+                            
+                        </h4>
+                        <h4 class="pull-right fr hotR">
+                          <a href="{:U('Square/square')}"><small>更多</small></a>
+                        </h4>
                     </div>
-                    <div class="item active">
-                        <img data-src="holder.js/900x500/auto/#555:#555" alt="900x500" src="__PUBLIC__/images/banner3.jpg" data-holder-rendered="true"/>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
-                    <span class="icon-prev glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
-                    <span class="icon-next glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-                <div class="thumb-bar"></div>
-            </div>
+                    
+                    <div class="row1 clearFix">
 
-            <!--热门主播-->
-            <div class="hotCon">
-                <div class="page-header clearfix clearFix outer">
-                    <h4 class="pull-left fl">
-                        <span class="glyphicon glyphicon-hot">HOT</span>
-                        <span>热门主播</span>
-
-                    </h4>
-                    <h4 class="pull-right fr hotR">
-                        <a href="{:U('Square/square')}"><small>更多</small></a>
-                    </h4>
-                </div>
-                <div class="row row1 clearFix outer">
-
-                    <volist name="rmzb" id="rm" offset="0" length="1">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 fl fir">
-                        <a href="{$rm.city}" class="thumbnail firHot">
-                            <!--img src="__PUBLIC__/images/girl01.png" alt=""/-->
-                            <img src="{$rm.image}" alt=""/>
-                            <span class="glyphicon glyphicon-stats"></span>
-                            <div class="firT thumbnail">
-                                <div class=""></div>
-                                <p class="text-center">人数：<span>{$rm.numbers}</span></p>
-                            </div>
-                            <div class="firB ellipsis">
-                                <p class="colorPin f16">{$rm.nickName|urldecode}</p>
-                                <p class="clearfix f12 outer">
-                                    <span class="glyphicon glyphicon-user"></span>
-                                   <!-- <span> {$rm['onlineTime']/60000|ceil}</span>
-                                    <span>分钟之前开播</span>-->
-                                    <span>
+                        <volist name="rmzb" id="rm" offset="0" length="1">
+                      <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 fl fir">
+                        <a href="{$rm.roomNumber}" class="thumbnail firHot">
+                          <img src="{$rm.image}&h=315&w=210" alt=""/>
+                          <span class="glyphicon glyphicon-stats" ></span>
+                          <div class="firT thumbnail">
+                            <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$rm.totalpoint} fl"></div>
+                            <p class="text-center">人数：<span>{$rm.numbers}</span></p>
+                          </div>
+                          <div class="firB ellipsis">
+                              <p class="colorPin f16">{$rm.nickName|urldecode}</p>
+                              <p class="clearfix f12 outer">
+                                  <span class="glyphicon glyphicon-user"></span>
+                                 <!-- <span>30</span>
+                                  <span>分钟之前开播</span>-->
+                                  <span>
                                         <if condition="$rm.online eq '1'">
                                                 {$rm['onlineTime']/60000|ceil}分钟前开播
                                                 <else />
                                                 未开播
                                             </if>
                                     </span>
-                                    <span class="glyphicon glyphicon-map-marker"></span>
-                                    <span>上海</span>
-                                </p>
-                            </div>
-                            <div class="shadow thumbnail"></div>
-                            <div class="playBtn"></div>
+                                  <span class="glyphicon glyphicon-map-marker"></span>
+                                  <span>上海</span>
+                              </p>
+                          </div>
+                          <div class="shadow thumbnail"></div>
+                          <div class="playBtn"></div>
                         </a>
-                    </div>
-                     </volist>
+                        <a href="#" class="thumbnail">
+                          <img src="__PUBLIC__/images/hotImg.png" alt=""/>
+                        </a>
+                      </div>
+                    </volist>
 
+                      <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6 fr itemList">
+                            <div class="row clearFix outer">
 
-                    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6 fr itemList">
-                        <div class="row clearFix outer">
-
-                         <volist name="rmzb" id="rm" offset="1" length="6">
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 fl items">
-                                <a href="https://www.baidu.com" class="hotItem thumbnail" id="a">
-                                    <!--img src="__PUBLIC__/images/girl02.png" alt=""/-->
-                                    <img src="{$rm.image}" alt=""/>
-                                    <span class="glyphicon glyphicon-stats"></span>
-                                    <div class="hotT thumbnail">
-                                        <div class=""></div>
-                                        <p class="text-center">人数：<span>{$rm.numbers}</span></p>
-                                    </div>
-                                    <div class="hotB">
-                                        <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
-                                        <p class="f12">
-                                            <!-- <span class="glyphicon glyphicon-user"></span> -->
-                                            <if condition="$rm.online eq '1'">
-                                                {$rm['onlineTime']/60000|ceil}分钟前开播
-                                                <else />
-                                                未开播
-                                            </if>
-                                        </p>
-                                    </div>
-                                    <div class="playBtn"></div>
-                                </a>
-                            </div>
-                        </volist>
-
-                            <volist name="rmzb" id="rm" offset="7" length="6">
-
-                            <div class="col-lg-2 hidden-md hidden-sm hidden-xs fl items">
-                                <a href="#" class="hotItem thumbnail">
-                                    <!--img src="__PUBLIC__/images/girl02.png" alt=""/-->
-                                    <img src="{$rm.image}" alt=""/>
-                                    <span class="glyphicon glyphicon-stats"></span>
-                                    <div class="hotT thumbnail">
-                                        <div class=""></div>
-                                        <p class="text-center">人数：<span>{$rm.numbers}</span></p>
-
-                                    </div>
-                                    <div class="hotB">
-                                        <span class="colorPin f14">{$rm.nickName|urldecode}</span>
-                                        <p class="f12">
-                                            <!-- <span class="glyphicon glyphicon-user"></span-->
-                                            <span>
+                                <volist name="rmzb" id="rm" offset="1" length="6">
+                            	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                                <a  href="{$rm.roomNumber}" class="hotItem thumbnail" id="a">
+                                  <img src="{$rm.image}&h=210&w=140" alt=""/>
+                                  <span class="glyphicon glyphicon-stats" ></span>
+                                  <div class="hotT thumbnail">
+                                    <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$rm.totalpoint} fl"></div>
+                                    <p class="text-center">人数：<span>{$rm.numbers}</span></p>
+                                  </div>
+                                <div class="hotB">
+                                    <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
+                                    <p class="f12">
+                                        <!-- <span class="glyphicon glyphicon-user"></span> -->
+                                        <span>
                                                  <if condition="$rm.online eq '1'">
                                                 {$rm['onlineTime']/60000|ceil}分钟前开播
                                                 <else />
                                                 未开播
                                             </if>
                                             </span>
+                                    </p>
+                                </div>
+                                <div class="playBtn"></div>
+                              </a>
+                            	</div>
+                            </volist>
 
-                                        </p>
-                                    </div>
-                                    <div class="playBtn"></div>
-                                </a>
-                            </div>
+                                <volist name="rmzb" id="rm" offset="7" length="6">
 
-                          </volist>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row2 clearFix outer">
-
-                    <!--md档13,14另加的两个-->
-
-                </div>
-
-                <div class="row row3 clearFix outer">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 fl items">
-                        <a href="#" class="thumbnail">
-                            <img src="__PUBLIC__/images/hotImg.png" alt=""/>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6 fl">
-
-                        <div class="row clearFix outer">
-
-                            <volist name="rmzb" id="rm" offset="8" length="6">
-
-                            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 fl items">
-                                <a href="#" class="hotItem thumbnail">
-                                    <img src="{$rm.image}" alt=""/>
-                                    <span class="glyphicon glyphicon-stats"></span>
-                                    <div class="hotT thumbnail">
-                                        <div class=""></div>
-                                        <p class="text-center">人数：<span>{$rm.numbers}</span></p>
-
-                                    </div>
-                                    <div class="hotB">
-                                        <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
-                                        <p class="f12">
-                                            <!-- <span class="glyphicon glyphicon-user"></span> -->
-                                            <if condition="$rm.online eq '1'">
+                                <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs">
+                                <a href="{$rm.roomNumber}" class="hotItem thumbnail" id="a">
+                                  <img src="{$rm.image}&h=210&w=140" alt=""/>
+                                  <span class="glyphicon glyphicon-stats"></span>
+                                  <div class="hotT thumbnail">
+                                    <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$rm.totalpoint} fl"></div>
+                                    <p class="text-center">人数：<span>{$rm.numbers}</span></p>
+                                    
+                                  </div>
+                                <div class="hotB">
+                                    <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
+                                    <p class="f12">
+                                        <!-- <span class="glyphicon glyphicon-user"></span> -->
+                                         <span>
+                                                 <if condition="$rm.online eq '1'">
                                                 {$rm['onlineTime']/60000|ceil}分钟前开播
                                                 <else />
                                                 未开播
                                             </if>
-                                        </p>
-                                    </div>
-                                    <div class="playBtn"></div>
-                                </a>
-                            </div>
-
-                             </volist>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row row4 clearFix outer">
-                    <!--md档另加的7,8,9,10档-->
-
-                </div>
-
-            </div>
-
-            <!--精彩推荐-->
-            <div class="recomm">
-                <div class="page-header clearfix">
-                    <h4 class="pull-left"><span class="glyphicon glyphicon-fire"></span>精彩推荐
-                    </h4>
-                    <h4 class="pull-right recommR">
-                        <a href="javascript:;"><small>话题</small></a>
-                        <a href="javascript:;"><small>游戏</small></a>
-                        <a href="javascript:;"><small>户外</small></a>
-                        <a href="javascript:;"><small>lol</small></a>
-                        <a href="{:U('Square/square')}"><small>更多</small></a>
-                    </h4>
-
-                </div>
-                <div class="row outer">
-
-                   <!-- <foreach name="jctj" item="tj" -->
-                    <volist name="jctj" id="tj" offset="0" length="12">
-                    <div class="col-lg-3 col-sm-3 col-xs-4">
-                        <a href="#" class="thumbnail">
-                            <div class="recommImg thumbnail">
-                                <img src="{$tj[image]}" alt=""/>
-                                <div class="thumb-bar"></div>
-                                <div class="shadow"></div>
-                                <div class="playBtn"></div>
-                            </div>
-                            <div class="recommB">
-                                <div class="clearfix">
-                                    <span class="color33 pull-left">{$tj[nickName]|urldecode}</span>
-                                    <div class="color99 pull-right">
-                                        <span class="glyphicon glyphicon-eye-open"></span>
-                                        <span>{$tj.numbers}</span>
-                                    </div>
+                                         </span>
+                                    </p>
                                 </div>
-                                <p class="color99 ellipsis f12">{$jc[$tj[online]]}</p>
+                                <div class="playBtn"></div>
+                              </a>
+                            	</div>
+                            </volist>
+
+                                <volist name="rmzb" id="rm" offset="13" length="6">
+                                <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+                                    <a href="{$rm.roomNumber}" class="hotItem thumbnail" id="a">
+                                        <img src="{$rm.image}&h=210&w=140" alt=""/>
+                                        <span class="glyphicon glyphicon-stats"></span>
+                                        <div class="hotT thumbnail">
+                                            <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$rm.totalpoint} fl"></div>
+                                            <p class="text-center">人数：<span>{$rm.numbers}</span></p>
+
+                                        </div>
+                                        <div class="hotB">
+                                            <span class="colorPin f14 f14">{$rm.nickName|urldecode}</span>
+                                            <p class="f12">
+                                                <!-- <span class="glyphicon glyphicon-user"></span> -->
+                                               <span>
+                                                    <if condition="$rm.online eq '1'">
+                                                        {$rm['onlineTime']/60000|ceil}分钟前开播
+                                                    <else />
+                                                        未开播
+                                                    </if>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="playBtn"></div>
+                                    </a>
+                                </div>
+                                </volist>
+
                             </div>
-
-                        </a>
+                      </div>
                     </div>
-                </volist>
-
+                    
                 </div>
-            </div>
+                
+                <!--精彩推荐-->
+                <div class="recomm">
+                	 <div class="page-header clearfix">
+                        <h4 class="pull-left"><span class="glyphicon glyphicon-fire"></span>精彩推荐
+                        </h4>
+                        <h4 class="pull-right recommR">
+                          <a href="javascript:;"><small>话题</small></a>
+                          <a href="javascript:;"><small>游戏</small></a>
+                          <a href="javascript:;"><small>户外</small></a>
+                          <a href="javascript:;"><small>lol</small></a>
+                          <a href="{:U('Square/square')}"><small>更多</small></a>
+                        </h4>
+                        
+                    </div>
+                    <div class="row outer">
 
-            <!--最新入驻-->
-            <div class="hotCon">
-                <div class="page-header clearfix">
-                    <h4 class="pull-left">
-                        <span class="glyphicon glyphicon-hot">NEW</span>
-                        <span>最新入驻</span>
+                        <volist name="jctj" id="tj" offset="0" length="12">
 
-                    </h4>
-                    <h4 class="pull-right recommR">
-                        <a href="javascript:;"><small>话题</small></a>
-                        <a href="javascript:;"><small>游戏</small></a>
-                        <a href="javascript:;"><small>户外</small></a>
-                        <a href="javascript:;"><small>lol</small></a>
-                        <a href="{:U('Square/square')}"><small>更多</small></a>
-                    </h4>
+                      <div class="col-lg-3 col-sm-3 col-xs-4">
+                        <a href="{$tj.roomNumber}" class="thumbnail">
+                          <div class="recommImg thumbnail">
+                            <img src="{$tj[image]}&h=127&w=248" alt=""/>
+                            <div class="thumb-bar"></div>
+                            <div class="shadow"></div>
+                            <div class="playBtn"></div>
+                          </div>
+                          <div class="recommB">
+                            <div class="clearfix">
+                              <span class="color33 pull-left">{$tj[nickName]|urldecode}</span>
+                              <div class="color99 pull-right">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span>{$tj.numbers}</span>
+                              </div>
+                            </div>
+                            <p class="color99 ellipsis f12">谢霆锋百科知识 舒淇变迷妹点赞</p>
+                          </div>
+                        </a>
+                      </div>
+                     </volist>
+
+                    </div>
                 </div>
-                <div class="row">
+                
+                <!--最新入驻-->
+                <div class="hotCon">
+                	<div class="page-header clearfix">
+                        <h4 class="pull-left">
+                        	<span class="glyphicon glyphicon-hot">NEW</span>
+                        	<span>最新入驻</span>
+                            
+                        </h4>
+                        <h4 class="pull-right recommR">
+                          <a href="javascript:;"><small>话题</small></a>
+                          <a href="javascript:;"><small>游戏</small></a>
+                          <a href="javascript:;"><small>户外</small></a>
+                          <a href="javascript:;"><small>lol</small></a>
+                          <a href="{:U('Square/square')}"><small>更多</small></a>
+                        </h4>
+                    </div>
+                    <div class="row">
 
-                    <volist name="zxzb" id="zx" offset="0" length="1">
-
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
-                        <a href="{$zx.city}" class="thumbnail firHot">
-                            <!--img src="__PUBLIC__/images/girl01.png" alt=""/-->
-                            <img src="{$zx.image}" alt=""/>
-                            <div class="firB ellipsis">
-                                <p class="colorPin f16">{$zx.nickName|urldecode}</p>
-                                <p class="clearfix f12 outer">
-                                    <span class="glyphicon glyphicon-eye-open"></span>
-                                    <span>{$zx.numbers}人</span>
-                                    <span class="glyphicon glyphicon-fire"></span>
-                                    <!--<span>{$zx['onlineTime']/60000|ceil}分钟前开播</span>-->
-                                    <span>
+                        <volist name="zxzb" id="zx" offset="0" length="1">
+                      <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+                        <a href="{$zx.roomNumber}" class="thumbnail firHot">
+                          <img src="{$zx.image}" alt=""/>
+                          <div class="firB ellipsis">
+                              <p class="colorPin f16">{$zx.nickName|urldecode}</p>
+                              <p class="clearfix f12 outer">
+                                  <span class="glyphicon glyphicon-eye-open"></span>
+                                  <span>{$zx.numbers}人</span>
+                                  <span class="glyphicon glyphicon-fire"></span>
+                                  <!--<span>985632</span>-->
+                                   <span>
                                          <if condition="$zx.online eq '1'">
                                                 {$zx['onlineTime']/60000|ceil}分钟前开播
                                                 <else />
                                                 未开播
                                             </if>
                                     </span>
-                                </p>
-                            </div>
-                            <div class="shadow thumbnail"></div>
-                            <div class="playBtn"></div>
+                              </p>
+                          </div>
+                          <div class="shadow thumbnail"></div>
+                          <div class="playBtn"></div>
                         </a>
-                    </div>
-                     </volist>
+                        <a href="#" class="thumbnail">
+                          <img src="__PUBLIC__/images/hotImg.png" alt=""/>
+                        </a>
+                      </div>
+                    </volist>
 
-                    <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
-                        <div class="row">
+                      <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6">
+                            <div class="row">
 
-                            <volist name="zxzb" id="zx" offset="1" length="12">
-
-                            <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
-                                <a href="#" class="hotItem thumbnail">
-                                    <img src="{$zx.image}" alt=""/>
+                                <volist name="zxzb" id="zx" offset="1" length="6">
+                            	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                                    <a href="{$zx.roomNumber}" class="hotItem thumbnail">
+                                      <img src="{$zx.image}&h=200&w=135" alt=""/>
                                     <div class="hotB">
-                                        <span class="colorPin f14">{$zx.nickName|urldecode}</span>
+                                        <span class="colorPin f14 f14">{$zx.nickName|urldecode}</span>
                                         <p class="f12">
                                             <!-- <span class="glyphicon glyphicon-user"></span> -->
                                             <span class="glyphicon glyphicon-eye-open"></span>
                                             <span>{$zx.numbers}人</span>
-                                           <!-- <span>{$zx['onlineTime']/60000|ceil}分钟前开播</span>-->
-                                            <span>
+                                             <span>
                                              <if condition="$zx.online eq '1'">
-                                                {$zx['onlineTime']/60000|ceil}分钟前开播
+                                                在线
                                                 <else />
                                                 未开播
                                             </if>
@@ -390,47 +297,87 @@
                                         </p>
                                     </div>
                                     <div class="playBtn"></div>
-                                </a>
-                            </div>
-
+                                  </a>
+                                </div>
                             </volist>
 
+                                <volist name="zxzb" id="zx" offset="7" length="6">
+                                <div class="col-lg-2 col-md-3 col-sm-3 hidden-xs">
+                                    <a href="{$zx.roomNumber}" class="hotItem thumbnail">
+                                      <img src="{$zx.image}&h=200&w=135" alt=""/>
+                                    <div class="hotB">
+                                        <span class="colorPin f14">{$zx.nickName|urldecode}</span>
+                                        <p class="f12">
+                                            <!-- <span class="glyphicon glyphicon-user"></span> -->
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                            <span>{$zx.numbers}人</span>
+                                             <span>
+                                             <if condition="$zx.online eq '1'">
+                                                在线
+                                                <else />
+                                                未开播
+                                            </if>
+                                           </span>
+                                        </p>
+                                    </div>
+                                    <div class="playBtn"></div>
+                                  </a>
+                                </div>
+                            </volist>
 
+                                <volist name="zxzb" id="zx" offset="13" length="6">
+                                <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+                                    <a href="{$zx.roomNumber}" class="hotItem thumbnail">
+                                      <img src="{$zx.image}&h=200&w=135" alt=""/>
+                                    <div class="hotB">
+                                        <span class="colorPin f14">{$zx.nickName|urldecode}</span>
+                                        <p class="f12">
+                                            <!-- <span class="glyphicon glyphicon-user"></span> -->
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                            <span>{$zx.numbers}人</span>
+                                             <span>
+                                             <if condition="$zx.online eq '1'">
+                                                在线
+                                                <else />
+                                                未开播
+                                            </if>
+                                           </span>
+                                        </p>
+                                    </div>
+                                    <div class="playBtn"></div>
+                                  </a>
+                                </div>
+                            </volist>
 
-                        </div>
-
+                            </div>
+                      </div>
                     </div>
-
                 </div>
-
-                <div class="row">
-
-                    <!--md档13,14另加的两个-->
-                </div>
-
             </div>
 
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs pull-right fr mainRight" role="complementary">
-            <!--登录注册-->
-            <div class="thumbnail regLog text-center">
-                <!--登录后-->
-                <!--if condition="empty($_session='') eq true"-->
+            <div class="col-lg-3 col-md-3 col-sm-3 hidden-xs pull-right fr mainRight" role="complementary">
+				<!--登录注册-->
+                <div class="thumbnail regLog text-center">
+                    <!--登录后-->
 
-                    <if condition="$Think.session.userid neq ''">
+                    <if condition="$Think.session.userid != ''" >
 
                         <div class="caption AfterLog">
                             <div class="row">
                                 <div class="pull-left imgR img-circle colorPin">
-                                    <img class="img-circle" src="{$Think.const._IMAGES_DOMAIN_}/{$user.avatar}" alt=""/>
+                                 <if condition="$user.avatar eq ''">
+                                 <a href="{:U('Center/index')}"> <img class="img-circle" src="__PUBLIC__/images/photo_title.jpg" alt=""/></a>
+                                 <else/>
+                                 <a href="{:U('Center/index')}"> <img class="img-circle" src="{$Think.const._IMAGES_DOMAIN_}/{$user.avatar}" alt=""/></a>
+                                 </if>
                                 </div>
                                 <div class="pull-left">
-                                    <div class="name">{$user['nickname']|urldecode}</div>
+                                    <div class="name"><a href="{:U('Center/index')}">{$user['nickname']|urldecode}</a></div>
                                     <div class="money">
                                         <span class="glyphicon glyphicon-bold img-circle"></span>
-                                        <span class="moneyNum">{$user['coins']}</span>
+                                        <span class="moneyNum">{$dj['coins']}</span>
                                     </div>
-                                    <div class="charge"><button type="button" class="btn btn-warning">充值</button></div>
+                                    <div class="charge"><button type="button" class="btn btn-warning" href="__MODULE__/Pay/pay"><a href="__MODULE__/Pay/pay">充值</a></button></div>
                                 </div>
                             </div>
 
@@ -444,17 +391,15 @@
                                 <div class="progress-bar progress-bar-danger" role="progressbar"
                                      aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                      style="width: 60%;">
-                                    <span class="sr-only">{$user['nextSpender']}% 完成（危险）</span>
+                                    <span class="sr-only">{$dj['nextActive']}% 完成（危险）</span>
                                 </div>
                             </div>
-                            <div>还差{$user.differ}经验值升级到下一级</div>
-
+                            <div>还差{$dj.activeDiffer}经验值升级到下一级</div>
 
                             <p class="row showOw clearfix outer">
                                 <input class="btn btn-md btn-default colorBlue pull-left fl show" type="submit" value="开播">
                                 <input class="btn btn-md btn-default colorBlue pull-right fr" type="submit" value="OW">
                             </p>
-
 
                             <div class="clearfix outer">
                                 <span class="pull-left fl">获得成就</span>
@@ -465,20 +410,20 @@
                                 <span class="achieve2 pull-left"></span>
                                 <span class="achieve3 pull-left"></span>
                                 <span class="achieve4 pull-left"></span>
-                                <a href="" class="pull-right">更多</a>
+                                <a href="__MODULE__/Mall/mall" class="pull-right">更多</a>
                             </div>
 
                         </div>
 
-                <!--登陆前-->
-                <else />
+                        <!--登陆前-->
+                        <else />
 
                         <div class="caption beforLog">
                             <p class="row">
-                                <button type="button" id="btn_login" class="btn_login loginBtn btn btn-warning" data-loading-text="Loading..." autocomplete="off" >立即登录</button>
+                                <button type="button" id="btn_login" class="btn_login loginBtn btn btn-warning" data-loading-text="Loading..." autocomplete="off" onclick="return false;" >立即登录</button>
                             </p>
                             <p class="row">
-                                <a type="button" class="btn_login regBtn btn btn-default" data-loading-text="Loading..." autocomplete="off">一键注册</a>
+                                <a type="button" href="" class="btn_login regBtn btn btn-default" data-loading-text="Loading..." autocomplete="off">一键注册</a>
                             </p>
                             <p class="text-left color99 pasTip">忘记密码 点击 <b><a href="javascript:;">这里找回</a></b></p>
                             <hr/>
@@ -491,142 +436,220 @@
                             </p>
 
                         </div>
-                </if>
-            </div>
+                    </if>
+                </div>
 
-
-            <!--我的关注-->
-            <div class="thumbnail follow text-left">
-                <div class="caption">
-                    <div class="row foTit outer">
-                        <h4 class="pull-left titH fl">我的关注</h4>
-                        <div class="pull-right titD fl">
-                            <a href="#" class="glyphicon glyphicon-menu-up"></a>
-                            <a href="#" class="glyphicon glyphicon-menu-down"></a>
+                <!--我的关注-->
+               <div class="thumbnail follow text-left">
+               	<div class="caption">
+                        <div class="row foTit outer">
+                        	<h4 class="pull-left titH fl">我的关注</h4>
+                            <div class="pull-right titD fl">
+                            	<a href="#" class="glyphicon glyphicon-menu-up"></a>
+                            	<a href="#" class="glyphicon glyphicon-menu-down"></a>
+                            </div>
                         </div>
-                    </div>
-
                     <volist  name="gzlb" id="gz" offset="0" length="5">
-                    <div class="row foLi outer">
-                        <a href="javascript:;">
-                            <!--img class="pull-left fl" src="__PUBLIC__/images/photo_title.jpg" alt=""/-->
-                            <img class="pull-left fl" src="{$gz['imagePrivate']}&h=60&w=60" alt=""/>
-                            <div class="pull-left fl">
-                                <p class="name">{$gz.nickName|urldecode}</p>
-                                <p class="ynLiv">{$a[$gz[online]]}</p>
+                        <div class="row foLi outer">
+                        	<a href="{$gz.roomNumber}">
+                                <img class="pull-left fl" src="{$gz['imagePrivate']}&h=60&w=60" alt=""/>
+                                <div class="pull-left fl">
+                                    <p class="name">{$gz.nickName|urldecode}</p>
+                                    <p class="ynLiv">
+                                        <span>
+                                        <if condition="$rm.online eq '1'">
+                                                {$gz['onlineTime']/60000|ceil}分钟前开播
+                                            <else />
+                                                未开播
+                                        </if>
+                                    </span>
+                                    </p>
+                                </div>
+                                <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$gz.totalpoint} fl"></div>
+                            </a>
+                        </div>
+                    </volist>
+
+               	</div>
+               </div>
+                <!--申请入驻-->
+                <a href="javascript:;" class="thumbnail">
+                    <img src="__PUBLIC__/images/download.jpg"/>
+                </a>
+                
+                <!--主播排行榜-->
+               <div class="thumbnail text-left rank">
+               	<div class="caption">
+                        <div class="row foTit outer">
+                        	<h4 class="pull-left titH hidden-sm fl">主播排行榜</h4>
+                            <h4 class="pull-left titH visible-sm-block fl">主播榜</h4>
+                            <div class="pull-right titD">
+                            	<a href="" class="colorPin week">周</a>
+                            	<a href="" class="colorPin month">月</a>
+                                <a href="" class="colorPin year">年</a>
                             </div>
-                            <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$gz.totalpoint} fl"></div>
-                        </a>
-                    </div>
+                        </div>
+                    <!--周榜-->
+                    <volist name="zbzb" id="zb" offset="0" length="8">
+                        <div class="weekcharts charts row foLi outer">
+                        	<a href="{$zb.roomNumber}">
+                                <span class="icon_shuzi_1 sprite_top pull-left hidden-md hidden-sm hidden-xs"></span>
+                                <img class="pull-left fl" src="{$zb.avatar}&h=55&w=55" alt=""/>
+                                <span class="crown hidden-md hidden-sm hidden-xs"></span>
+                                <div class="pull-left fl">
+                                    <p class="name">{$zb.nickname|urldecode}</p>
+                                    <p class="ynLiv">房间号{$zb.roomNumber}</p>
+                                </div>
+                                <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$zb.totalpoint} fl"></div>
+                            </a>
+                        </div>
+                    </volist>
+                    <!--月榜-->
+                    <volist name="zbyb" id="yb" offset="0" length="8">
+                        <div class="monthcharts charts hidenss row foLi outer">
+                            <a href="{$yb.roomNumber}">
+                                <img class="pull-left fl" src="{$yb.avatar}&h=55&w=55" alt=""/>
+                                <div class="pull-left fl">
+                                    <p class="name">{$yb.nickname|urldecode}</p>
+                                    <p class="ynLiv">房间号{$yb.roomNumber}</p>
+                                </div>
+                                <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$yb.totalpoint} fl"></div>
+                            </a>
+                        </div>
+                    </volist>
+                    <!--年榜-->
+                    <volist name="zbnb" id="nb" offset="0" length="8">
+                        <div class="yearcharts charts hidenss row foLi outer">
+                            <a href="{$nb.roomNumber}">
+                                <img class="pull-left fl" src="{$nb.avatar}&h=55&w=55" alt=""/>
+                                <div class="pull-left fl">
+                                    <p class="name">{$nb.nickname|urldecode}</p>
+                                    <p class="ynLiv">房间号{$nb.roomNumber}</p>
+                                </div>
+                                <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$nb.totalpoint} fl"></div>
+                            </a>
+                        </div>
                     </volist>
 
                 </div>
-            </div>
-            <!--申请入驻-->
-            <a href="javascript:;" class="thumbnail">
-                <img src="__PUBLIC__/images/download.jpg"/>
-            </a>
-
-            <!--主播排行榜-->
-            <div class="thumbnail text-left rank">
-                <div class="caption">
-                    <div class="row foTit outer">
-                        <h4 class="pull-left titH hidden-sm fl">主播排行榜</h4>
-                        <h4 class="pull-left titH visible-sm-block fl">主播榜</h4>
-                        <div class="pull-right titD">
-                            <a href="#" class="colorPin">周</a>
-                            <a href="#" class="colorPin">月</a>
-                            <a href="#" class="colorPin">年</a>
-                        </div>
-                    </div>
-
-                    <volist name="zbzb" id="zb" offset="0" length="6">
-
-                    <div class="row foLi outer">
-                        <a href="javascript:;">
-                            <img class="pull-left fl" src="{$zb.avatar}&h=60&w=60" alt=""/>
-                            <div class="pull-left fl">
-                                <p class="name">{$zb.nickname|urldecode}</p>
-                                <p class="ynLiv">房间号{$zb.roomNumber}</p>
+                       
+               </div>
+                
+                <!--土豪榜-->
+                <div class="thumbnail rich text-left">
+                         <div class="caption">
+                         	<div class="row foTit outer">
+                        		<h4 class="pull-left titH">土豪榜</h4>
+                                <div class="pull-right fl titD">
+                                    <a href="" class="colorPin week">周</a>
+                                    <a href="" class="colorPin month">月</a>
+                                    <a href="" class="colorPin year">年</a>
+                                </div>
+                        	</div>
+                         <!--周榜-->
+                             <volist name="thzb" id="thz" offset="0" length="8">
+                            <div class="weekcharts charts  row foLi outer">
+                                <a href="11">
+                                    <img class="pull-left fl" src="{$thz.avatar}&h=55&w=55" alt=""/>
+                                    <div class="pull-left fl">
+                                        <p class="name">{$thz.nickname|urldecode}</p>
+                                        <p class="ynLiv">{$thz.activelmg}</p>
+                                    </div>
+                                    <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$thz.totalpoint} fl"></div>
+                                </a>
                             </div>
-                            <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$zb.totalpoint} fl"></div>
-                        </a>
-                    </div>
-                    </volist>
+                         </volist>
+                             <!--月榜-->
+                             <volist name="thyb" id="thy" offset="0" length="8">
+                                 <div class="monthcharts charts hidenss row foLi outer">
+                                     <a href="22">
+                                         <img class="pull-left fl" src="{$thy.avatar}&h=55&w=55" alt=""/>
+                                         <div class="pull-left fl">
+                                             <p class="name">{$thy.nickname|urldecode}</p>
+                                             <p class="ynLiv">{$thy.activelmg}</p>
+                                         </div>
+                                         <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$thy.totalpoint} fl"></div>
+                                     </a>
+                                 </div>
+                             </volist>
+                             <!--年榜-->
+                             <volist name="thnb" id="thn" offset="0" length="8">
+                                 <div class="yearcharts charts hidenss row foLi outer">
+                                     <a href="11">
+                                         <img class="pull-left fl" src="{$thn.avatar}&h=55&w=55" alt=""/>
+                                         <div class="pull-left fl">
+                                             <p class="name">{$thn.nickname|urldecode}</p>
+                                             <p class="ynLiv">{$thn.activelmg}</p>
+                                         </div>
+                                         <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$thn.totalpoint} fl"></div>
+                                     </a>
+                                 </div>
+                             </volist>
 
-
-                </div>
-
-            </div>
-
-            <!--土豪榜-->
-            <div class="thumbnail rich text-left">
-                <div class="caption">
-                    <div class="row foTit outer">
-                        <h4 class="pull-left titH">土豪榜</h4>
-                        <div class="pull-right fl titD">
-                            <a href="#" class="colorPin">周</a>
-                            <a href="#" class="colorPin">月</a>
-                            <a href="#" class="colorPin">年</a>
-                        </div>
-                    </div>
-
-                    <volist name="thzb" id="zb" offset="0" length="6">
-                    <div class="row foLi outer">
-                        <a href="javascript:;">
-                            <img class="pull-left fl" src="{$zb.avatar}&h=60&w=60" alt=""/>
-                            <div class="pull-left fl">
-                                <p class="name">{$zb.nickname|urldecode}</p>
-                                <p class="ynLiv">{$zb.activelmg}</p>
+                         </div>
+                 </div>
+                
+                <!--粉丝活跃榜-->
+                <div class="fans thumbnail text-left">
+                         <div class="caption">
+                         	<div class="row foTit outer">
+                        		<h4 class="pull-left titH hidden-sm fl">粉丝活跃榜</h4>
+                                <h4 class="pull-left titH visible-sm-block fl">粉丝榜</h4>
+                                <div class="pull-right titD fl">
+                                    <a href="" class="colorPin week">周</a>
+                                    <a href="" class="colorPin month">月</a>
+                                    <a href="" class="colorPin year">年</a>
+                                </div>
+                        	</div>
+                             <!--周榜-->
+                             <volist name="fszb" id="fsz" offset="0" length="8">
+                            <div class="weekcharts charts  row foLi outer">
+                                <a href="11">
+                                    <img class="pull-left fl" src="{$fsz.avatar}&h=55&w=55" alt=""/>
+                                    <div class="pull-left fl">
+                                        <p class="name">{$fsz.nickname|urldecode}</p>
+                                        <p class="ynLiv">{$fsz.spenderlmg}</p>
+                                    </div>
+                                    <div class="pull-left fl spriteLev liverlevel-pic_liverlevel_{$fsz.totalpoint}}"></div>
+                                </a>
                             </div>
-                            <div class="pull-left spriteLev liverlevel-pic_liverlevel_{$zb.spender} fl"></div>
-                        </a>
-                    </div>
+                        </volist>
+                             <!--月榜-->
+                             <volist name="fsyb" id="fsy" offset="0" length="8">
+                                 <div class="monthcharts charts hidenss row foLi outer">
+                                     <a href="">
+                                         <img class="pull-left fl" src="{$fsy.avatar}&h=55&w=55" alt=""/>
+                                         <div class="pull-left fl">
+                                             <p class="name">{$fsy.nickname|urldecode}</p>
+                                             <p class="ynLiv">{$fsy.spenderlmg}</p>
+                                         </div>
+                                         <div class="pull-left fl spriteLev liverlevel-pic_liverlevel_{$fsy.totalpoint}}"></div>
+                                     </a>
+                                 </div>
+                             </volist>
+                             <!--年榜-->
+                             <volist name="fsnb" id="fsn" offset="0" length="8">
+                                 <div class="yearcharts charts hidenss row foLi outer">
+                                     <a href="javascript:;">
+                                         <img class="pull-left fl" src="{$fsn.avatar}&h=55&w=55" alt=""/>
+                                         <div class="pull-left fl">
+                                             <p class="name">{$fsn.nickname|urldecode}</p>
+                                             <p class="ynLiv">{$fsn.spenderlmg}</p>
+                                         </div>
+                                         <div class="pull-left fl spriteLev liverlevel-pic_liverlevel_{$fsn.totalpoint}}"></div>
+                                     </a>
+                                 </div>
+                             </volist>
 
-                 </volist>
-
-
-                </div>
-            </div>
-
-            <!--粉丝活跃榜-->
-            <div class="fans thumbnail text-left">
-                <div class="caption">
-                    <div class="row foTit outer">
-                        <h4 class="pull-left titH hidden-sm fl">粉丝活跃榜</h4>
-                        <h4 class="pull-left titH visible-sm-block fl">粉丝榜</h4>
-                        <div class="pull-right titD fl">
-                            <a href="#" class="colorPin">周</a>
-                            <a href="#" class="colorPin">月</a>
-                            <a href="#" class="colorPin">年</a>
-                        </div>
-                    </div>
-
-                    <volist name="fshyb" id="fs" offset="0" length="6">
-                    <div class="row foLi outer">
-                        <a href="javascript:;">
-                            <img class="pull-left fl" src="{$fs.avatar}&h=60&w=60" alt=""/>
-                            <div class="pull-left fl">
-                                <p class="name">{$fs.nickname|urldecode}</p>
-                                <p class="ynLiv">{$fs.spenderlmg}</p>
-                            </div>
-                            <div class="pull-left fl spriteLev liverlevel-pic_liverlevel_{$fs.active}"></div>
-                        </a>
-                    </div>
-                    </volist>
-
-
-                </div>
-
-            </div>
-
-        </div>
+                         </div>
+                   </div>
+        	</div>
+        </div>    
     </div>
-</div>
 
-<!-- login -->
-<input type="hidden" name="" id="url" value="{$url}">
-<div class="bgmask" style="height: 100%;z-index:20002;display: none;"></div>
+    <!-- login -->
+    <input type="hidden" name="" id="m_url" value="{:U('Login/index')}">
+    <!-- <div class="bgmask" style="height: 100%;z-index:20002;display: none;"></div>
     <div class="login-box-global-css" id="loginbox" style="display: none;">
         <div class="box_head">
             <div style="position:relative">
@@ -634,22 +657,22 @@
             </div>
             <ul class="loginswitch">
                 <li id="tab_login" class="regsw"><a href="javascript:void(0)"
-                    onclick="selectTagLoginBox('tab_login');refreshCode();"
-                    id="loginboxLoginbtn">登录</a></li>
+                                                    onclick="selectTagLoginBox('tab_login');refreshCode();"
+                                                    id="loginboxLoginbtn">登录</a></li>
                 <li class="" id="tab_reg"><a href="javascript:void(0)"
-                    onclick="selectTagLoginBox('tab_reg');refreshCode();"
-                    id="loginboxRegbtn">注册</a></li>
+                                             onclick="selectTagLoginBox('tab_reg');refreshCode();"
+                                             id="loginboxRegbtn">注册</a></li>
             </ul>
         </div>
-        <div class="clear"></div>
+        <div class="clear"></div> -->
         <!-- 注册 -->
-        <div class="rlbox" id="tab_reg_content" style="display: none;">
+        <!-- <div class="rlbox" id="tab_reg_content" style="display: none;">
             <div class="regbox">
                 <form id="registerForm" method="get" onsubmit="return false;">
                     <div class="regmail">
                         <div class="border_center topb">
                             <input type="text" id="reg_email" style="margin-top:0"
-                                placeholder="帐号(邮箱号)" class="input210">
+                                   placeholder="帐号(邮箱号)" class="input210">
                         </div>
                         <div class="border_right topb"></div>
                         <div class="oktip"></div>
@@ -659,7 +682,7 @@
                     <div class="regnic">
                         <div class="border_center topb">
                             <input type="text" id="reg_nickname" placeholder="昵称"
-                                class="input210 f_g">
+                                   class="input210 f_g">
                         </div>
                         <div class="border_right topb"></div>
                         <div class="oktip"></div>
@@ -668,7 +691,7 @@
                     <div class="regpw">
                         <div class="border_center topb">
                             <input type="password" id="reg_password" placeholder="创建密码"
-                                class="input210">
+                                   class="input210">
                         </div>
                         <div class="border_right topb"></div>
                         <div class="oktip"></div>
@@ -680,7 +703,7 @@
                     <div class="regpw2">
                         <div class="border_center topb">
                             <input type="password" id="reg_repassword" placeholder="确认密码"
-                                class="input210">
+                                   class="input210">
                         </div>
                         <div class="border_right topb"></div>
                         <div class="oktip"></div>
@@ -691,18 +714,18 @@
                     <div class="regcode">
                         <div class="border_center topb">
                             <input type="text" id="reg_vaildcode"
-                                placeholder="验&nbsp;证&nbsp;码" class="input100">
+                                   placeholder="验&nbsp;证&nbsp;码" class="input100">
                             <div class="checkCode"></div>
                         </div>
                         <div class="border_right topb"></div>
-                        <img src="__MODULE__/Login/verify" class="yzmimg yzmimg_reg" onclick="refreshRegCode()">
+                        <img src="" class="yzmimg yzmimg_reg" onclick="refreshRegCode()">
                         <div class="oktip"></div>
                         <div class="regdes" onclick="refreshRegCode()">刷新</div>
                         <div class="error" style="display: none;"></div>
                     </div>
                     <p class="agree_p">
                         <label class="agree"> <input type="checkbox"
-                            checked="true" id="agreement" class="icon_checked fl v-middle">
+                                                     checked="true" id="agreement" class="icon_checked fl v-middle">
                             我已阅读并同意 <a target="_blank" href="#">网站使用协议</a>
                         </label>
                     </p>
@@ -710,23 +733,23 @@
                 </form>
                 <div class="other_login_area">
                     <span class="other_log_qq"> <a
-                        href="javascript:login.qqlogin()"></a>
+                            href="javascript:login.qqlogin()"></a>
                     </span> <span class="other_log_sina"> <a
                         href="javascript:login.wxlogin()" class="Stat 2_2"></a>
                     </span>
                 </div>
             </div>
             <div></div>
-        </div>
-<!--登录-->
-        <div class="rlbox" id="tab_login_content" style="display: block;">
-            <div class="regbox logbox">
+        </div> -->
+        <!--登录-->
+        <!-- <div class="rlbox" id="tab_login_content" style="display: block;">
+            <div class="regbox logbox"> -->
                 <!--form id="login_form2" onsubmit="return false;"-->
-                <form method="post" id="login_form2" name="login" onsubmit="return false;">
+                <!-- <form method="post" id="login_form2" name="login" onsubmit="return false;">
                     <div class="regmail lip">
                         <div class="border_center topb">
                             <input type="text" id="tcuser" placeholder="帐号(邮箱号)"
-                                class="input210" style="color: rgb(153, 153, 153);margin-top:0">
+                                   class="input210" style="color: rgb(153, 153, 153);margin-top:0">
                         </div>
                         <div class="border_right topb"></div>
                         <div class="oktip"></div>
@@ -747,12 +770,12 @@
                     <div class="log_yzm lip">
                         <div class="border_center topb">
                             <input type="text" id="login_vaildcode" placeholder="验证码"
-                                class="input100">
+                                   class="input100">
                         </div>
                         <div class="border_right topb"></div>
                         <img class="yzmimg yzmimg_login" style="width: 65px;"
-                            alt="点击图片切换验证码" onclick="refreshCode();"
-                            src="__PUBLIC__/login/img/captcha.jpg">
+                             alt="点击图片切换验证码" onclick="refreshCode();"
+                             src="__PUBLIC__/login/img/captcha.jpg">
                         <div class="oktip"></div>
                         <div class="regdes" onclick="refreshCode();">刷新</div>
                         <div class="error" style="display: none;"></div>
@@ -760,7 +783,7 @@
                     </div>
                     <p class="agree_p">
                         <label class="agree"> <input type="checkbox"
-                            id="tcremember" class="icon_checked fl v-middl" checked="true">
+                                                     id="tcremember" class="icon_checked fl v-middl" checked="true">
                             下次自动登录 <a target="_blank" href="javascript:;">忘记密码</a>
                         </label>
                     </p>
@@ -768,55 +791,49 @@
                 </form>
                 <div class="other_login_area">
                     <span class="other_log_qq"> <a
-                        href="javascript:login.qqlogin()"></a>
+                            href="javascript:login.qqlogin()"></a>
                     </span> <span class="other_log_sina"> <a
                         href="javascript:login.wxlogin()" class="Stat 2_2"></a>
                     </span>
                 </div>
             </div>
         </div>
-    </div>
-<!-- login over -->
-<!--底部-->
-<div class="bs-docs-footer navbar-inverse" role="contentinfo">
-    <div class="container">
-        <p>
-            <a href="javascript:;">关于蝌蚪 </a>|
-            <a href="javascript:;">服务协议 </a>|
-            <a href="javascript:;">客服帮助 </a>|
-            <a href="javascript:;">关于我们 </a>|
-            <a href="javascript:;">版权声明</a>
+    </div> -->
+    <!-- login over -->
 
-        </p>
-        <p>
-            <img src="__PUBLIC__/images/logo_foot.png"/>
-            <span> -Copyright©2016 沪ICP备14054721号</span>
-        </p>
-        <p>蝌蚪客服电话：021-63156389 | 商务合作邮箱：
-            <a class="officialMailbox" href="mailto:mt@mutiantech.com">kd@kedo.tv</a>
-        </p>
-    </div>
-</div>
+    <!--底部-->
+	<div class="bs-docs-footer navbar-inverse" role="contentinfo">
+		<div class="container">
+			<p>
+            	<a href="javascript:;">关于蝌蚪 </a>|
+            	<a href="javascript:;">服务协议 </a>|
+                <a href="javascript:;">客服帮助 </a>|
+                <a href="javascript:;">关于我们 </a>|            
+                <a href="javascript:;">版权声明</a>
+                
+            </p>
+            <p>
+            	<img src="__PUBLIC__/images/logo_foot.png"/>
+                <span> -Copyright©2016 沪ICP备14054721号</span>
+            </p>
+            <p>蝌蚪客服电话：021-63156389 | 商务合作邮箱：
+            	<a class="officialMailbox" href="mailto:mt@mutiantech.com">kd@kedo.tv</a>
+            </p>
+		</div>
+	</div>
 
-<!-- 2 jQuery库 同时加载该库必须在加载bootstrap.min.js之前 -->
-<script src="__PUBLIC__/js/jquery-1.12.2.min.js"></script>
-<!-- 3 加载bootstrap的核心ＪＳ库 -->
-<script src="__PUBLIC__/js/bootstrap.min.js"></script>
-<script src="__PUBLIC__/js/boot.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
-<!--<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
-<script type="text/javascript">
-        $(document).ready(function(){
-            $('.login').click(function(){
-                //$('.bgmask').show();
-                //$('.login-box-global-css').show();
-            });
-            $('.bgmask').click(function(){
-                //$('.login-box-global-css').hide();
-               // $('.bgmask').hide();
-            });
-        });
-    </script>
-</body>
+    
+   
+    
+    <!-- 2 jQuery库 同时加载该库必须在加载bootstrap.min.js之前 -->
+
+    <!-- 3 加载bootstrap的核心ＪＳ库 -->
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/boot.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+    <!--<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    
+
+  </body>
 </html>

@@ -12,11 +12,110 @@ function password($password){
 	return md5('ke'.$password.'do');
 
 }
+
+
+//curl配置级调用方法一
+function curl_post($url, $post) {
+
+	$options = array(
+		CURLOPT_RETURNTRANSFER => true,
+		CURLOPT_HEADER         => false,
+		CURLOPT_POST           => true,
+		CURLOPT_POSTFIELDS     => $post,
+	);
+	$ch = curl_init($url);
+	curl_setopt_array($ch, $options);
+	$result = curl_exec($ch);
+	curl_close($ch);
+	return $result;
+}
+
+
+function curl_get($get_url,$get_param){
+	global $tm;
+	if($tm){
+		echo "<br>loadBegin:".getMillisecond();
+	}
+
+	$oCurl = curl_init();
+	if(stripos($get_url,"https://")!==FALSE){
+		curl_setopt($oCurl, CURLOPT_SSL_VERIFYPEER, FALSE);
+		curl_setopt($oCurl, CURLOPT_SSL_VERIFYHOST, FALSE);
+	}
+	$aGet = array();
+	foreach($get_param as $key=>$val){
+		$aGet[] = $key."=".urlencode($val);
+	}
+	curl_setopt($oCurl, CURLOPT_URL, $get_url."?".join("&",$aGet));
+	curl_setopt($oCurl, CURLOPT_RETURNTRANSFER, 1 );
+	curl_setopt($oCurl, CURLOPT_TIMEOUT, 1);
+	$sContent = curl_exec($oCurl);
+	$aStatus = curl_getinfo($oCurl);
+	curl_close($oCurl);
+
+	if(intval($aStatus["http_code"])==200){
+		return $sContent;
+	}else{
+		return FALSE;
+	}
+}
+///*curl调用方法*/
+//$ab=curl_post(接口地址);
+
+/**
+ * 发送HTTP请求方法二
+ * @param  string $url    请求URL
+ * @param  array  $params 请求参数
+ * @param  string $method 请求方法GET/POST
+ * @return array  $data   响应数据
+ */
+function http($url, $params, $method = 'GET', $header = array(), $multi = false){
+	$opts = array(
+		CURLOPT_TIMEOUT        => 30,
+		CURLOPT_RETURNTRANSFER => 1,
+		CURLOPT_SSL_VERIFYPEER => false,
+		CURLOPT_SSL_VERIFYHOST => false,
+		CURLOPT_HTTPHEADER     => $header,
+	);
+
+	/* 根据请求类型设置特定参数 */
+	switch(strtoupper($method)){
+		case 'GET':
+			$opts[CURLOPT_URL] = $url . '?' . http_build_query($params);
+			break;
+		case 'POST':
+			//判断是否传输文件
+			$params = $multi ? $params : http_build_query($params);
+			$opts[CURLOPT_URL] = $url;
+			$opts[CURLOPT_POST] = 1;
+			$opts[CURLOPT_POSTFIELDS] = $params;
+			break;
+		default:
+			throw new Exception('不支持的请求方式！');
+	}
+
+	/* 初始化并执行curl请求 */
+	$ch = curl_init($url);
+	curl_setopt_array($ch, $opts);
+	$data  = curl_exec($ch);
+	$error = curl_error($ch);
+	curl_close($ch);
+	if($error) throw new Exception('请求发生错误：' . $error);
+	return  $data;
+}
+/*curl调用方法*/
+//        //定义一个要发送的目标URL；
+//        $url = "https://www.xxx.com";
+//        //定义传递的参数数组；
+//        $data['aaa']='aaaaa';
+//        $data['bbb']='bbbb';
+//        //定义返回值接收变量；
+//        $httpstr = http($url, $data, 'POST', array("Content-type: text/html; charset=utf-8"));
+
 define("_IMAGES_DOMAIN_","http://images.181show.com");
 define('_REDIS_HOST_','112.124.58.61');//redis地址
 define('_REDIS_PWD_','foobareds');//redis地址
 define('_REDIS_KEYB_','loc');
-define('_COOKIE_DOMAIN_',$_SERVER['HTTP_HOST']);
 
 function nickname_black_list(){
 	return array("'",'"','-','|',',','admin','root','官方','客服','运营','管理','毛泽东','周恩来','刘少奇',

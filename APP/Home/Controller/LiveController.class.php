@@ -9,9 +9,9 @@ class LiveController extends Controller{
 	
 	public function index(){
 		//live
-		header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
-		header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
-		header("Pragma: no-cache");
+		// header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+		// header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
+		// header("Pragma: no-cache");
 		/*if(strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 6.0') !== false ){
 		    header("Location:/html/noie6.html");
 		}*/
@@ -32,6 +32,7 @@ class LiveController extends Controller{
 		    $BSG=$_COOKIE["sbg"];
 		}
 		$roomnumber=(int)$_GET['roomnumber'];
+		$roomnumber = 1029;
 
 		//tokern校验
 		// $db->Execute("update bu_user_packs set liveDT='".time()."' where userId='{$user[userId]}'");
@@ -55,7 +56,7 @@ class LiveController extends Controller{
 		//
 		$model = M('bu_user');
 		$userid = $_SESSION['userid'];
-		$showinfo = $model->join("bu_user_anchors on bu_user_anchors.userId = bu_user.userId")->where(array("bu_user_anchors.roomnumber"=>$roomnumber,"bu_user_anchors.status"=>1,"bu_user.status"=>1))->select();
+		$showinfo = $model->join("bu_user_anchors on bu_user_anchors.userId = bu_user.userId")->where(array("bu_user_anchors.roomNumber"=>$roomnumber,"bu_user_anchors.status"=>1,"bu_user.status"=>1))->select();
 		if (!$showinfo) {
 			//
 		}
@@ -92,6 +93,7 @@ class LiveController extends Controller{
 		//礼物
 		$gift = M('gift');
 		$rs = $gift->join("giftcate on gift.giftcateid = giftcate.giftcateid")->where(array("giftcate.type"=>0))->order('gift.indexs desc')->select();
+		//dump($rs);
 		//
 		$giftId = $giftinfo = array();
 
@@ -109,15 +111,30 @@ class LiveController extends Controller{
 		// 	$giftinfo[$arr['giftcateid']][]=$arr;
 		// 	$giftId[$arr["giftid"]] = $arr;
 		// }
+
+		for ($i=0; $i <count($rs) ; $i++) { 
+			$arr = $rs[$i];
+			$arr['class'] = str_replace('.png','',$arr['giftimage']);
+			$arr['class'] = str_replace('.gif','',$arr['class']);
+			if (in_array($arr['giftid'],$zhou_xing)) {
+				$arr['week'] = true;
+				$zhou_xing_gift[$arr['giftid']] = $arr;
+			}
+			$giftinfo[$arr['giftcateid']][]=$arr;
+			$giftId[$arr['giftid']] = $arr;
+		}
 		shuffle($zhou_xing_gift);
 		//$rs=$db->Execute("select * from giftcate WHERE type=0 order by indexs DESC");
-		$rs = M('giftcate')->where(array('type'=>0))->order('indexs desc')->select();
+		$rs1 = M('giftcate')->where(array('type'=>0))->order('indexs desc')->select();
 
 		$giftcate = array();
 		// while($arr=$rs->FetchRow()){
 		// 	$giftcate[$arr["giftcateid"]] = $arr;
 		// }
-
+		for ($i=0; $i <count($rs1) ; $i++) { 
+			$giftcate[$arr['giftcateid']] = $rs1[$i];
+		}
+		
 		$redis = new \Redis();
 		$redis->connect(_REDIS_HOST_, 6379);
 		$redis->auth(_REDIS_PWD_);
@@ -155,6 +172,7 @@ class LiveController extends Controller{
 		$this->assign('showinfo',$showinfo);
 		$this->assign('site_name',$site_name);
 		$this->assign('skinType',$skinType);
+		$this->assign('vsn',$vsn);
 		//include($app_path."live_comic.php");
 		//include($app_path."include/footer.inc.php");
 		//live over

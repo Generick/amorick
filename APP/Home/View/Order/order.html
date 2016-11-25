@@ -1,32 +1,16 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<link href="__PUBLIC__/css/anchor-level.css" rel="stylesheet">
-<title>广场-蝌蚪直播</title>
-<meta property="qc:admins" content="105415766763547646">
-<meta name="description" content="超人气视频直播互动娱乐社区，在这里你可以展示自己的才艺，也可以跟众多优秀的美女主播在线互动聊天、视频交友">
-<link data-fixed="true" href="__PUBLIC__/css/square.css" rel="stylesheet">
-<link href="__PUBLIC__/css/icons.css" rel="stylesheet">
-<link href="__PUBLIC__/css/index.css" rel="stylesheet">
-<link href="__PUBLIC__/css/login.css" type="text/css" rel="stylesheet">
-</head>
-<body style="zoom: 1;">
-<include file="Public/header" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=9" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>排行榜-蝌蚪直播</title>
 
-	<div class="head-outer btline">
-		<div class="header clearFix">
-			<a class="hd_bg fl" href="/"></a>
-			<ul class="nav fl">
-				<li class="fl "><a href="__MODULE__">首页</a></li>
-				<li class="fl "><a href="{:U('Square/square')}">广场</a></li>
-				<li class="fl "><a href="{:U('Mall/mall')}">商城</a></li>
-				<li class="fl cu"><a href="#">排行榜</a></li>
-			</ul>
 
-			<include file="Public/head" />
-		</div>
-	</div>
+	<include file="Public/head" />
 
+<!--主体-->
 	<div class="main-order">
 		<div class="order-list">
 			<div class="order-box-outer charmList">
@@ -47,97 +31,151 @@
 						<div class="orderItem cur">
 							<div class="order-box-top">
 
+								<!--第二名-->
+								<volist name="mlb" id="ml" offset="1" length="1">
 								<a href="/.html" class="order-box-second">
 									<div class="order-second-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/d5feef62c58c4048e42c16ca63a61987"
-											alt="苦艾酒"> <span class="secondCrown"></span>
+										<img class="rank_pho" src="{$ml.image}" alt="hellobaby">
+										<span class="secondCrown"></span>
 									</div>
 									<div class="order-first-name">
-										<span class="sec sprite consumelevel-pic_consumelevel_7"></span>苦艾酒
+										<!--<span class="sec sprite consumelevel-pic_consumelevel_7"></span>苦艾酒2222-->
+										<span class="sec {$ml.levelImg}"></span>{$ml.nickName|urldecode}
 									</div>
 									<div class="order-second-level">
 										<span></span>
 									</div>
-								</a> <a href="/.html" target="_blank" class="order-box-first">
+								</a>
+								</volist>
+
+								<!--第一名-->
+								<volist name="mlb" id="ml" offset="0" length="1">
+								<a href="/.html" target="_blank" class="order-box-first">
 									<div class="order-first-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/128474f5fa24aac08adf87c316f3c091"
-											alt="小耳朵增可爱"> <span class="crown"></span> <span
-											class="crown"></span>
+										<img class="rank_pho" src="{$ml.image}" alt="hellobaby">
+										<span class="crown"></span>
+										<span class="crown"></span>
 									</div>
 									<div class="order-first-name">
-										<span class="sec sprite liverlevel-pic_liverlevel_24"></span>小耳朵增可爱
+										<!--<span class="sec sprite liverlevel-pic_liverlevel_24"></span>{$ml.nickName|urldecode}-->
+										<span class="sec {$ml.levelImg}"></span>{$ml.nickName|urldecode}
 									</div>
 									<div class="order-first-level">
 										<span></span>
 									</div>
-								</a> <a href="/.html" class="order-box-third">
+								</a>
+								</volist>
+
+
+								<!--第三名-->
+								<volist name="mlb" id="ml" offset="3" length="1">
+								<a href="/.html" class="order-box-third">
 									<div class="order-third-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/2c7b5b68ce3f4978df3fee6838ab7111"
-											alt="昨天的事情"> <span class="thirdCrown"></span>
+										<img class="rank_pho" src="{$ml.image}" alt="hellobaby">
+										<span class="thirdCrown"></span>
 									</div>
 									<div class="order-first-name">
-										<span class="sec sprite liverlevel-pic_liverlevel_22"></span>昨天的事情
+										<!--<span class="sec sprite liverlevel-pic_liverlevel_22"></span>昨天的事情-->
+										<span class="sec {$ml.levelImg}"></span>{$ml.nickName|urldecode}
 									</div>
 									<div class="order-third-level">
 										<span></span>
 									</div>
 								</a>
+								</volist>
+
 							</div>
+
 							<div class="clear"></div>
 							<div class="order-box-bottom">
 								<ul>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">4.</span> <span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_2"></span>
-											<span class="order-second-name">赞义大王</span>
+									<volist name="mlb" id="ml" offset="4" length="1">
+									<li><a href="/.html" target="_blank">
+										<span class="number">4.</span>
+										<span class="diamond sprite {$ml.levelImg}"></span>
+										<span class="order-second-name">{$ml.nickName|urldecode}</span>
 									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">5.</span> <span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_1"></span>
-											<span class="order-second-name">头大大</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">6.</span> <span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_0"></span>
-											<span class="order-second-name">春天的雪花</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">7.</span> <span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_0"></span>
-											<span class="order-second-name">别问我是谁</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">8.</span> <span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_0"></span>
-											<span class="order-second-name">晒太阳一号</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">9.</span> <span class="diamond sprite "></span>
-											<span class="order-second-name">~姐很~自然~</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">10.</span> <span class="diamond sprite "></span>
-											<span class="order-second-name">白糖✔</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">11.</span> <span class="diamond sprite "></span>
-											<span class="order-second-name">rongrong</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">12.</span> <span class="diamond sprite "></span>
-											<span class="order-second-name">爱，你懂吗</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">13.</span> <span class="diamond sprite "></span>
-											<span class="order-second-name">不见不散</span>
-									</a></li>
-									<li><a href="/.html" target="_blank"> <span
-											class="number">14.</span> <span class="diamond sprite "></span>
-											<span class="order-second-name">淡伤</span>
-									</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="5" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">5.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="6" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">6.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="7" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">7.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="8" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">8.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="9" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">9.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="10" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">10.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="11" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">11.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="12" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">12.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="13" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">13.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="mlb" id="ml" offset="14" length="1">
+										<li><a href="/.html" target="_blank">
+											<span class="number">14.</span>
+											<span class="diamond sprite {$ml.levelImg}"></span>
+											<span class="order-second-name">{$ml.nickName|urldecode}</span>
+										</a></li>
+									</volist>
 
 								</ul>
 							</div>
@@ -310,99 +348,150 @@
 						<div class="orderItem cur">
 							<div class="order-box-top">
 
-								<a href="javascript:;" class="order-box-second">
-									<div class="order-second-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/d5feef62c58c4048e42c16ca63a61987"
-											alt="苦艾酒"> <span class="secondCrown"></span>
-									</div>
-									<div class="order-first-name">
-										<span class="sec sprite consumelevel-pic_consumelevel_7"></span>苦艾酒
-									</div>
-									<div class="order-second-level">
-										<span></span>
-									</div>
-								</a> <a href="javascript:;" class="order-box-first">
-									<div class="order-first-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/128474f5fa24aac08adf87c316f3c091"
-											alt="小耳朵增可爱"> <span class="crown"></span> <span
-											class="crown"></span>
-									</div>
-									<div class="order-first-name">
-										<span class="sec sprite consumelevel-pic_consumelevel_12"></span>小耳朵增可爱
-									</div>
-									<div class="order-first-level">
-										<span></span>
-									</div>
-								</a> <a href="javascript:;" class="order-box-third">
-									<div class="order-third-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/2c7b5b68ce3f4978df3fee6838ab7111"
-											alt="昨天的事情"> <span class="thirdCrown"></span>
-									</div>
-									<div class="order-first-name">
-										<span class="sec sprite consumelevel-pic_consumelevel_7"></span>昨天的事情
-									</div>
-									<div class="order-third-level">
-										<span></span>
-									</div>
-								</a>
+								<!--第二名-->
+								<volist name="jwb" id="jw" offset="1" length="1">
+									<a href="javascript:;" class="order-box-second">
+										<div class="order-second-img">
+											<img class="rank_pho" src="{$jw.image}" alt="hellobaby">
+											<span class="secondCrown"></span>
+										</div>
+										<div class="order-first-name">
+											<!--<span class="sec sprite consumelevel-pic_consumelevel_7"></span>苦艾酒2222-->
+											<span class="sec {$jw.levelImg}"></span>{$jw.nickName|urldecode}
+										</div>
+										<div class="order-second-level">
+											<span></span>
+										</div>
+									</a>
+								</volist>
+
+								<!--第一名-->
+								<volist name="jwb" id="jw" offset="0" length="1">
+									<a href="javascript:;" target="_blank" class="order-box-first">
+										<div class="order-first-img">
+											<img class="rank_pho" src="{$jw.image}" alt="hellobaby">
+											<span class="crown"></span>
+											<span class="crown"></span>
+										</div>
+										<div class="order-first-name">
+											<!--<span class="sec sprite liverlevel-pic_liverlevel_24"></span>{$ml.nickName|urldecode}-->
+											<span class="sec {$jw.levelImg}"></span>{$jw.nickName|urldecode}
+										</div>
+										<div class="order-first-level">
+											<span></span>
+										</div>
+									</a>
+								</volist>
+
+
+								<!--第三名-->
+								<volist name="jwb" id="jw" offset="3" length="1">
+									<a href="javascript:;" class="order-box-third">
+										<div class="order-third-img">
+											<img class="rank_pho" src="{$jw.image}" alt="hellobaby">
+											<span class="thirdCrown"></span>
+										</div>
+										<div class="order-first-name">
+											<!--<span class="sec sprite liverlevel-pic_liverlevel_22"></span>昨天的事情-->
+											<span class="sec {$jw.levelImg}"></span>{$jw.nickName|urldecode}
+										</div>
+										<div class="order-third-level">
+											<span></span>
+										</div>
+									</a>
+								</volist>
 
 							</div>
 							<div class="clear"></div>
 							<div class="order-box-bottom">
 								<ul>
+									<volist name="jwb" id="jw" offset="4" length="1">
+									<li><a href="javascript:;">
+										<span class="number">4.</span>
+										<span class="diamond sprite {$jw.levelImg}"></span>
+										<span class="order-second-name">{$jw.nickName|urldecode}</span>
+									</a></li>
+									</volist>
 
-									<li><a href="javascript:;"> <span class="number">4.</span>
-											<span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_2"></span>
-											<span class="order-second-name">赞义大王</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">5.</span>
-											<span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_1"></span>
-											<span class="order-second-name">头大大</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">6.</span>
-											<span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_0"></span>
-											<span class="order-second-name">春天的雪花</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">7.</span>
-											<span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_0"></span>
-											<span class="order-second-name">别问我是谁</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">8.</span>
-											<span
-											class="diamond sprite sprite consumelevel-pic_consumelevel_0"></span>
-											<span class="order-second-name">晒太阳一号</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">9.</span>
-											<span class="diamond sprite "></span> <span
-											class="order-second-name">~姐很~自然~</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">10.</span>
-											<span class="diamond sprite "></span> <span
-											class="order-second-name">白糖✔</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">11.</span>
-											<span class="diamond sprite "></span> <span
-											class="order-second-name">rongrong</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">12.</span>
-											<span class="diamond sprite "></span> <span
-											class="order-second-name">爱，你懂吗</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">13.</span>
-											<span class="diamond sprite "></span> <span
-											class="order-second-name">不见不散</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">14.</span>
-											<span class="diamond sprite "></span> <span
-											class="order-second-name">淡伤</span>
-									</a></li>
+									<volist name="jwb" id="jw" offset="5" length="1">
+										<li><a href="javascript:;">
+											<span class="number">5.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="6" length="1">
+										<li><a href="javascript:;">
+											<span class="number">6.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="7" length="1">
+										<li><a href="javascript:;">
+											<span class="number">7.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="8" length="1">
+										<li><a href="javascript:;">
+											<span class="number">8.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="9" length="1">
+										<li><a href="javascript:;">
+											<span class="number">9.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="10" length="1">
+										<li><a href="javascript:;">
+											<span class="number">10.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="11" length="1">
+										<li><a href="javascript:;">
+											<span class="number">11.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="12" length="1">
+										<li><a href="javascript:;">
+											<span class="number">12.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="13" length="1">
+										<li><a href="javascript:;">
+											<span class="number">13.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="jwb" id="jw" offset="14" length="1">
+										<li><a href="javascript:;">
+											<span class="number">14.</span>
+											<span class="diamond sprite {$jw.levelImg}"></span>
+											<span class="order-second-name">{$jw.nickName|urldecode}</span>
+										</a></li>
+									</volist>
 
 								</ul>
 							</div>
@@ -575,106 +664,154 @@
 						<div class="orderItem cur">
 							<div class="order-box-top">
 
-								<a href="javascript:;" class="order-box-second">
-									<div class="order-second-img">
+								<!--第二名-->
+								<volist name="hyb" id="hy" offset="1" length="1">
+									<a href="javascript:;" class="order-box-second">
+										<div class="order-second-img">
+											<img class="rank_pho" src="{$hy.image}" alt="hellobaby">
+											<span class="secondCrown"></span>
+										</div>
+										<div class="order-first-name">
+											<!--<span class="sec sprite consumelevel-pic_consumelevel_7"></span>苦艾酒2222-->
+											<span class="sec {$hy.levelImg}"></span>{$hy.nickName|urldecode}
+										</div>
+										<div class="order-second-level">
+											<span></span>
+										</div>
+									</a>
+								</volist>
 
-										<img class="rank_pho"
-											src="http://img.kedo.tv/128474f5fa24aac08adf87c316f3c091"
-											alt="小耳朵增可爱"> <span class="secondCrown"></span>
-									</div>
-									<div class="order-first-name">
-										<span class="sec sprite activelevel-pic_activelevel_6"></span>小耳朵增可爱
-									</div>
-									<div class="order-second-level">
-										<span></span>
-									</div>
-								</a> <a href="javascript:;" class="order-box-first">
-									<div class="order-first-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/b809265e1afc3a737571664bfa294eec"
-											alt="淡淡DE"> <span class="crown"></span> <span
-											class="crown"></span>
-									</div>
-									<div class="order-first-name">
-										<span class="sec sprite activelevel-pic_activelevel_8"></span>淡淡DE
-									</div>
-									<div class="order-first-level">
-										<span></span>
-									</div>
-								</a> <a href="javascript:;" class="order-box-third">
-									<div class="order-third-img">
-										<img class="rank_pho"
-											src="http://img.kedo.tv/2c7b5b68ce3f4978df3fee6838ab7111"
-											alt="昨天的事情"> <span class="thirdCrown"></span>
-									</div>
-									<div class="order-first-name">
-										<span class="sec sprite activelevel-pic_activelevel_6"></span>昨天的事情
-									</div>
-									<div class="order-third-level">
-										<span></span>
-									</div>
-								</a>
+								<!--第一名-->
+								<volist name="jwb" id="jw" offset="0" length="1">
+									<a href="javascript:;" target="_blank" class="order-box-first">
+										<div class="order-first-img">
+											<img class="rank_pho" src="{$jw.image}" alt="hellobaby">
+											<span class="crown"></span>
+											<span class="crown"></span>
+										</div>
+										<div class="order-first-name">
+											<!--<span class="sec sprite liverlevel-pic_liverlevel_24"></span>{$ml.nickName|urldecode}-->
+											<span class="sec {$jw.levelImg}"></span>{$hy.nickName|urldecode}
+										</div>
+										<div class="order-first-level">
+											<span></span>
+										</div>
+									</a>
+								</volist>
+
+
+								<!--第三名-->
+								<volist name="hyb" id="hy" offset="3" length="1">
+									<a href="javascript:;" class="order-box-third">
+										<div class="order-third-img">
+											<img class="rank_pho" src="{$hy.image}" alt="hellobaby">
+											<span class="thirdCrown"></span>
+										</div>
+										<div class="order-first-name">
+											<!--<span class="sec sprite liverlevel-pic_liverlevel_22"></span>昨天的事情-->
+											<span class="sec {$hy.levelImg}"></span>{$hy.nickName|urldecode}
+										</div>
+										<div class="order-third-level">
+											<span></span>
+										</div>
+									</a>
+								</volist>
+
+
 
 							</div>
 							<div class="clear"></div>
 							<div class="order-box-bottom">
 								<ul>
+									<volist name="hyb" id="hy" offset="4" length="1">
+									<li><a href="javascript:;">
+										<span class="number">4.</span>
+										<span class="diamond sprite {$hy.levelImg}"></span>
+										<span class="order-second-name">{$hy.nickName|urldecode}</span>
+									</a></li>
+									</volist>
 
-									<li><a href="javascript:;"> <span class="number">4.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_5"></span>
-											<span class="order-second-name">雅妹妹丶</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">5.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_5"></span>
-											<span class="order-second-name">滋滋 ぃ</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">6.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_5"></span>
-											<span class="order-second-name">软软丶</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">7.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">杀手古德</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">8.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">春天的雪花</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">9.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">晒太阳一号</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">10.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">治愈系❤楠楠</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">11.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">污力大胸弟</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">12.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">桃安</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">13.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_4"></span>
-											<span class="order-second-name">小雨燕</span>
-									</a></li>
-									<li><a href="javascript:;"> <span class="number">14.</span>
-											<span
-											class="diamond sprite sprite activelevel-pic_activelevel_3"></span>
-											<span class="order-second-name">Loong</span>
-									</a></li>
+									<volist name="hyb" id="hy" offset="5" length="1">
+										<li><a href="javascript:;">
+											<span class="number">5.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="6" length="1">
+										<li><a href="javascript:;">
+											<span class="number">6.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="7" length="1">
+										<li><a href="javascript:;">
+											<span class="number">7.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="8" length="1">
+										<li><a href="javascript:;">
+											<span class="number">8.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="9" length="1">
+										<li><a href="javascript:;">
+											<span class="number">9.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="10" length="1">
+										<li><a href="javascript:;">
+											<span class="number">10.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="11" length="1">
+										<li><a href="javascript:;">
+											<span class="number">11.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="12" length="1">
+										<li><a href="javascript:;">
+											<span class="number">12.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="13" length="1">
+										<li><a href="javascript:;">
+											<span class="number">13.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+									<volist name="hyb" id="hy" offset="14" length="1">
+										<li><a href="javascript:;">
+											<span class="number">14.</span>
+											<span class="diamond sprite {$hy.levelImg}"></span>
+											<span class="order-second-name">{$hy.nickName|urldecode}</span>
+										</a></li>
+									</volist>
+
+
 
 
 								</ul>

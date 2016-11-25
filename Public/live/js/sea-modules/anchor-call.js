@@ -4,12 +4,12 @@ define(function(require, exports, module) {
 	var swf = require("./anchor-swf");
 	var ani = require("./anchor-anchor");
 	var uni = require("./anchor-user");
-	var gift = require("./anchor-gift");
-	var guards = require("./anchor-guard");
-	var hall = require("./anchor-hall");
-	var chat = require("./anchor-chat");
-	var list = require("./anchor-list");
-	module.exports = {
+        var gift = require("./anchor-gift");
+    var guards = require("./anchor-guard");
+    var hall = require("./anchor-hall");
+    var chat = require("./anchor-chat");
+    var list = require("./anchor-list");
+    module.exports = {
 		status : function(data) {
 			lvs.stat(jQuery.parseJSON(data));
 		},
@@ -26,7 +26,9 @@ define(function(require, exports, module) {
 		},
 		anchorsHeadInfo : function(data) {
 			UIF.log("主播信息：" + data);
-			ani.onMessage(jQuery.parseJSON(data));
+			var d = jQuery.parseJSON(data);
+            ani.onMessage(d);
+            list.flushBuUsers(d.userList);
 			var boos = UIF.handler.cache.get(cons.LOCAL_TIMENICES);
 			if (!boos) {
 				chat.onNotice(jQuery.parseJSON(data));
@@ -59,9 +61,12 @@ define(function(require, exports, module) {
 		},
 		userEntersCars : function(data) {
 			UIF.log("进场特效：" + data);
-			chat.welcome(jQuery.parseJSON(data));
-			setTimeout(gift.enterCar(jQuery.parseJSON(data)), 5000);
-			list.addUsers(jQuery.parseJSON(data));
+            var pd = jQuery.parseJSON(data);
+			chat.welcome(pd);
+            list.welcome(pd);
+            list.flushBuUsers();
+			setTimeout(gift.enterCar(pd), 10000);
+			list.addUsers(pd);
 		},
 		guardList : function(data) {
 			UIF.log("守护列表：" + data);
@@ -87,10 +92,10 @@ define(function(require, exports, module) {
 			UIF.log("直播间飞屏：" + data);
 			chat.onFlyMsg(jQuery.parseJSON(data));
 		},
-		chatAFFMessage : function(data) {
+		/*chatAFFMessage : function(data) {
 			UIF.log("全站公告：" + data);
 			chat.onAffMsg(jQuery.parseJSON(data));
-		},
+		},*/
 		roomBanned : function(data) {
 			UIF.log("禁止发言：" + data);
 			chat.banned(jQuery.parseJSON(data));
@@ -102,19 +107,27 @@ define(function(require, exports, module) {
 		upgrades : function(data) {
 			UIF.log("爵位升级：" + data);
 			gift.speGift(jQuery.parseJSON(data));
-			chat.onAffMsg(jQuery.parseJSON(data));
+			//chat.onAffMsg(jQuery.parseJSON(data));
 		},
 		sendUsers : function(data) {
 			UIF.log("收到礼物：" + data);
 			gift.sendRecord(jQuery.parseJSON(data));
 		},
 		censor : function(data) {
-			UIF.log("关闭直播间：" + data);
+			UIF.log("查封直播间：" + data);
 			swf.censor(jQuery.parseJSON(data));
 		},
 		anchorPK : function(data) {
 			UIF.log("主播pk信息：" + data);
 			swf.anchorPK(jQuery.parseJSON(data));
+		},
+		guardsMessage : function(data) {
+			UIF.log("守护升级：" + data);
+			guards.onMessage(jQuery.parseJSON(data));
+		},
+		Runway: function(data){
+			UIF.log("全站跑道：" + data);
+			chat.runMsg(jQuery.parseJSON(data));
 		}
 	}
 })

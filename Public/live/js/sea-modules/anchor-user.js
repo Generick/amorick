@@ -20,7 +20,7 @@ define(function(require, exports, module) {
 			base.container = $(".nav-left .nl-login .main-title .infoBox");
 			base.container2 = $(".newGifts .portraits");
 			base.container.find(".kb").text(Tools.nreplace(base.data.coins));
-			base.container.find(".mtname").text(base.data.nickname);
+			base.container.find(".mtname").text(decodeURI(base.data.nickname));
 			base.container.find(".mt-inner").width(base.data.sppes + "%");
 			base.container.find(".mtlevel").html('<span class="sprite consumelevel-pic_consumelevel_' + base.data.splev + '"></span>');
 			if (base.data.actlev != null && base.data.actlev != "")
@@ -100,7 +100,6 @@ define(function(require, exports, module) {
 						anhimg : anchInfo.avatar
 					});
 				}
-				/** 爵位升级 */
 				if (headInfo.splev != null && base.data.splev != null && base.data.splev >= 6 && base.data.splev > headInfo.splev) {
 					UIF.handler.upgrade({
 						nickname : base.data.nickname,

@@ -8,40 +8,40 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        $isCookie = R('Login/checkCookie');
-        if ($isCookie) {
-            $userid = $_SESSION['userid'];
-        }else{
-            $userid = $_SESSION['userid'];
+        if (isset($_GET['rndcode']) || isset($_POST['rndcode'])) {
+            $result = R('Personinfo/imgupload');
+            $this->ajaxReturn($result);
+            exit;
         }
 
-            $user = M('bu_user');
-            $result = $user->join("bu_user_packs on bu_user.userId = bu_user_packs.userid")->where("bu_user.userId='{$userid}'")->find();
-            $this->assign('user',$result);
-            //var_dump($result);
-            
-        
-       // echo 'aa';
+        $isCookie = R('Login/checkCookie');
 
-/*
-        $show=M('show');
-        $data=$show->order('viewernum','DESC')->limit(20)->select();
-        $this->assign('data', $data);
-*/
-      //  $data=file_get_contents('http://kedo.tv/rest/homeAnchors/hotAnchors.mt');
-       // $data=json_decode($data,true);
-       // $this->assign('rmzb', $data);
+        //首页导航栏基本用户信息
+
+        R('Comment/index');
+
+        /*curl调用方法*/
+       //定义一个要发送的目标URL；
+       // $url = "http://10.1.1.17/rest/homeAnchors/anchors.mt";
+       //定义传递的参数数组；
+  //    $data['aaa']='aaaaa';
+  //    $data['bbb']='bbbb';
+       // $data[]='';
+         //定义返回值接收变量；
+       // $rmzb = http($url, $data, 'POST');
+        //$rmzb=json_decode($rmzb,true);
+        //$this->assign('rmzb', $rmzb['data']);
+
 
         //首页热门主播展示；
-        $data=file_get_contents('http://kedo.tv/rest/homeAnchors/hotAnchors.mt');
+        $data=curl_post('http://10.1.1.17/rest/homeAnchors/anchors.mt');
         $data=json_decode($data,true);
-       
         $this->assign('rmzb', $data['data']);
-        // print_r($data['data']);
+        //print_r($data['data']);
        // dump($data);exit;
 
         //首页精彩推荐；
-        $data=file_get_contents('http://kedo.tv/rest/homeAnchors/GameAnchors.mt');
+        $data=curl_post('http://10.1.1.17/rest/homeAnchors/gameAnchors.mt');
         $data=json_decode($data,true);
         $jc=array(0=>'不在线',1=>'在线');
         $this->assign('jc',$jc);
@@ -49,14 +49,14 @@ class IndexController extends Controller {
         
 
         //首页最新主播展示；
-        $zxzb=file_get_contents('http://kedo.tv/rest/homeAnchors/newAnchors.mt');
+        $zxzb=curl_post('http://10.1.1.17/rest/homeAnchors/newAnchors.mt');
         $zxzb=json_decode($zxzb,true);
         $this->assign('zxzb',$zxzb['data']);
-        //print_r($zxzb['data']);
+       // print_r($zxzb['data']);
 
 
         //首页用户关注列表展示
-        $data=file_get_contents('http://kedo.tv/rest/homeAnchors/followList.mt');
+        $data=curl_post('http://10.1.1.17/rest/homeAnchors/followList.mt');
         $data=json_decode($data,true);
 		$a=array('0'=>'不在线', '1'=>'在线' );
 		//$a[$online];
@@ -66,132 +66,58 @@ class IndexController extends Controller {
 
 
         //首页主播排行榜（周榜）；
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/giftWeels.mt');
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/giftWeels.mt');
         $data=json_decode($data,true);
         $this->assign('zbzb', $data['data']);
        // print_r($data['data']);
 
         //首页主播排行榜（月榜）；
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/giftMonth.mt');
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/giftMonth.mt');
         $data=json_decode($data,true);
-        $this->assign('zbyb', $data);
+        $this->assign('zbyb', $data['data']);
         // $this->display();
+
+        //首页主播排行榜（年榜）；
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/giftYear.mt');
+        $data=json_decode($data,true);
+        $this->assign('zbnb', $data['data']);
 
 
         //首页土豪排行榜（周榜）；
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/localTyrantDay.mt');
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/localTyrantDay.mt');
         $data=json_decode($data,true);
         $this->assign('thzb', $data['data']);
        // print_r($data['data']);
 
-        //首页粉丝活跃榜；
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/fansActive.mt');
+        //首页土豪排行榜（月榜）；
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/localTyrantMonth.mt');
         $data=json_decode($data,true);
-        $this->assign('fshyb',$data['data']);
+        $this->assign('thyb', $data['data']);
+
+        //首页土豪排行榜（年榜）；
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/localTyrantYear.mt');
+        $data=json_decode($data,true);
+        $this->assign('thnb', $data['data']);
+
+        //首页粉丝活跃榜(周榜)；
+        $data=curl_post('http://10.1.1.17/rest/anchorRanking/fansActive.mt');
+        $data=json_decode($data,true);
+        $this->assign('fszb',$data['data']);
         //  print_r($data);
 
-        $loginUrl = U('Login/index');
-        $this->assign('url',$loginUrl);
+        //首页粉丝活跃榜(月榜)；
+        $data=file_get_contents('');
+        $data=json_decode($data,true);
+        $this->assign('fsyb',$data['data']);
+
+        //首页粉丝活跃榜(年榜)；
+        $data=file_get_contents('');
+        $data=json_decode($data,true);
+        $this->assign('fsnb',$data['data']);
+
+        
         $this->display();
     }
-     //首页热门主播展示；
-    public function hotAnchors(){
-        //echo "aaa";
-
-        $data=file_get_contents('http://kedo.tv/rest/homeAnchors/hotAnchors.mt');
-        $data=json_decode($data,true);
-        $this->assign('rmzb', $data);
-       // var_dump($data);
-        //dump($data);exit;
-       //$this->display("Index/index");
-
-    }
-    //首页最新主播展示；
-    public function newAnchors(){
-
-        $zxzb=file_get_contents('http://kedo.tv/rest/homeAnchors/newAnchors.mt');
-        $zxzb=json_decode($zxzb,true);
-        $this->assign('zxzb',$zxzb);
-		//dump($zxzb);exit;
-        //$this->display();
-
-    }
-
-    //首页用户关注列表展示
-    public function followlist(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/homeAnchors/followList.mt');
-        $data=json_decode($data,true);
-        $this->assign('gzlb', $data);
-        //dump($data);
-        //$this->display('Index/index');
-
-    }
-
-    //首页主播排行榜（周榜）；
-    public function giftWeels(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/giftWeels.mt');
-        $data=json_decode($data,true);
-        $this->assign('zbzb', $data);
-        //$this->display();
-
-    }
-    //首页主播排行榜（月榜）；
-    public function giftMonth(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/giftMonth.mt');
-        $data=json_decode($data,true);
-        $this->assign('zbyb', $data);
-       // $this->display();
-
-    }
-    //首页主播排行榜（年榜）；
-    public function giftYear(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/giftYear.mt');
-        $data=json_decode($data,true);
-        $this->assign('zbnb', $data);
-       // $this->display();
-
-    }
-    //首页土豪排行榜（周榜）；
-    public function localTyrantDay(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/localTyrantDay.mt');
-        $data=json_decode($data,true);
-        $this->assign('thzb', $data);
-        $this->display();
-
-    }
-    //首页土豪排行榜（月榜）；
-    public function localTyrantMonth(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/localTyrantMonth.mt');
-        $data=json_decode($data,true);
-        $this->assign('thyb', $data);
-       // $this->display();
-
-    }
-    //首页土豪排行榜（年榜）；
-    public function localTyrantYear(){
-        //echo "aaa";
-        $data=file_get_contents('http://kedo.tv/rest/anchorRanking/localTyrantYear.mt');
-        $data=json_decode($data,true);
-        $this->assign('thnb', $data);
-        //$this->display();
-
-    }
-    //首页粉丝活跃榜；
-    public function fansActive(){
-        //echo "aaa";
-        $data=file_get_contents(' http://kedo.tv/rest/anchorRanking/fansActive.mt');
-        $data=json_decode($data,true);
-        $this->assign('fshyb', $data);
-        //$this->display();
-
-    }
-
 
 
 

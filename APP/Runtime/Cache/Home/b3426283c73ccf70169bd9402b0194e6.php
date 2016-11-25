@@ -2,11 +2,11 @@
 <head lang="en">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title><?php echo addslashes($showinfo['nickname'])?>的直播间_美女视频聊天室_视频交友房间_视频秀 &ndash; <?php echo $page_var['site_name']?></title>
+    <title><?php echo (addslashes($showinfo['nickname'])); echo ($roomnumber); ?>的直播间_美女视频聊天室_视频交友房间_视频秀 &ndash;<?php echo ($site_name); ?></title>
     <meta name="description" content="<?php echo $page_var['site_name']?>是超人气视频直播互动娱乐社区，在这里你可以展示自己的才艺，也可以跟众多优秀的美女主播在线互动聊天、视频交友" />
     <meta content="视频交友,视频聊天,视频聊天室,美女视频,同城聊天室,视频秀,美女视频秀" name="keywords">
     <script src="/kedo/Public/live/js/sea-modules/jquery/jquery/3.0.0/jquery-3.0.0.min.js"></script>
-    <script src="/kedo/Public/live/js/sea-modules/anchor-base.js?v=<?php echo $vsn;?>"></script>
+    <script src="/kedo/Public/live/js/sea-modules/anchor-base.js?v=<?php echo ($vsn); ?>"></script>
     <script src="/kedo/Public/live/js/sea-modules/jquery-ui-master/jquery-ui.min.js"></script>
     <script src="/kedo/Public/live/js/sea-modules/jquery-ui-master/external/splitter/jqxcore.js"></script>
     <script src="/kedo/Public/live/js/sea-modules/jquery-ui-master/external/splitter/jqxsplitter.js"></script>
@@ -24,18 +24,18 @@
     <link href="/kedo/Public/live/skin/<?php echo ($skinType); ?>/css/nanoScroller.css" rel="stylesheet">
     <link href="/kedo/Public/live/skin/<?php echo ($skinType); ?>/css/live.css?v=<?php echo $vsn;?>" rel="stylesheet">
     <link href="/kedo/Public/live/static_data/images_css/icons.css?v=<?php echo $vsn;?>" rel="stylesheet">
-    <link href="/kedo/Public/live/css/gift.css?v=<?php echo $vsn;?>" rel="stylesheet" type="text/css"/>
+    <link href="/kedo/Public/live/css/gift.css?v=<?php echo ($vsn); ?>" rel="stylesheet" type="text/css"/>
 
     <script type="text/javascript">
         var UIF = {
-            cdn_img : "<?php echo _IMAGES_DOMAIN_?>",
-            thisHome:"<?php echo $thisHome;?>",
-            roomType:"<?php echo $roomType;?>",
-            currentToken : "<?php echo $currentToken;?>",
-            currentUserID : "<?php echo addslashes($user['userId'])?>",
-            currentRoomNumber : "<?php echo addslashes($roomnumber)?>",
-            currentUserNickname : "<?php echo addslashes($user['nickname'])?>",
-            version :"<?php echo $vsn?>",
+            cdn_img : "<?php echo (_IMAGES_DOMAIN_); ?>",
+            thisHome:"<?php echo ($thisHome); ?>",
+            roomType:"<?php echo ($roomType); ?>",
+            currentToken : "<?php echo ($currentToken); ?>",
+            currentUserID : "<?php echo (addslashes($user['userId'])); ?>",
+            currentRoomNumber : "<?php echo (addslashes($roomnumber)); ?>",
+            currentUserNickname : "<?php echo (addslashes($user['nickname'])); ?>",
+            version :"<?php echo ($vsn); ?>",
             log : function(msg){
                 UIF.handler.weblog(msg);
             },
@@ -60,7 +60,7 @@
                         "jquery" : "jquery/jquery/1.10.1/jquery"
                     },
                     map:[
-                        [".js",".js?v=<?php echo $vsn?>"]//映射规则
+                        [".js",".js?v=<?php echo ($vsn); ?>"]//映射规则
                     ]
                 })
                 seajs.use("/kedo/Public/live/js/sea-modules/anchor-webs",function(W){
@@ -218,12 +218,12 @@
     <?php }?>
     <div class="nl-nav">
         <ul>
-            <li class="cur"><a href="/"  target="_blank">首页</a></li>
-            <li><a href="/square.php"  target="_blank">广场</a></li>
-            <li><a href="/mall.php"  target="_blank">商城</a></li>
+            <li class="cur"><a href="<?php echo U('Index/index');?>"  target="_blank">首页</a></li>
+            <li><a href="<?php echo U('Square/square');?>"  target="_blank">广场</a></li>
+            <li><a href="<?php echo U('Mall/mall');?>"  target="_blank">商城</a></li>
             <li><a href="javascript:"  target="_blank">活动</a></li>
             <li class="aud"><span><a href="#">观众</a></span></li>
-            <li><a href="/help.php" target="_blank">帮助</a></li>
+            <li><a href="" target="_blank">帮助</a></li>
             <li><a href="/files/softwore/crossgate20161115_0423.zip" target="_blank">下载</a></li>
             <li> <a href="javascript:;" onClick="location.href='crossgate:'">游戏</a></li>
         </ul>
@@ -370,7 +370,7 @@ if($roomType != "game"){ ?>
 
 <!-- 任务区-->
 <?php
-include('./include/studio/task.php'); include('./include/studio/audience.php'); if($_SERVER['HTTP_HOST'] != "www.kedo.tv"){ } if($thisHome ==1){ include('./include/studio/setting.php'); } ?>
+include('task.php'); include('audience.php'); include('treasureBox.php'); include('pet.php'); if($thisHome ==1){ include('setting.php'); } ?>
 <!-- 聊天区-->
 <div class="chat-area myDiv4">
     <div class="chat-header">
@@ -405,7 +405,7 @@ include('./include/studio/task.php'); include('./include/studio/audience.php'); 
                 <ul class="son_ul" style="display:none ">
                     <li id="GLO"></li>
                     <li id="FLY"></li>
-                    <li id="<?php echo addslashes($showinfo['userId'])?>" class="private"></li>
+                    <li id="<?php echo (addslashes($showinfo['userId'])); ?>" class="private"></li>
                     <li id="ALL" class="no-b"></li>
                 </ul>
             </div>

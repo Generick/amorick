@@ -8,11 +8,19 @@ namespace Home\Controller;
 use Think\Controller;
 class MallController extends Controller {
 
-    public function index(){
-        //echo "aaa";
+    public function mall(){
+
+        R('Comment/index');
         $this->display();
     }
-
+    public function mall_prop(){
+        R('Comment/index');
+        $this->display(Mall/mall_prop);
+    }
+    public function mall_ride(){
+        R('Comment/index');
+        $this->display(Mall/mall_ride);
+    }
 }
 
 /**
