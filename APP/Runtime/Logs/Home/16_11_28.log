@@ -1,0 +1,288 @@
+[ 2016-11-28T09:53:49+08:00 ] ::1 /kedo/index.php/Home/assets/MultyGiftNoticeMaterial.swf
+ERR: 无法加载控制器:Assets
+
+[ 2016-11-28T09:53:49+08:00 ] ::1 /kedo/index.php/Home/assets/GiftShapeMaterial.swf
+ERR: 无法加载控制器:Assets
+
+[ 2016-11-28T09:53:49+08:00 ] ::1 /kedo/index.php/Home/assets/IntimacyDegree.swf
+ERR: 无法加载控制器:Assets
+
+[ 2016-11-28T09:53:55+08:00 ] ::1 /kedo/index.php/Home/1027
+ERR: 无法加载控制器:1027
+
+[ 2016-11-28T10:55:03+08:00 ] ::1 /kedo/index.php/Home/1027
+ERR: 无法加载控制器:1027
+
+[ 2016-11-28T10:55:05+08:00 ] ::1 /kedo/index.php/Home/1028
+ERR: 无法加载控制器:1028
+
+[ 2016-11-28T10:55:06+08:00 ] ::1 /kedo/index.php/Home/1028
+ERR: 无法加载控制器:1028
+
+[ 2016-11-28T15:05:36+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001171s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0136s ]
+
+[ 2016-11-28T15:05:55+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456d'  [ RunTime:0.0134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000444s ]
+
+[ 2016-11-28T15:05:59+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456d'  [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000750s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-11-28T15:06:05+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456d'  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-11-28T15:06:14+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456d'  [ RunTime:0.0033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-11-28T15:08:19+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456dg'  [ RunTime:0.0134s ]
+
+[ 2016-11-28T15:11:50+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005636s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test008@qq.com' LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2016-11-28T15:11:57+08:00 ] ::1 /kedo/index.php/Home/Login/nicknamecheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0012s ]
+
+[ 2016-11-28T15:12:37+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0011s ]
+
+[ 2016-11-28T15:12:41+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0013s ]
+
+[ 2016-11-28T15:13:02+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0042s ]
+
+[ 2016-11-28T15:13:02+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0011s ]
+
+[ 2016-11-28T15:13:03+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0012s ]
+
+[ 2016-11-28T15:13:03+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0012s ]
+
+[ 2016-11-28T15:13:03+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000480s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0011s ]
+
+[ 2016-11-28T15:13:03+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0013s ]
+
+[ 2016-11-28T15:13:03+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0011s ]
+
+[ 2016-11-28T15:13:04+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0009s ]
+
+[ 2016-11-28T15:13:04+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0010s ]
+
+[ 2016-11-28T15:13:10+08:00 ] ::1 /kedo/index.php/Home/Login/regUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `nickname` = '123456'  [ RunTime:0.0012s ]
+
+[ 2016-11-28T17:33:01+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0136s ]
+
+[ 2016-11-28T17:33:20+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-11-28T17:33:27+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0143s ]
+
+[ 2016-11-28T17:37:38+08:00 ] ::1 /kedo/index.php/Home/Login/checkedUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `username` = 'test001@qq.com' LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2016-11-28T17:37:48+08:00 ] ::1 /kedo/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE ( username='test001@qq.com' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-11-28T18:33:18+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+
+[ 2016-11-28T18:45:41+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+
+[ 2016-11-28T18:47:26+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0022s ]
+
+[ 2016-11-28T18:48:10+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: userid E:\xampp\htdocs\kedo\APP\Home\Controller\PersoninfoController.class.php 第 255 行.
+SQL: UPDATE `bu_user` SET `mobile`='18255001881' WHERE `userId` = null [ RunTime:0.0010s ]
+
+[ 2016-11-28T18:49:48+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-11-28T18:50:08+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: userid E:\xampp\htdocs\kedo\APP\Home\Controller\PersoninfoController.class.php 第 255 行.
+SQL: UPDATE `bu_user` SET `mobile`='18255001881' WHERE `userId` = null [ RunTime:0.0010s ]
+
+[ 2016-11-28T18:50:45+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2016-11-28T18:50:57+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: userid E:\xampp\htdocs\kedo\APP\Home\Controller\PersoninfoController.class.php 第 255 行.
+SQL: UPDATE `bu_user` SET `mobile`='18255001881' WHERE `userId` = null [ RunTime:0.0008s ]
+
+[ 2016-11-28T18:52:16+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `bu_user` SET `mobile`='18255001881' WHERE `userId` = 11121 [ RunTime:0.0215s ]
+
+[ 2016-11-28T18:56:43+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2016-11-28T18:56:57+08:00 ] ::1 /kedo/index.php/Home/Personinfo/sendPhone.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `bu_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `bu_user` WHERE `userId` = 11121 LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `bu_user` SET `mobile`='18255001881' WHERE `userId` = 11121 [ RunTime:0.0017s ]
+

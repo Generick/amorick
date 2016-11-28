@@ -59,17 +59,18 @@
 
 <!--main-->
 <div class="inmiddle">
-
+<input type="hidden" id="m_personUrl" value="{:U('Personinfo/sendPhone')}">
     <div class="center-right">
         <div calass="cr-bind-phone" >
             <div class="cr-title">绑定手机</div>
             <div class="cr-phone-main">
                 <div class="bind-phone-area">
-                        <if condition="$user['mobile'] neq ''">
+                        <if condition="$phone neq ''">
                             <table>
                                 <tr>
                                     <td class="bind-phone-aright">已绑定手机号码：</td>
-                                    <td><?php   $a=substr_replace($user['mobile'],'****',3,4); echo ($a);?></td>
+                                    <!-- <td><?php   $a=substr_replace($phone,'****',3,4); echo ($a);?></td> -->
+                                    <td>{$phone|substr_replace='****',3,4}</td>
                                 </tr>
                             </table>
                         <else/>
@@ -116,6 +117,10 @@
 <!--main-->
 
 <include file="Public/footer" />
+
+<script>
+    seajs.use("ajax/phone");
+</script>
 
 </body>
 </html>

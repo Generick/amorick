@@ -189,6 +189,54 @@ function selectTagLoginBox(showContent){
 	$('#'+showContent+'_content').show();
 }
 
+
+function index_hover(){
+	var rank = $('.rank');
+	var rich = $('.rich');
+	var fans = $('.fans');
+	var my = '.monthcharts,.yearcharts';
+	var wy = '.weekcharts,.yearcharts';
+	var wm = '.weekcharts,.monthcharts';
+	rank.find('.week').hover(function(){
+		rank.find(my).hide();
+		rank.find('.weekcharts').show();
+	});
+	rank.find('.month').hover(function(){
+		rank.find(wy).hide();
+		rank.find('.monthcharts').show();
+	});
+	rank.find('.year').hover(function(){
+		rank.find(wm).hide();
+		rank.find('.yearcharts').show();
+	});
+
+	rich.find('.week').hover(function(){
+		rich.find(my).hide();
+		rich.find('.weekcharts').show();
+	});
+	rich.find('.month').hover(function(){
+		rich.find(wy).hide();
+		rich.find('.monthcharts').show();
+	});
+	rich.find('.year').hover(function(){
+		rich.find(wm).hide();
+		rich.find('.yearcharts').show();
+	});
+
+	fans.find('.week').hover(function(){
+		fans.find(my).hide();
+		fans.find('.weekcharts').show();
+	});
+	fans.find('.month').hover(function(){
+		fans.find(wy).hide();
+		fans.find('.monthcharts').show();
+	});
+	fans.find('.year').hover(function(){
+		fans.find(wm).hide();
+		fans.find('.yearcharts').show();
+	});
+}
+
 login.prototype = {
 	signin:function(){
 		$('#password .error').hide();
@@ -321,7 +369,6 @@ reg.prototype = {
 			$('#reg_email').parent().siblings('.error').html("邮箱格式不正确.").show();
 			return;
 		}
-		//var url = window.location.href.split('index.html')[0];
 		var url = getLoginUrl();
 		$.ajax({
 			type:'post',
@@ -373,6 +420,8 @@ reg.prototype = {
 					console.log("注册失败");
 				}else if(msg == 2){
 					$('.regnic .error').html("昵称中包含有不允许的文字.").show();
+				}else if(msg == 3){
+					$('.regnic .error').html('此昵称已存在，换一个吧.').show();
 				}else{
 					console.log(msg);
 					window.location.href = msg.url;
@@ -416,9 +465,23 @@ reg.prototype = {
 			success:function(msg){
 				if (msg ==1 ) {
 					$('.regnic .error').html("昵称中包含有不允许的文字.").show();
+				}else if(msg == 2){
+					$('.regnic .error').html('此昵称已存在，换一个试试吧.').show();
+				}else{
+					$('.regnic .error').hide();
 				}
 			}
 		});
+	},
+	agreementCheck:function(){
+		checked = $('#agreement').is(':checked');
+		if (checked) {
+			$('#regsub').attr('disabled',false);
+			$('#regsub').css('background-color','#f77599');
+		}else{
+			$('#regsub').attr('disabled',true);
+			$('#regsub').css('background-color','gray');
+		}
 	}
 };
 
@@ -462,4 +525,9 @@ $(document).ready(function(){
 	$('.btn_login.weChatLog').on('click',login.wxlogin);
 	$('#reg_password').on('blur',reg.pwdLength);
 	$('#reg_nickname').on('blur',reg.nicknameCheck);
+	$('#agreement').on('click',reg.agreementCheck);
+	
+	// 首页年月日排行显示隐藏效果
+	index_hover();
+
 });

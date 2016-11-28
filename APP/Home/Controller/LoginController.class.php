@@ -113,8 +113,13 @@ class LoginController extends Controller{
 		$nickname = I('post.nickname');
 		$nickname_black_list = nickname_black_list();
 		if (in_array($nickname,$nickname_black_list)) {
-			$this->ajaxReturn(1);
+			$this->ajaxReturn(1);exit;
 		}else{
+			$nickname = urlencode($nickname);
+			$result = M('bu_user')->where(array('nickname'=>$nickname))->select();
+			if ($result) {
+				$this->ajaxReturn(2);exit;
+			}
 			$this->ajaxReturn(0);
 		}
 	}
@@ -138,6 +143,12 @@ class LoginController extends Controller{
 		//preg_match('/^[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/',$email)
 		if (in_array($nickname,$nickname_black_list)) {
 			$this->ajaxReturn(2);exit;
+		}
+
+		// chekc nickname only one
+		$nickcheck = M('bu_user')->where(array('nickname'=>$data['nickname']))->select();
+		if ($nickcheck) {
+			$this->ajaxReturn(3);exit;
 		}
 
 		$data['createDT'] = $timer;

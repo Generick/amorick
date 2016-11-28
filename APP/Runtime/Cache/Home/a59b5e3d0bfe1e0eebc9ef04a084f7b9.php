@@ -68,7 +68,7 @@
                     <li><a href="<?php echo U('Login/index');?>" class="login" onclick="return false;">登录</a></li>
                     <li class="hidden-xs"><a href="">|</a></li>
                     <li class="hidden-lg hidden-md hidden-sm show-xs line"><a href=""></a></li>
-                    <li class="Reg"><a href="./">注册</a></li>
+                    <li class="Reg"><a href="./" onclick="return false;">注册</a></li>
                 </ul><?php endif; ?>
 
         </div>
@@ -449,7 +449,7 @@
                                 <button type="button" id="btn_login" class="btn_login loginBtn btn btn-warning" data-loading-text="Loading..." autocomplete="off" onclick="return false;" >立即登录</button>
                             </p>
                             <p class="row">
-                                <a type="button" href="" class="btn_login regBtn btn btn-default" data-loading-text="Loading..." autocomplete="off">一键注册</a>
+                                <a type="button" class="btn_login regBtn btn btn-default" data-loading-text="Loading..." autocomplete="off">一键注册</a>
                             </p>
                             <p class="text-left color99 pasTip">忘记密码 点击 <b><a href="javascript:;">这里找回</a></b></p>
                             <hr/>
