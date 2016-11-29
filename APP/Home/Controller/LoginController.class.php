@@ -48,7 +48,7 @@ class LoginController extends Controller{
 		$msg = array();
 		$str = array();
 		$msg['username'] = I('post.username');
-		$msg['password'] = md5(I('post.password'));
+		$msg['password'] = $this->password_deal(I('post.password'));
 		$msg['vaildcode'] = I('post.vaildcode');
 
 		if (!$this->checkedCode($msg['vaildcode'])) {
@@ -134,7 +134,7 @@ class LoginController extends Controller{
 		$nickname = I('post.nickname');
 		$data['nickname'] = urlencode($nickname);
 		//$this->ajaxReturn($data['nickname']);exit;
-		$data['password'] = md5(I('post.password'));
+		$data['password'] = $this->password_deal(I('post.password'));
 		$verifycode = I('post.verifycode');
 		if (!$this->checkedCode($verifycode)) {
 			$this->ajaxReturn(1);exit;
@@ -181,6 +181,11 @@ class LoginController extends Controller{
 		//$this->ajaxReturn(0);
 	}
 
+
+	//password deal
+	function password_deal($pwd){
+		return md5(md5($pwd));
+	}
 	//encrypt
 	function m_encrypt($encryptData){
 		//echo "string";

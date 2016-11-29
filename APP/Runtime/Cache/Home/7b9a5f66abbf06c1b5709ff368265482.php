@@ -14,7 +14,7 @@
 
 <div class="head-outer btline">
     <div class="header clearFix">
-        <a class="hd_bg fl" href="/"></a>
+        <a class="hd_bg fl" href="<?php echo U('Index/index');?>"></a>
         <ul class="nav fl">
             <li class="fl "><a href="/kedo/index.php/Home/Index/index">首页</a></li>
             <li class="fl "><a href="/kedo/index.php/Home/Square/square">广场</a> </li>
