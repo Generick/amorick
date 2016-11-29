@@ -51,7 +51,7 @@
             <if condition="$Think.session.userid neq ''">
 
                 <ul class="nav navbar-nav navbar-right hidden-sm afHdNavR">
-                    <li class="logName"><a href="{:U('Center/index')}" class="ellipsis">{$user['nickname']}</a></li>
+                    <li class="logName"><a href="{:U('Center/index')}" class="ellipsis">{$user['nickname']|urldecode}</a></li>
                     <li class="hidden-xs"><a href="">|</a></li>
                     <li class=""><a href="{:U('Login/logout')}">退出</a></li>
                     <!--<li class="glyphicon glyphicon-envelope"><a href=""></a></li>-->

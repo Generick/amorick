@@ -142,7 +142,7 @@
         </div>
     </div>
     <div class="pi">
-        <div class="cl-div  hasnenu ">
+        <div class="cl-div  hasnenu  ">
             <div class="cl-trade cl-title">交易中心</div>
             <div class="arrow-down"></div>
         </div>
@@ -187,89 +187,86 @@
     </div>
 </div>
 </div>
+
 <!--main-->
 <div class="inmiddle">
 
 
-    <script src="/kedo/Public/center/js/sea.js"></script>
-    <script>
-
-    </script>
-
     <div class="center-right">
-        <div class="cr-basics" style="">
-            <div class="cr-title">基本资料</div>
-
-            <form class="J_profile_form" action="/kedo/index.php/Home/Personinfo/update" method="post">
-            <table id="info-table">
-                <tr  class="cr-hline">
-                    <td class="n-type">昵称：</td>
-                    <td class="" colspan="3">
-                        <input type="text" name="nickname" id="aliasname"   value="<?php echo (urldecode($user['nickname'])); ?>"/>
-                    </td>
-                </tr>
-                <tr class="cr-hline">
-                    <td  class="n-type">
-                        <span>性别：</span>
-                    </td>
-                    <td colspan="3">
-                        <?php if($user['Gender'] == '1'): ?><label class="mr20"><input name="gender" type="radio" value="1" checked />男</label>
-                            <label class="mr20"><input name="gender" type="radio" value="0" />女</label>
-                            <?php else: ?>
-                            <label class="mr20"><input name="gender" type="radio" value="1" />男</label>
-                            <label class="mr20"><input name="gender" type="radio" value="0" checked />女</label><?php endif; ?>
-                    </td>
-                </tr>
-                <tr class="cr-hline">
-                    <td class="n-type">所在地：</td>
-                    <td>
-                        <select name="province" id="province"></select>
-                    </td>
-                    <td>
-                        <select name="city"  id="city"></select>
-                    </td>
-                    <!--<td>-->
-                        <!--<select name="county" id="county"></select>-->
-                    <!--</td>-->
-                    <!--<td>-->
-                        <!--<input type="radio" name="issecret" id="" value="1">保密 <input type="radio" name="issecret" value="2" />公开-->
-                    <!--</td>-->
-                </tr>
-
-                <tr class="cr-hline">
-                    <td class="n-type">生日：</td>
-                    <td> <select id="sel_year" name="year"   ></select></td>
-                    <td> <select  id="sel_month" name="month"></select> </td>
-                    <td> <select id="sel_day" name="day"></select></td>
-
-                    <!--<input   name="birthday" value="<?php echo (date('Y-m-d',$user['birthday'])); ?>" type="text" data-date-format="dd-mm-yyyy" />　-->
-
-                </tr>
-                <tr class="cr-hline">
-                    <td  class="n-type"> <td colspan="3"><button id="submits" >保存</button></td>
-                </tr>
-            </table>
-            </form>
+        <input type="hidden" id="personUrl" value="<?php echo U('Personinfo/imgupload');?>">
+        <div class="cr_portrait">
+            <div class="cr-title">修改头像</div>
+            <div class="modify-protrait">
+                <div style="padding-top: 50px;padding-left: 50px;">
+                    <p id="swfContainer">
+                        本组件需要安装Flash Player后才可使用，请从<a href="http://www.adobe.com/go/getflashplayer">这里</a>下载安装。
+                    </p>
+                    <button type="button" id="upload" style="display:none;margin-top:8px;"></button>
+                </div>
+            </div>
         </div>
     </div>
-    <!--main-->
-</div>
-<!--birthday-->
-<script type="text/javascript" src="/kedo/Public/personinfo/js/birthday.js"></script>
-    <script>
-        $(function () {
-            $.ms_DatePicker({
-                YearSelector: ".sel_year",
-                MonthSelector: ".sel_month",
-                DaySelector: ".sel_day"
-            });
-            $.ms_DatePicker();
-        });
-    </script>
 
-<!--city-->
-<script type="text/javascript"  src="/kedo/Public/personinfo/js/area.js"></script>
-<script type="text/javascript">_init_area('.$city.');</script>';
+    <script src="/kedo/Public/center/js/swfobject.js"></script>
+    <script src="/kedo/Public/center/js/fullAvatarEditor.js"></script>
+    <script>
+        function avatarUploadComplete(url){
+            $("#personavatar").attr("src",url);
+            $("#peravatar").attr("src",url);
+            //window.location.href = "/kedo/index.php/Home/Center/index";
+            window.location.reload();
+        }
+        
+        $(function(){
+            swfobject.addDomLoadEvent(function () {
+                var personUrl = $('#personUrl').val();
+                var swf = new fullAvatarEditor("/kedo/Public/center/js/fullAvatarEditor.swf", "/kedo/Public/center/js/expressInstall.swf", "swfContainer", {
+                        id : 'uploadavatarbtn',
+                        upload_url : personUrl,	//上传接口
+                        method : 'post',	//传递到上传接口中的查询参数的提交方式。更改该值时，请注意更改上传接口中的查询参数的接收方式
+                        src_upload : 0,		//是否上传原图片的选项，有以下值：0-不上传；1-上传；2-显示复选框由用户选择
+                        avatar_box_border_width : 1,
+                        avatar_sizes : '120*120',
+                        isShowUploadResultIcon:true,
+                        avatar_sizes_desc : '120*120像素'
+                    }, function (msg) {
+                        console.log(msg);
+                        console.log(personUrl);
+                        switch(msg.code){
+                            case 1 : break;//页面成功加载了组件！
+                            case 2 : //已成功加载图片到编辑面板。
+                                document.getElementById("upload").style.display = "inline";
+                                break;
+                            case 3 :
+                                if(msg.type == 0)
+                                {
+                                    alert("摄像头已准备就绪且用户已允许使用。");
+                                }
+                                else if(msg.type == 1)
+                                {
+                                    alert("摄像头已准备就绪但用户未允许使用！");
+                                }
+                                else
+                                {
+                                    alert("摄像头被占用！");
+                                }
+                                break;
+                            case 5 :
+                                //console.log(msg.content.avatarUrls[0]);
+                                avatarUploadComplete(msg.content.avatarUrls);
+                                break;
+
+                        }
+                    }
+                );
+                document.getElementById("upload").onclick=function(){
+                    swf.call("upload");
+                };
+            });
+        });
+    </script></div>
+
+
 <!--main-->
 
 <div class="zhezhao"></div>

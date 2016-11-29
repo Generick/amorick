@@ -220,6 +220,44 @@ class LoginController extends Controller{
 		$url = $url[0];
 		require_once $url."\Common\qqlogin.php";
 		//$this->show("");
+		exit();
+		if (isset(I('get.isiphone')) && I('get.isiphone')=="1") {
+			$_SESSION['isiphone'] = 1;
+		}
+		$action = isset(I('get.action'))?I('get.action'):'';
+		switch ($action) {
+			case '':
+				# code...
+				break;
+			case 'login':
+				if (I('get.from') == 'client') {
+					$_SESSION['from'] = 'client';
+				}
+				if (I('get.from') == 'mobile') {
+					$_SESSION['from'] = 'mobile';
+				}
+				if (I('get.from') == 'mobile_new') {
+					$_SESSION['from'] = 'mobile_new';
+				}
+				$this->qq_login_core();
+				break;
+			case 'regmobile':
+			case 'reg':
+				$this->qq_callback();
+				if($_SESSION['from']=='mobile'){
+					echo "<script src='/iumobile/js/StageWebViewBridge.php?20141114c'></script>"."<script>StageWebViewBridge.call('fnCalledFromJS', null, '".$_COOKIE['KDUUS']."');</script>";
+				}else if($_SESSION['from']=='mobile_new'){
+					echo "<script src='/iumobile/js/StageWebViewBridge.php?20141114c'></script>"."<script>StageWebViewBridge.call('fnCalledFromJS', null, '".$_COOKIE['KDUUS']."|$userinfo[userId]|$userinfo[nickname]');</script>";
+				}else if($_SESSION['from']=='client'){
+					echo '<script>self.location="/index.php"</script>';
+				}else{
+					echo '<script>window.opener.location.href="/";window.close()</script>';
+				}
+				break;
+			default:
+				# code...
+				break;
+		}
 	}
 	//weixin login
 	function wxlogin(){
@@ -232,6 +270,125 @@ class LoginController extends Controller{
 	function qqreg(){
 		$AuthCode = I('get.code');
 		$state = I('get.state');
+	}
+
+	//qq login method
+	function qq_login_core(){
+		$qq_oauth_config = $this->qq_oauth_config();
+		$_SESSION['state'] = md5(uniqid(rand(), TRUE)); //CSRF protection
+    	$login_url = "https://graph.qq.com/oauth2.0/authorize?response_type=code&client_id=" 
+        . $qq_oauth_config['oauth_consumer_key'] . "&redirect_uri=" . urlencode($qq_oauth_config['oauth_callback'])
+        . "&state=" . $_SESSION['state']
+        . "&scope=".$qq_oauth_config['scope'];
+    	header("Location:$login_url");
+	}
+
+	//qq callback
+	function qq_callback(){
+		$qq_oauth_config = $this->qq_oauth_config();
+		if ($_REQUEST['state'] == $SESSION['state']) {
+			$token_url = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code&"
+            . "client_id=" . $qq_oauth_config["oauth_consumer_key"]. "&redirect_uri=" . urlencode($qq_oauth_config["oauth_callback"])
+            . "&client_secret=" . $qq_oauth_config["oauth_consumer_secret"]. "&code=" . $_REQUEST["code"];
+            $response = file_get_contents($token_url);
+            if (strpos($response,"callback") !== false) {
+            	$lpos = strpos($response, "(");
+            	$rpos = strrpos($response, ")");
+            	$response  = substr($response, $lpos + 1, $rpos - $lpos -1);
+            	$msg = json_decode($response);
+            	if (isset($msg->error)) {
+            		echo "<h3>error:</h3>" . $msg->error;
+                	echo "<h3>msg  :</h3>" . $msg->error_description;
+                	exit;
+            	}
+            }
+            $params = array();
+            parse_str($response,$params);
+            $_SESSION['access_token'] = $params['access_token'];
+            $this->get_openid();//
+            $qq_user_info = $this->get_qquser_info();//
+            if (empty($_SESSION['openid']) || empty($qq_user_info)) {
+            	echo "The state does not match,You may be a victim of CSRF";
+            }else{
+            	$userinfo = M('bu_user')->where(array('snsid'=>$_SESSION['openid']))->select();
+            	if ($userinfo) {
+            		# code...
+            		$users=search_save_user($userinfo['userId']);//
+                	set_login_info($users);//
+                	setcookie("KDUUS",logincookie($users),time()+3600*24,'/',_COOKIE_DOMAIN_);//
+                	$_COOKIE['KDUUS']=logincookie($users);//
+            	}else{
+            		if ($qq_user_info['gender'] == '男') {
+            			$gender = 1;
+            		}else{
+            			$gender = 0;
+            		}
+            		$avatar = $qq_user_info['figureurl_qq_2']?$qq_user_info['figureurl_qq_2']:$qq_user_info['figureurl_qq_1'];
+            		$_COOKIE['KDUUS']=register_by_opensns(1,$_SESSION['openid'],$qq_user_info['nickname'],$avatar,$gender,"QQ");//
+            	}
+            }
+		}else{
+			echo "The state does not match,You may be a victim of CSRF";
+		}
+	}
+	//get openid
+	function get_openid(){
+		$graph_url = "https://graph.qq.com/oauth2.0/me?access_token=" 
+        . $_SESSION['access_token'];
+
+	    $str  = file_get_contents($graph_url);
+	    if (strpos($str, "callback") !== false){
+	        $lpos = strpos($str, "(");
+	        $rpos = strrpos($str, ")");
+	        $str  = substr($str, $lpos + 1, $rpos - $lpos -1);
+	    }
+
+	    $user = json_decode($str);
+	    if (isset($user->error)){
+	        echo "<h3>error:</h3>" . $user->error;
+	        echo "<h3>msg  :</h3>" . $user->error_description;
+	        exit;
+	    }
+
+	    //debug
+	    //echo("Hello " . $user->openid);
+
+	    //set openid to session
+	    $_SESSION["openid"] = $user->openid;
+	}
+	//get user info
+	function get_qquser_info(){
+		//
+		$qq_oauth_config = $this->qq_oauth_config();
+
+    //参数: http://wiki.open.qq.com/wiki/website/get_user_info
+	    $get_user_info = "https://graph.qq.com/user/get_user_info?"
+	        . "access_token=" . $_SESSION['access_token']
+	        . "&oauth_consumer_key=" . $qq_oauth_config["oauth_consumer_key"]
+	        . "&openid=" . $_SESSION["openid"]
+	        . "&format=json";
+
+	    $info = file_get_contents($get_user_info);
+	    $arr = json_decode($info, true);
+	    return $arr;
+	}
+	//qq oauth config
+	function qq_oauth_config(){
+		return array(
+			    'scope'=>'get_user_info',
+			    'oauth_consumer_key'=>"101321404",//APP ID
+			    'oauth_consumer_secret'=>"97047c25e765fdf012b118efd2d46293",//APP KEY
+			    'oauth_callback'=>"http://kedo.tv/opensns/qq/reg",//回调地址
+			    'oauth_request_token_url'=>"http://openapi.qzone.qq.com/oauth/qzoneoauth_request_token",
+			    'oauth_authorize_url'=>'http://openapi.qzone.qq.com/oauth/qzoneoauth_authorize',
+			    'oauth_request_access_token_url'=>'http://openapi.qzone.qq.com/oauth/qzoneoauth_access_token',
+			    'user_info_url' => 'http://openapi.qzone.qq.com/user/get_user_info',
+		);
+	}
+
+	//weixin callback
+	function wx_callback(){
+		//
 	}
 
 	//退出登陆

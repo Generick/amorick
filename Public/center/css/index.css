@@ -482,3 +482,5 @@ i{color:#ffb900; font-style:normal; }
 .jcrop-dark .jcrop-handle{-moz-border-radius:3px;-webkit-border-radius:3px;background-color:#FFF;border-color:#000;border-radius:3px;}
 .solid-line .jcrop-vline,.solid-line .jcrop-hline{background:#FFF;}
 .jcrop-holder img,img.jcrop-preview{max-width:none;}
+/*个人中心兑换k豆*/
+.duikdou{margin-left: 80%;margin-top:3%;}

@@ -27,7 +27,7 @@
         </div>
         <div class="user clearFix">
             <div class="fl hd_hov">
-                <a class="username fl" href="/kedo/index.php/Home/Center/index"><?php echo ($user['nickname']); ?></a>
+                <a class="username fl" href="/kedo/index.php/Home/Center/index"><?php echo (urldecode($user['nickname'])); ?></a>
                 <a class="hidden-xs" href="">|</a>
                 <a href="<?php echo U('Login/logout');?>" class="userout">退出</a>
                 <a class="expand fl" id="expand" href="javascript:;"></a>
@@ -53,7 +53,7 @@
                     </ul>
                 </div>
                 <div class="hon-bottom">
-                    <div class="tocenter"><a href="/kedo/index.php/Home/Center/index"><?php echo ($user['nickname']); ?></a></div>
+                    <div class="tocenter"><a href="/kedo/index.php/Home/Center/index"><?php echo (urldecode($user['nickname'])); ?></a></div>
                     <div class="logout"><a href="<?php echo U('Login/logout');?>">退出</a></div>
                 </div>
             </div>
@@ -88,12 +88,12 @@
 
             <div class="a-myname">
                 <div class="m-name">
-                    <span class="center-name"><?php echo ($user["nickname"]); ?></span><span class="center-edit"></span>
+                    <span class="center-name"><?php echo (urldecode($user["nickname"])); ?></span><span class="center-edit"></span>
                 </div>
                 <div class="uid">ID:<?php echo ($user["userid"]); ?></div>
             </div>
             <div class="c-myname" style="display: none">
-                <div><input type="input" id="nickname" value="<?php echo ($user["nickname"]); ?>" maxlength="16"></div>
+                <div><input type="input" id="nickname" value="<?php echo (urldecode($user["nickname"])); ?>" maxlength="16"></div>
                 <button id="sure" class="small-button" onclick="seajs.use('ajax/username', function(test){ test.check(); });">确定</button>
                 <button id="cancel" class="small-button">取消</button>
             </div>
@@ -116,12 +116,10 @@
                 <div class="c-funds-cz"><a href="/kedo/index.php/Home/Pay/pay">充值</a></div>
             </div>
         </div>
-
-    </div>
-
-    <div class="duikdou">
-        <div class="dui-header">兑换k豆</div>
-        <div class="dui-mian">
+		
+		<div class="duikdou">
+			<div class="dui-header">兑换k豆</div>
+			<div class="dui-mian">
             <div class="dui-input">
                 <input type="text" name="duiv" id="duiv" class="duiv">
             </div>
@@ -129,8 +127,13 @@
                 <button class="dui-queren">确认</button>
                 <button class="dui-cancel">退出</button>
             </div>
-        </div>
+			</div>
+		</div>
+		
+
     </div>
+
+    
 
 
 <!--main-->
