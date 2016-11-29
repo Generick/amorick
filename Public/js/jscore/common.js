@@ -26,7 +26,7 @@ define('ajax/common', function(require, exports, module){
             setTimeout(function () {
                 $(".zhezhao-threesecond").hide();
                 $(".threesecond").hide();
-            }, 1000);
+            }, 2000);
         }
         else {
             setTimeout(function () {

@@ -68,12 +68,12 @@
     <script>
 
         seajs.config({
-            base: "/kedo/Public/js/",
+            base: "/kedo/Public/js/jscore",
             alias: {
                 // "jquery": "jquery/jquery/1.10.1/jquery.js"
             }
         });
-        seajs.use("ajax/username");
+        seajs.use("username");
     </script>
 
     <div class="zhezhao"></div>
@@ -195,7 +195,7 @@
 
 <!--main-->
 <div class="inmiddle">
-<input type="hidden" id="m_personUrl" value="<?php echo U('Personinfo/sendPhone');?>">
+<input type="hidden" id="m_personUrl" value="<?php echo U('Personinfo/phoneCore');?>">
     <div class="center-right">
         <div calass="cr-bind-phone" >
             <div class="cr-title">绑定手机</div>
@@ -274,7 +274,7 @@
 </div>
 
 <script>
-    seajs.use("ajax/phone");
+    seajs.use("messageCore");
 </script>
 
 </body>

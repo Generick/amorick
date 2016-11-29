@@ -190,12 +190,11 @@ class PersoninfoController extends ComController
 	public function myphone(){
 		$userid = $_SESSION['userid'];
 		$phone = M('bu_user')->where(array('userId'=>$userid))->getField('mobile');
-		//$ab=S('info');
 		$this->assign('phone',$phone);
 		$this->display();
 	}
 
-	function sendphone(){
+	function phoneCore(){
 		$type=I('post.type');
 		$ajax_data=array();
 		$userId=$_SESSION['userid'];

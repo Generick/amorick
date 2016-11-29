@@ -68,12 +68,12 @@
     <script>
 
         seajs.config({
-            base: "/kedo/Public/js/",
+            base: "/kedo/Public/js/jscore",
             alias: {
                 // "jquery": "jquery/jquery/1.10.1/jquery.js"
             }
         });
-        seajs.use("ajax/username");
+        seajs.use("username");
     </script>
 
     <div class="zhezhao"></div>

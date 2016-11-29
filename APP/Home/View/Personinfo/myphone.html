@@ -59,7 +59,7 @@
 
 <!--main-->
 <div class="inmiddle">
-<input type="hidden" id="m_personUrl" value="{:U('Personinfo/sendPhone')}">
+<input type="hidden" id="m_personUrl" value="{:U('Personinfo/phoneCore')}">
     <div class="center-right">
         <div calass="cr-bind-phone" >
             <div class="cr-title">绑定手机</div>
@@ -119,7 +119,7 @@
 <include file="Public/footer" />
 
 <script>
-    seajs.use("ajax/phone");
+    seajs.use("messageCore");
 </script>
 
 </body>

@@ -1,10 +1,10 @@
-define('ajax/phone', function(require, exports, module){
+define('messageCore', function(require, exports, module){
     var Tools = require('./common.js');
     var sendPhone=0;
     var sendphoneUrl = $('#m_personUrl').val();
 
     $(".send").click(function(){
-
+        alert('jh');
         var re = /^(((13[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
 
         if($('#phone').val()!=null && re.test($('#phone').val())){
