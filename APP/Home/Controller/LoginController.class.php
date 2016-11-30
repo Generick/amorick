@@ -399,7 +399,6 @@ class LoginController extends Controller{
 	        $nowDT_str = date('Y-m-d',strtotime($nowDT));
 	        if($nowDT_str > $loginDT_str){
 	            $logins ++;
-	            //$db->Execute("update bu_user  set loginDT ='{$nowDT}',logins =$logins where userId=$userinfo[userId]");
 	            $result = M('bu_user')->where(array('userId'=>$userinfo['userId']))->data(array('loginDT'=>$loginDT,'logins'=>$logins))->save();
 	        }
 		}
