@@ -215,20 +215,19 @@ class LoginController extends Controller{
 	}
 	//qq login
 	function qqlogin(){
-		$dir = __DIR__;
-		$url = explode('Controller',$dir);
-		$url = $url[0];
-		require_once $url."\Common\qqlogin.php";
-		//$this->show("");
-		exit();
-		if (isset(I('get.isiphone')) && I('get.isiphone')=="1") {
+		// $dir = __DIR__;
+		// $url = explode('Controller',$dir);
+		// $url = $url[0];
+		// require_once $url."\Common\qqlogin.php";
+		// //$this->show("");
+		// exit();
+		if (isset($_GET['isiphone']) && I('get.isiphone')=="1") {
 			$_SESSION['isiphone'] = 1;
 		}
-		$action = isset(I('get.action'))?I('get.action'):'';
+		$action = isset($_GET['action'])?I('get.action'):'';
 		switch ($action) {
 			case '':
 				# code...
-				break;
 			case 'login':
 				if (I('get.from') == 'client') {
 					$_SESSION['from'] = 'client';
@@ -239,7 +238,7 @@ class LoginController extends Controller{
 				if (I('get.from') == 'mobile_new') {
 					$_SESSION['from'] = 'mobile_new';
 				}
-				$this->qq_login_core();
+				$this->qq_login_core();//qq login
 				break;
 			case 'regmobile':
 			case 'reg':
@@ -247,15 +246,14 @@ class LoginController extends Controller{
 				if($_SESSION['from']=='mobile'){
 					echo "<script src='/iumobile/js/StageWebViewBridge.php?20141114c'></script>"."<script>StageWebViewBridge.call('fnCalledFromJS', null, '".$_COOKIE['KDUUS']."');</script>";
 				}else if($_SESSION['from']=='mobile_new'){
-					echo "<script src='/iumobile/js/StageWebViewBridge.php?20141114c'></script>"."<script>StageWebViewBridge.call('fnCalledFromJS', null, '".$_COOKIE['KDUUS']."|$userinfo[userId]|$userinfo[nickname]');</script>";
+					echo "<script src='/iumobile/js/StageWebViewBridge.php?20141114c'></script>"."<script>StageWebViewBridge.call('fnCalledFromJS', null, '".$_COOKIE['KDUUS']."|{$userinfo['userId']}|{$userinfo['nickname']}');</script>";
 				}else if($_SESSION['from']=='client'){
 					echo '<script>self.location="/index.php"</script>';
 				}else{
 					echo '<script>window.opener.location.href="/";window.close()</script>';
 				}
 				break;
-			default:
-				# code...
+			default :
 				break;
 		}
 	}
@@ -290,7 +288,7 @@ class LoginController extends Controller{
 			$token_url = "https://graph.qq.com/oauth2.0/token?grant_type=authorization_code&"
             . "client_id=" . $qq_oauth_config["oauth_consumer_key"]. "&redirect_uri=" . urlencode($qq_oauth_config["oauth_callback"])
             . "&client_secret=" . $qq_oauth_config["oauth_consumer_secret"]. "&code=" . $_REQUEST["code"];
-            $response = file_get_contents($token_url);
+            $response = file_get_contents($token_url);//curl_get($token_url);
             if (strpos($response,"callback") !== false) {
             	$lpos = strpos($response, "(");
             	$rpos = strrpos($response, ")");
@@ -303,20 +301,20 @@ class LoginController extends Controller{
             	}
             }
             $params = array();
-            parse_str($response,$params);
+            parse_str($response,$params);//=>array
             $_SESSION['access_token'] = $params['access_token'];
-            $this->get_openid();//
-            $qq_user_info = $this->get_qquser_info();//
+            $this->get_openid();
+            //get qq user info
+            $qq_user_info = $this->get_qquser_info();
             if (empty($_SESSION['openid']) || empty($qq_user_info)) {
             	echo "The state does not match,You may be a victim of CSRF";
             }else{
             	$userinfo = M('bu_user')->where(array('snsid'=>$_SESSION['openid']))->select();
             	if ($userinfo) {
-            		# code...
-            		$users=search_save_user($userinfo['userId']);//
-                	set_login_info($users);//
-                	setcookie("KDUUS",logincookie($users),time()+3600*24,'/',_COOKIE_DOMAIN_);//
-                	$_COOKIE['KDUUS']=logincookie($users);//
+            		$users=$this->search_save_user($userinfo['userId']);
+                	$this->set_login_info($users);
+                	setcookie("KDUID",$this->logincookie($users),time()+3600*24,'/',$_SERVER['HTTP_HOST']);
+                	$_COOKIE['KDUID']=$this->logincookie($users);
             	}else{
             		if ($qq_user_info['gender'] == '男') {
             			$gender = 1;
@@ -324,7 +322,7 @@ class LoginController extends Controller{
             			$gender = 0;
             		}
             		$avatar = $qq_user_info['figureurl_qq_2']?$qq_user_info['figureurl_qq_2']:$qq_user_info['figureurl_qq_1'];
-            		$_COOKIE['KDUUS']=register_by_opensns(1,$_SESSION['openid'],$qq_user_info['nickname'],$avatar,$gender,"QQ");//
+            		$_COOKIE['KDUID']=$this->register_by_opensns(1,$_SESSION['openid'],$qq_user_info['nickname'],$avatar,$gender,"QQ");
             	}
             }
 		}else{
@@ -333,8 +331,7 @@ class LoginController extends Controller{
 	}
 	//get openid
 	function get_openid(){
-		$graph_url = "https://graph.qq.com/oauth2.0/me?access_token=" 
-        . $_SESSION['access_token'];
+		$graph_url = "https://graph.qq.com/oauth2.0/me?access_token=".$_SESSION['access_token'];
 
 	    $str  = file_get_contents($graph_url);
 	    if (strpos($str, "callback") !== false){
@@ -356,7 +353,7 @@ class LoginController extends Controller{
 	    //set openid to session
 	    $_SESSION["openid"] = $user->openid;
 	}
-	//get user info
+	//get qq user info
 	function get_qquser_info(){
 		//
 		$qq_oauth_config = $this->qq_oauth_config();
@@ -386,6 +383,191 @@ class LoginController extends Controller{
 		);
 	}
 
+	//search save user
+	function search_save_user($userid){
+		//
+		$sql = "select u.userId as userId,u.nickname as nickname,u.password as password,a.roomNumber as roomNumber,u.avatar as avatar,u.username as username,u.loginDT as loginDT,u.logins as logins from bu_user u left JOIN bu_user_anchors a ON u.userId = a.userId where u.userId ={$userid}";
+		$userinfo = M()->query($sql);
+		$loginDT = $userinfo['loginDT'];
+		$nowDT = date('Y-m-d H:i:s',$_SERVER['REQUEST_TIME']);
+		$logins = $userinfo['logins']?$userinfo['logins']:0;
+		if ($loginDT == '' or $loginDT == null) {
+			$loginDT = $nowDT;
+			$result = M('bu_user')->where(array('userId'=>$userinfo['userId']))->data(array('loginDT'=>$loginDT,'logins'=>1))->save();
+		}else{
+			$loginDT_str = date('Y-m-d',strtotime($loginDT));
+	        $nowDT_str = date('Y-m-d',strtotime($nowDT));
+	        if($nowDT_str > $loginDT_str){
+	            $logins ++;
+	            //$db->Execute("update bu_user  set loginDT ='{$nowDT}',logins =$logins where userId=$userinfo[userId]");
+	            $result = M('bu_user')->where(array('userId'=>$userinfo['userId']))->data(array('loginDT'=>$loginDT,'logins'=>$logins))->save();
+	        }
+		}
+
+		if ($userinfo) {
+			if ($userinfo['isblock'] == 1) {
+				return false;
+			}
+			$datas1 = curl_post(_INTERFACE_."/rest/homeAnchors/personInfo.mt","userId={$userinfo['userId']}");
+			$acceptData1=json_decode($datas1, true);
+			if ($userinfo['nickname'] == base64_encode(base64_decode($userinfo['nickname']))) {
+	            $uuname = base64_decode($userinfo['nickname']);
+	        }else{
+	            $uuname = $userinfo['nickname'];
+	        }
+
+	        if($acceptData1[resultStatus] == 200){
+	            $uuname=$acceptData1[data]['user']?$acceptData1[data]['user']:$uuname;
+	            $userinfo['coins'] =intval($acceptData1[data]['coins']);
+	            $userinfo['spender'] =$acceptData1[data]['spender'];
+	            $userinfo['differ'] = $acceptData1[data]['differ'];
+	            $userinfo['nextSpender'] = $acceptData1[data]['nextSpender'];
+	            $userinfo['active'] = $acceptData1[data]['active'];
+	            $userinfo['activeDiffer'] = $acceptData1[ data]['activeDiffer'];
+	            $userinfo['nextActive'] = $acceptData1[data]['nextActive'];
+	            $userinfo['socType'] = $acceptData1[data]['socType'];
+	        }else{
+	            $userinfo['coins'] =0;
+	            $userinfo['spender'] =0;
+	            $userinfo['differ'] = 0;
+	            $userinfo['nextSpender'] = 1;
+	            $userinfo['active'] = 0;
+	            $userinfo['activeDiffer'] = 0;
+	            $userinfo['nextActive'] =1; //比例
+	            $userinfo['socType'] =0;
+	        }
+		}
+		$userinfo['nickname'] = $uuname;
+		$userinfo = $this->safe_output($userinfo,true);
+		return $userinfo;
+	}
+	// set login info
+	function set_login_info($userinfo){
+		$_SESSION['login_info'] = $userinfo;
+	}
+	//get login info
+	function get_login_info(){
+		if($_SESSION['login_info'] or !empty($_SESSION['login_info'])){
+	        //$_SESSION['login_info']['isc']='1';
+	        return $_SESSION['login_info'];
+	    }
+	    return false;
+	}
+	//safe output
+	function safe_output($arr,$return=true){
+		if(!is_array($arr)){
+			return;
+		}
+		foreach($arr as $key=>$val){
+			if(is_array($val)){
+				$val=$this->safe_output($val);
+				$arr[$key]=$val;
+			}
+			else{
+				$arr[$key]=nl2br(htmlspecialchars($val));
+			}
+		}
+		if($return){
+			return $arr;
+		}
+	}
+	//login cookie
+	function logincookie($userinfo){
+		$cookie_str = $userinfo['userId'].','.$userinfo['nickname'];
+		return $this->m_encrypt($cookie_str);
+	}
+
+	//register by open sns
+	function register_by_opensns($type,$snsid,$nickname,$avatar,$gender,$sns_type){
+		$nickname = trim($nickname);
+		$nc_count = M('bu_user')->where(array('nickname'=>$nickname))->count();
+		if ($nc_count != 0) {
+			$nickname.="00".$nc_count;
+		}
+		//过滤昵称
+		$nickname_black_list = nickname_black_list();
+		$nickname = str_replace($nickname_black_list,'',$nickname);
+		$nickname = base64_encode($nickname);
+		if (!$_COOKIE['uniqid']) {
+			$_COOKIE['uniqid'] = 0;
+		}
+		$timer = date('Y-m-d H:i:s',$_SERVER['REQUEST_TIME']);
+		$username = $sns_type.substr(md5($snsid),1,7);
+		$pass = md5($snsid);
+		$gnr = $gender?$gender:0;
+		$db->Execute("insert into bu_user(createDT,status,nickname,username,password,accountfrom,snsid,gender,logins) values('".$timer."',1,'$nickname','$username','$pass','$type','$snsid',$gnr,1)");
+		$data = array();
+		$data['createDT'] = $timer;
+		$data['status'] = 1;
+		$data['nickname'] = $nickname;
+		$data['username'] = $username;
+		$data['password'] = $pass;
+		$data['accountfrom'] = $type;
+		$data['snsid'] = $snsid;
+		$data['gender'] = $gnr;
+		$data['logins'] = 1;
+		$userid = M('bu_user')->data($data)->add();// success return new id
+		if ($result) {
+			$data = array();
+			$data['createDT'] = $timer;
+			$data['status'] = 1;
+			$data['userId'] = $userid;
+			M('bu_user_packs')->data($data)->add();
+		}
+		$token = $this->logincookie(array('userId'=>$userid,'nickname'=>$nickname));
+		setcookie("KDUID",time()+3600,'/',$_SERVER['HTTP_HOST']);
+		$mz_avatar = '46a920d47a9c287e627693554180598a';
+		if($avatar){
+	        $md5_fanmian=$this->uploadSnsImages($avatar);
+	        if(!$md5_fanmian){
+	            $md5_fanmian=$mz_avatar;
+	        }
+	        M('bu_user')->where(array('userId'=>$userid))->data(array('avatar'=>$md5_fanmian))->save();
+
+		}else{
+	        M('bu_user')->where(array('userId'=>$userid))->data(array('avatar'=>$mz_avatar))->save();
+	    }
+		return $token;
+	}
+	//upload sns images
+	function uploadSnsImages($imgurl){
+		$zimg_upload_url = _IMAGES_DOMAIN_;
+        $simg=$imgurl;
+
+        $post_data = $this->curl_file_get_contents($simg); // raw_post方式//
+		
+		$ch = curl_init();
+
+        $headers = array();
+        $headers[] = 'Content-Type:jpg'; // 还有这里！
+
+        curl_setopt($ch, CURLOPT_URL, $zimg_upload_url);
+        curl_setopt($ch, CURLOPT_HEADER, false);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
+
+        $info = curl_exec($ch);
+        curl_close($ch);
+		
+        $json = json_decode($info, true);
+        if($json['ret']==true){
+            return $json['info']['md5'];
+        }
+        return false;
+	}
+	//curl file get contents
+	function curl_file_get_contents($durl){
+		$ch = curl_init();
+	   curl_setopt($ch, CURLOPT_URL, $durl);
+	   curl_setopt($ch, CURLOPT_TIMEOUT, 2);
+	   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	   $r = curl_exec($ch);
+	   curl_close($ch);
+	   return $r;
+	}
 	//weixin callback
 	function wx_callback(){
 		//
