@@ -8,6 +8,7 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
+        R('Login/session_to_redis');
         //个人中心修改头像插件需
         if (isset($_GET['rndcode']) || isset($_POST['rndcode'])) {
             $result = R('Personinfo/imgupload');

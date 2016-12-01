@@ -186,15 +186,16 @@ class LoginController extends Controller{
 	function password_deal($pwd){
 		return md5(md5($pwd));
 	}
-	// save login session  to redis
-	function redis_session(){
+	// save login session  to Redis
+	function session_to_redis(){
 		Vendor('session.session');
 		ini_set('session.save_handler',"user");
 		\session::getSession('redis',array(
-			'host'=>'112.124.58.61',
+			'host'=>_REDIS_HOST_,
 			'port'=>'6379',
-			'auth'=>'foobareds',
+			'auth'=>_REDIS_PWD_,
 			))->begin();
+		session_start();
 	}
 	//encrypt
 	function m_encrypt($encryptData){
@@ -269,17 +270,105 @@ class LoginController extends Controller{
 	}
 	//weixin login
 	function wxlogin(){
-		$dir = __DIR__;
-		$dir = explode('Controller',$dir);
-		$url = $dir[0];
-		require_once $url.'\Common\wxlogin.php';
+		// $dir = __DIR__;
+		// $dir = explode('Controller',$dir);
+		// $url = $dir[0];
+		// require_once $url.'\Common\wxlogin.php';
+		$code = I('get.code');
+		$state = I('get.state');
 	}
 	//qq reg
 	function qqreg(){
 		$AuthCode = I('get.code');
 		$state = I('get.state');
-	}
+		$appid = 'wxedb924ffe29990ab';
+		$appsecret = '7649359358fe7d106b0e3a965ecfea42';
+		if (empty($code)) {
+			$this->error("授权失败");
+		}
+		$token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$appsecret.'&code='.$code.'&grant_type=authorization_code';
+		$token = json_decode(file_get_contents($token_url));
+		if (isset($token->errcode)) {
+			echo "<h1>错误:</h1>".$token->errcode;
+			echo '<br/><h2>错误信息：</h2>'.$token->errmsg;
+			exit();
+		}
+		$access_token_url = 'https://api.weixin.qq.com/sns/oauth2/refresh_token?appid='.$appid.'&grant_type=refresh_token&refresh_token='.$token->refresh_token;
+		//shift to object
+		$access_token = json_decode(file_get_contents($access_token_url));
+		if (isset($access_token->errcode)) {
+		    echo '<h1>错误：</h1>'.$access_token->errcode;
+		    echo '<br/><h2>错误信息：</h2>'.$access_token->errmsg;
+		    exit;
+		}
+		// 参数: http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html
+		$user_info_url = 'https://api.weixin.qq.com/sns/userinfo?access_token='.$access_token->access_token.'&openid='.$access_token->openid.'&lang=zh_CN';
+		//shift to object
+		$user_info = json_decode(file_get_contents($user_info_url),true);
+		if (isset($user_info->errcode)) {
+		    echo '<h1>错误：</h1>'.$user_info->errcode;
+		    echo '<br/><h2>错误信息：</h2>'.$user_info->errmsg;
+		    exit;
+		}
+		if (empty($user_info)) {
+			echo "The state does not match,You may be a victim of CSRF";
+		}else{
+			$userinfo = M('bu_user')->where(array('snsid'=>$user_info['openid']))->field('userId')->select();
+			if ($userinfo) {
+				$users = $this->search_save_user($userinfo['userId']);
+				$this->set_login_info($users);
+				setcookie("KDUID",$this->logincookie($users),time()+3600*24,'/',$_SERVER['HTTP_HOST']);
+        		$_COOKIE['KDUID']=$this->logincookie($users);
+        		echo '<script>window.opener.location.href="/";window.close()</script>';
+			}else{
+				$ac = $this->GrabImage($user_info['headimgurl'],dirname(dirname(dirname(__FILE__)))."/upload", $user_info['openid'].".jpg");
+		         if(!empty($ac)){
+		             $tmp_img=$_SERVER['HTTP_HOST']."/upload/".$user_info['openid'].".jpg";
+		         }else{
+		             $tmp_img =$user_info['headimgurl'];
+		         }
+		        $tmp_img1=$_SERVER['HTTP_HOST']."/upload/".$user_info['openid'].".jpg";
+		        $imghttp = get_headers($user_info['headimgurl'],true);
 
+		        $_COOKIE['KDUID']=$this->register_by_opensns(2,$user_info['openid'],$user_info['nickname'],$tmp_img,$user_info['sex'],"WX");
+
+		        echo '<script>window.opener.location.href="/";window.close()</script>';
+			}
+		}
+	}
+	//grabimage
+	function GrabImage($url,$dir='',$filename=''){
+		if(empty($url)){
+                return false;
+            }
+            $ext = strrchr($url, '.');
+            //为空就当前目录
+            if(empty($dir))$dir = dirname(__FILE__).'/upload';
+
+           // $dir = realpath($dir);
+            //目录+文件
+            $filename = $dir . (empty($filename) ? '/'.time().$ext : '/'.$filename);
+            //开始捕捉
+           /* ob_start();
+            readfile($url);
+            $img = ob_get_contents();
+            ob_end_clean();*/
+
+            $ch = curl_init ($url);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_BINARYTRANSFER,1);
+            $img = curl_exec ($ch);
+            curl_close ($ch);
+
+            $size = strlen($img);
+            $fp2 = fopen($filename , "a");
+            if(!$fp2){
+                return $dir;
+            }
+            fwrite($fp2, $img);
+            fclose($fp2);
+            return $filename;
+	}
 	//qq login method
 	function qq_login_core(){
 		$qq_oauth_config = $this->qq_oauth_config();
@@ -322,6 +411,7 @@ class LoginController extends Controller{
             	$userinfo = M('bu_user')->where(array('snsid'=>$_SESSION['openid']))->select();
             	if ($userinfo) {
             		$users=$this->search_save_user($userinfo['userId']);
+            		//save login info to session
                 	$this->set_login_info($users);
                 	setcookie("KDUID",$this->logincookie($users),time()+3600*24,'/',$_SERVER['HTTP_HOST']);
                 	$_COOKIE['KDUID']=$this->logincookie($users);
@@ -456,6 +546,7 @@ class LoginController extends Controller{
 	}
 	//get login info
 	function get_login_info(){
+
 		if($_SESSION['login_info'] or !empty($_SESSION['login_info'])){
 	        //$_SESSION['login_info']['isc']='1';
 	        return $_SESSION['login_info'];
