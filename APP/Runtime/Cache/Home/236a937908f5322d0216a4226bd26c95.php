@@ -59,7 +59,7 @@
 
             </form>
             <?php if($_SESSION['userid']!= ''): ?><ul class="nav navbar-nav navbar-right hidden-sm afHdNavR">
-                    <li class="logName"><a href="<?php echo U('Center/index');?>" class="ellipsis"><?php echo ($user['nickname']); ?></a></li>
+                    <li class="logName"><a href="<?php echo U('Center/index');?>" class="ellipsis"><?php echo (urldecode($user['nickname'])); ?></a></li>
                     <li class="hidden-xs"><a href="">|</a></li>
                     <li class=""><a href="<?php echo U('Login/logout');?>">退出</a></li>
                     <!--<li class="glyphicon glyphicon-envelope"><a href=""></a></li>-->
@@ -69,7 +69,7 @@
                     <li><a href="<?php echo U('Login/index');?>" class="login" onclick="return false;">登录</a></li>
                     <li class="hidden-xs"><a href="">|</a></li>
                     <li class="hidden-lg hidden-md hidden-sm show-xs line"><a href=""></a></li>
-                    <li class="Reg"><a href="./">注册</a></li>
+                    <li class="Reg"><a href="./" onclick="return false;">注册</a></li>
                 </ul><?php endif; ?>
 
         </div>

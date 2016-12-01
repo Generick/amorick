@@ -186,6 +186,16 @@ class LoginController extends Controller{
 	function password_deal($pwd){
 		return md5(md5($pwd));
 	}
+	// save login session  to redis
+	function redis_session(){
+		Vendor('session.session');
+		ini_set('session.save_handler',"user");
+		\session::getSession('redis',array(
+			'host'=>'112.124.58.61',
+			'port'=>'6379',
+			'auth'=>'foobareds',
+			))->begin();
+	}
 	//encrypt
 	function m_encrypt($encryptData){
 		//echo "string";
@@ -415,16 +425,16 @@ class LoginController extends Controller{
 	            $uuname = $userinfo['nickname'];
 	        }
 
-	        if($acceptData1[resultStatus] == 200){
-	            $uuname=$acceptData1[data]['user']?$acceptData1[data]['user']:$uuname;
-	            $userinfo['coins'] =intval($acceptData1[data]['coins']);
-	            $userinfo['spender'] =$acceptData1[data]['spender'];
-	            $userinfo['differ'] = $acceptData1[data]['differ'];
-	            $userinfo['nextSpender'] = $acceptData1[data]['nextSpender'];
-	            $userinfo['active'] = $acceptData1[data]['active'];
-	            $userinfo['activeDiffer'] = $acceptData1[ data]['activeDiffer'];
-	            $userinfo['nextActive'] = $acceptData1[data]['nextActive'];
-	            $userinfo['socType'] = $acceptData1[data]['socType'];
+	        if($acceptData1['resultStatus'] == 200){
+	            $uuname=$acceptData1['data']['user']?$acceptData1['data']['user']:$uuname;
+	            $userinfo['coins'] =intval($acceptData1['data']['coins']);
+	            $userinfo['spender'] =$acceptData1['data']['spender'];
+	            $userinfo['differ'] = $acceptData1['data']['differ'];
+	            $userinfo['nextSpender'] = $acceptData1['data']['nextSpender'];
+	            $userinfo['active'] = $acceptData1['data']['active'];
+	            $userinfo['activeDiffer'] = $acceptData1['data']['activeDiffer'];
+	            $userinfo['nextActive'] = $acceptData1['data']['nextActive'];
+	            $userinfo['socType'] = $acceptData1['data']['socType'];
 	        }else{
 	            $userinfo['coins'] =0;
 	            $userinfo['spender'] =0;
