@@ -423,7 +423,7 @@ reg.prototype = {
 				}else if(msg == 3){
 					$('.regnic .error').html('此昵称已存在，换一个吧.').show();
 				}else{
-					console.log(msg);
+					//console.log(msg);
 					window.location.href = msg.url;
 				}
 				//console.log(msg);

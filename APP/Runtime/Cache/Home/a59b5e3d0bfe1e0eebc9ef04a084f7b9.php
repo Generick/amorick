@@ -403,7 +403,7 @@
                                         <span class="glyphicon glyphicon-bold img-circle"></span>
                                         <span class="moneyNum"><?php echo ($dj['coins']); ?></span>
                                     </div>
-                                    <div class="charge"><button type="button" class="btn btn-warning" href="/kedo/index.php/Home/Pay/pay"><a href="/kedo/index.php/Home/Pay/pay">充值</a></button></div>
+                                    <div class="charge"><button type="button" class="btn btn-warning" href="/kedo/Home/Pay/pay"><a href="/kedo/Home/Pay/pay">充值</a></button></div>
                                 </div>
                             </div>
 
@@ -436,7 +436,7 @@
                                 <span class="achieve2 pull-left"></span>
                                 <span class="achieve3 pull-left"></span>
                                 <span class="achieve4 pull-left"></span>
-                                <a href="/kedo/index.php/Home/Mall/mall" class="pull-right">更多</a>
+                                <a href="/kedo/Home/Mall/mall" class="pull-right">更多</a>
                             </div>
 
                         </div>

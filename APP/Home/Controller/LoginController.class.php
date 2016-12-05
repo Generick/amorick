@@ -132,6 +132,7 @@ class LoginController extends Controller{
 		$timer=date('Y-m-d H:i:s');
 		$data['username'] = I('post.username');
 		$nickname = I('post.nickname');
+		//nickname urlencode
 		$data['nickname'] = urlencode($nickname);
 		//$this->ajaxReturn($data['nickname']);exit;
 		$data['password'] = $this->password_deal(I('post.password'));
@@ -159,24 +160,27 @@ class LoginController extends Controller{
 		$data['gender'] = 0;
 		$data['logins'] = 1;
 		$user = M('bu_user');
-		$result = $user->data($data)->add();
-
-		if ($result) {
+		$new_user_id = $user->data($data)->add();// if success, return new id
+		//insert new user info to bu_user_packs data table
+		if ($new_user_id) {
 			$user_packs = M('bu_user_packs');
 			$packs['createDT'] = $timer;
 			$packs['status'] = 1;
-			$packs['userid'] = $result;
+			$packs['userId'] = $new_user_id;
 			$packs_result = $user_packs->data($packs)->add();
 		}
-
-		$str['result'] = $result;
+		//return data
+		$str['new_user_id'] = $new_user_id;
 		$str['packs_result'] = $packs_result;
-		if ($result) {
-			$_SESSION['userid'] = (int)$result;
+		//reg success
+		if ($new_user_id) {
+			$_SESSION['userid'] = (int)$new_user_id;
+			$reg_cookie_data = $this->m_encrypt($new_user_id.','.$data['username']);
+			setcookie('KDUID',$reg_cookie_data,time()+3600,'/',$_SERVER['HTTP_POST']);
 			$str['url'] = U('Index/index');
 			$this->ajaxReturn($str);
 		}else{
-			$this->ajaxReturn(0);
+			$this->ajaxReturn(0);//reg falied
 		}
 		//$this->ajaxReturn(0);
 	}
@@ -277,8 +281,8 @@ class LoginController extends Controller{
 		$code = I('get.code');
 		$state = I('get.state');
 	}
-	//qq reg
-	function qqreg(){
+	//wx login&reg
+	function wxreg(){
 		$AuthCode = I('get.code');
 		$state = I('get.state');
 		$appid = 'wxedb924ffe29990ab';
@@ -289,16 +293,18 @@ class LoginController extends Controller{
 		$token_url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.$appid.'&secret='.$appsecret.'&code='.$code.'&grant_type=authorization_code';
 		$token = json_decode(file_get_contents($token_url));
 		if (isset($token->errcode)) {
-			echo "<h1>错误:</h1>".$token->errcode;
-			echo '<br/><h2>错误信息：</h2>'.$token->errmsg;
+			$msg =  "<h1>错误:</h1>".$token->errcode;
+			$msg .= '<br/><h2>错误信息：</h2>'.$token->errmsg;
+			$this->show($msg);
 			exit();
 		}
 		$access_token_url = 'https://api.weixin.qq.com/sns/oauth2/refresh_token?appid='.$appid.'&grant_type=refresh_token&refresh_token='.$token->refresh_token;
 		//shift to object
 		$access_token = json_decode(file_get_contents($access_token_url));
 		if (isset($access_token->errcode)) {
-		    echo '<h1>错误：</h1>'.$access_token->errcode;
-		    echo '<br/><h2>错误信息：</h2>'.$access_token->errmsg;
+		    $msg = '<h1>错误：</h1>'.$access_token->errcode;
+		    $msg .= '<br/><h2>错误信息：</h2>'.$access_token->errmsg;
+		    $this->show($msg);
 		    exit;
 		}
 		// 参数: http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html
@@ -306,22 +312,26 @@ class LoginController extends Controller{
 		//shift to object
 		$user_info = json_decode(file_get_contents($user_info_url),true);
 		if (isset($user_info->errcode)) {
-		    echo '<h1>错误：</h1>'.$user_info->errcode;
-		    echo '<br/><h2>错误信息：</h2>'.$user_info->errmsg;
+		    $smg = '<h1>错误：</h1>'.$user_info->errcode;
+		    $msg .= '<br/><h2>错误信息：</h2>'.$user_info->errmsg;
+		    $this->show($msg);
 		    exit;
 		}
 		if (empty($user_info)) {
 			echo "The state does not match,You may be a victim of CSRF";
 		}else{
 			$userinfo = M('bu_user')->where(array('snsid'=>$user_info['openid']))->field('userId')->select();
+			//user exists
 			if ($userinfo) {
 				$users = $this->search_save_user($userinfo['userId']);
 				$this->set_login_info($users);
 				setcookie("KDUID",$this->logincookie($users),time()+3600*24,'/',$_SERVER['HTTP_HOST']);
         		$_COOKIE['KDUID']=$this->logincookie($users);
-        		echo '<script>window.opener.location.href="/";window.close()</script>';
+        		$this->show('<script>window.opener.location.href="/";window.close()</script>') ;
 			}else{
-				$ac = $this->GrabImage($user_info['headimgurl'],dirname(dirname(dirname(__FILE__)))."/upload", $user_info['openid'].".jpg");
+				//user does not exists in database
+				$dir = dirname(dirname(dirname(dirname(__FILE__))))."\Public\upload\\";
+				$ac = $this->GrabImage($user_info['headimgurl'],$dir, $user_info['openid'].".jpg");
 		         if(!empty($ac)){
 		             $tmp_img=$_SERVER['HTTP_HOST']."/upload/".$user_info['openid'].".jpg";
 		         }else{
@@ -332,22 +342,29 @@ class LoginController extends Controller{
 
 		        $_COOKIE['KDUID']=$this->register_by_opensns(2,$user_info['openid'],$user_info['nickname'],$tmp_img,$user_info['sex'],"WX");
 
-		        echo '<script>window.opener.location.href="/";window.close()</script>';
+		        $this->show('<script>window.opener.location.href="/";window.close()</script>');
 			}
 		}
+	}
+
+	function path(){
+		$path = dirname(dirname(dirname(dirname(__FILE__))))."\Public\\";
+		$str = "收到回复开始的开发商的胜多负少";
+		$this->show(substr_replace($str,"...",9));
+		$this->show($_SERVER['HTTP_HOST']);
 	}
 	//grabimage
 	function GrabImage($url,$dir='',$filename=''){
 		if(empty($url)){
                 return false;
             }
-            $ext = strrchr($url, '.');
+            $ext = strrchr($url, '.');// find the last appear postion of a string in another string
             //为空就当前目录
-            if(empty($dir))$dir = dirname(__FILE__).'/upload';
+            if(empty($dir)) $dir = dirname(__FILE__).'\upload\\';
 
            // $dir = realpath($dir);
             //目录+文件
-            $filename = $dir . (empty($filename) ? '/'.time().$ext : '/'.$filename);
+            $filename = $dir . (empty($filename) ? time().$ext : $filename);
             //开始捕捉
            /* ob_start();
             readfile($url);
@@ -507,7 +524,7 @@ class LoginController extends Controller{
 			if ($userinfo['isblock'] == 1) {
 				return false;
 			}
-			$datas1 = curl_post(_INTERFACE_."/rest/homeAnchors/personInfo.mt","userId={$userinfo['userId']}");
+			$datas1 = curl_post(_centers_."personInfo.mt","userId={$userinfo['userId']}");
 			$acceptData1=json_decode($datas1, true);
 			if ($userinfo['nickname'] == base64_encode(base64_decode($userinfo['nickname']))) {
 	            $uuname = base64_decode($userinfo['nickname']);
@@ -587,7 +604,7 @@ class LoginController extends Controller{
 		//过滤昵称
 		$nickname_black_list = nickname_black_list();
 		$nickname = str_replace($nickname_black_list,'',$nickname);
-		$nickname = base64_encode($nickname);
+		$nickname = base64_encode($nickname);//?
 		if (!$_COOKIE['uniqid']) {
 			$_COOKIE['uniqid'] = 0;
 		}
@@ -595,7 +612,7 @@ class LoginController extends Controller{
 		$username = $sns_type.substr(md5($snsid),1,7);
 		$pass = md5($snsid);
 		$gnr = $gender?$gender:0;
-		$db->Execute("insert into bu_user(createDT,status,nickname,username,password,accountfrom,snsid,gender,logins) values('".$timer."',1,'$nickname','$username','$pass','$type','$snsid',$gnr,1)");
+		//$db->Execute("insert into bu_user(createDT,status,nickname,username,password,accountfrom,snsid,gender,logins) values('".$timer."',1,'$nickname','$username','$pass','$type','$snsid',$gnr,1)");
 		$data = array();
 		$data['createDT'] = $timer;
 		$data['status'] = 1;
@@ -606,16 +623,16 @@ class LoginController extends Controller{
 		$data['snsid'] = $snsid;
 		$data['gender'] = $gnr;
 		$data['logins'] = 1;
-		$userid = M('bu_user')->data($data)->add();// success return new id
-		if ($result) {
+		$newuserid = M('bu_user')->data($data)->add();// success return new id
+		if ($newuserid) {
 			$data = array();
 			$data['createDT'] = $timer;
 			$data['status'] = 1;
 			$data['userId'] = $userid;
 			M('bu_user_packs')->data($data)->add();
 		}
-		$token = $this->logincookie(array('userId'=>$userid,'nickname'=>$nickname));
-		setcookie("KDUID",time()+3600,'/',$_SERVER['HTTP_HOST']);
+		$token = $this->logincookie(array('userId'=>$newuserid,'nickname'=>$nickname));
+		setcookie("KDUID",$token,time()+3600,'/',$_SERVER['HTTP_HOST']);
 		$mz_avatar = '46a920d47a9c287e627693554180598a';
 		if($avatar){
 	        $md5_fanmian=$this->uploadSnsImages($avatar);
@@ -667,10 +684,6 @@ class LoginController extends Controller{
 	   $r = curl_exec($ch);
 	   curl_close($ch);
 	   return $r;
-	}
-	//weixin callback
-	function wx_callback(){
-		//
 	}
 
 	//退出登陆
