@@ -651,7 +651,7 @@
     </div>
 
     <!-- login -->
-    <input type="hidden" name="" id="m_url" value="<?php echo U('Login/index');?>">
+    <input type="hidden" name="" id="m_url" value="<?php echo U('Login/index','','login');?>">
     <!-- <div class="bgmask" style="height: 100%;z-index:20002;display: none;"></div>
     <div class="login-box-global-css" id="loginbox" style="display: none;">
         <div class="box_head">

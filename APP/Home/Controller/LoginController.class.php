@@ -272,17 +272,8 @@ class LoginController extends Controller{
 				break;
 		}
 	}
-	//weixin login
-	function wxlogin(){
-		// $dir = __DIR__;
-		// $dir = explode('Controller',$dir);
-		// $url = $dir[0];
-		// require_once $url.'\Common\wxlogin.php';
-		$code = I('get.code');
-		$state = I('get.state');
-	}
 	//wx login&reg
-	function wxreg(){
+	function wxlogin(){
 		$AuthCode = I('get.code');
 		$state = I('get.state');
 		$appid = 'wxedb924ffe29990ab';
@@ -333,11 +324,11 @@ class LoginController extends Controller{
 				$dir = dirname(dirname(dirname(dirname(__FILE__))))."\Public\upload\\";
 				$ac = $this->GrabImage($user_info['headimgurl'],$dir, $user_info['openid'].".jpg");
 		         if(!empty($ac)){
-		             $tmp_img=$_SERVER['HTTP_HOST']."/upload/".$user_info['openid'].".jpg";
+		             $tmp_img=$_SERVER['HTTP_HOST']."/Pubic/upload/".$user_info['openid'].".jpg";
 		         }else{
 		             $tmp_img =$user_info['headimgurl'];
 		         }
-		        $tmp_img1=$_SERVER['HTTP_HOST']."/upload/".$user_info['openid'].".jpg";
+		        $tmp_img1=$_SERVER['HTTP_HOST']."\upload\\".$user_info['openid'].".jpg";
 		        $imghttp = get_headers($user_info['headimgurl'],true);
 
 		        $_COOKIE['KDUID']=$this->register_by_opensns(2,$user_info['openid'],$user_info['nickname'],$tmp_img,$user_info['sex'],"WX");
@@ -411,8 +402,9 @@ class LoginController extends Controller{
             	$response  = substr($response, $lpos + 1, $rpos - $lpos -1);
             	$msg = json_decode($response);
             	if (isset($msg->error)) {
-            		echo "<h3>error:</h3>" . $msg->error;
-                	echo "<h3>msg  :</h3>" . $msg->error_description;
+            		$err = "<h3>error:</h3>" . $msg->error;
+                	$err .= "<h3>msg  :</h3>" . $msg->error_description;
+                	$this->show($err);
                 	exit;
             	}
             }

@@ -1,0 +1,303 @@
+[ 2016-12-06T09:32:03+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T09:32:05+08:00 ] ::1 /kedo/Home/Login/verify/num/0.7825024618660532
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T10:30:30+08:00 ] ::1 /kedo/Home/Login/path
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 模板不存在:./APP/Home/View/Login/path.html
+
+[ 2016-12-06T10:30:53+08:00 ] ::1 /kedo/index.php/Home/Login/path
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 模板不存在:./APP/Home/View/Login/path.html
+
+[ 2016-12-06T10:31:07+08:00 ] ::1 /kedo/index.php/Home/Login/path
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T10:31:27+08:00 ] ::1 /kedo/index.php/Home/Login/path
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 模板不存在:./APP/Home/View/Login/path.html
+
+[ 2016-12-06T10:31:46+08:00 ] ::1 /kedo/index.php/Home/Login/path
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 模板不存在:./APP/Home/View/Login/path.html
+
+[ 2016-12-06T11:02:12+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:02:12+08:00 ] ::1 /kedo/Home/Login/index.lgverify/num/0.2817451673922651
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:index.lgverify
+
+[ 2016-12-06T11:02:14+08:00 ] ::1 /kedo/Home/Login/index.lgverify/num/0.25139188082230524
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:index.lgverify
+
+[ 2016-12-06T11:02:14+08:00 ] ::1 /kedo/Home/Login/index.lgverify/num/0.24941876134485952
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:index.lgverify
+
+[ 2016-12-06T11:04:06+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:04:06+08:00 ] ::1 /kedo/Home/Login/verify.htmlverify/num/0.14151854888356663
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:verify.htmlverify
+
+[ 2016-12-06T11:04:08+08:00 ] ::1 /kedo/Home/Login/verify.htmlverify/num/0.8013106919922974
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:verify.htmlverify
+
+[ 2016-12-06T11:04:08+08:00 ] ::1 /kedo/Home/Login/verify.htmlverify/num/0.9318112330222739
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:verify.htmlverify
+
+[ 2016-12-06T11:04:15+08:00 ] ::1 /kedo/Home/Login/verify.htmlverify/num/0.8623787939561631
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:verify.htmlverify
+
+[ 2016-12-06T11:05:12+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:05:13+08:00 ] ::1 /kedo/Home/Login/indx.lgverify/num/0.6286917805088836
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:indx.lgverify
+
+[ 2016-12-06T11:05:15+08:00 ] ::1 /kedo/Home/Login/indx.lgverify/num/0.012134424107285602
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:indx.lgverify
+
+[ 2016-12-06T11:05:15+08:00 ] ::1 /kedo/Home/Login/indx.lgverify/num/0.3361264514077771
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:indx.lgverify
+
+[ 2016-12-06T11:05:17+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:05:17+08:00 ] ::1 /kedo/Home/Login/indx.lgverify/num/0.5381417799992549
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:indx.lgverify
+
+[ 2016-12-06T11:05:19+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:06:01+08:00 ] ::1 /kedo/Home/Login/indx.lgverify/num/0.08962067155289422
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+ERR: 非法操作:indx.lgverify
+
+[ 2016-12-06T11:06:03+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:06:03+08:00 ] ::1 /kedo/Home/Login/verify/num/0.2852952261921624
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:06:05+08:00 ] ::1 /kedo/Home/Login/verify/num/0.7174635199586894
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:06:05+08:00 ] ::1 /kedo/Home/Login/verify/num/0.7360303292561339
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:31+08:00 ] ::1 /kedo/
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:31+08:00 ] ::1 /kedo/Home/Login/verify/num/0.7145626273346675
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:34+08:00 ] ::1 /kedo/Home/Login/verify/num/0.4751121338535482
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:34+08:00 ] ::1 /kedo/Home/Login/verify/num/0.41472323800107835
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:35+08:00 ] ::1 /kedo/Home/Login/verify/num/0.5310837607622838
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:36+08:00 ] ::1 /kedo/Home/Login/verify/num/0.4700638914665469
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:37+08:00 ] ::1 /kedo/Home/Login/verify/num/0.34928838488751923
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:37+08:00 ] ::1 /kedo/Home/Login/verify/num/0.2551632325580957
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:38+08:00 ] ::1 /kedo/Home/Login/verify/num/0.8666348765085337
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:56+08:00 ] ::1 /kedo/Home/Login/verify/num/0.6756770198136741
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:56+08:00 ] ::1 /kedo/Home/Login/verify/num/0.5074594992621222
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:58+08:00 ] ::1 /kedo/Home/Login/verify/num/0.16524585680724635
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+
+[ 2016-12-06T11:07:58+08:00 ] ::1 /kedo/Home/Login/verify/num/0.9818711794207191
+NOTIC: [8] Constant _dataurl_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 2 行.
+NOTIC: [8] Constant _IMAGES_DOMAIN_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 4 行.
+NOTIC: [8] Constant _REDIS_HOST_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 5 行.
+NOTIC: [8] Constant _REDIS_PWD_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 6 行.
+NOTIC: [8] Constant _REDIS_KEYB_ already defined E:\xampp\htdocs\kedo\APP\Common\Conf\config_local.php 第 7 行.
+

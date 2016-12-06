@@ -160,7 +160,7 @@ function reg(){
 
 function getLoginUrl(){
 	var url0 = $('#m_url').val();
-	url1 = url0.split('index.html')[0];
+	url1 = url0.split('index.login')[0];
 	//url2 = url1+'verify/'+Math.random();
 	return url1;
 }
