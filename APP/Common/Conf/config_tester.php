@@ -22,6 +22,8 @@ return array(
             'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
 
             'URL_MODEL'             =>  2,
+			'URL_HTML_SUFFIX' => '',
+			'URL_DENY_SUFFIX' => 'html|shtml|xml|tml|hml|ico|png|gif|jpg' 
 );
 
 

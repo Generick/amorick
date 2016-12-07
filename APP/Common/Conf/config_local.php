@@ -22,6 +22,8 @@ return array(
 
             'SHOW_PAGE_TRACE'=>true,
             'URL_MODEL'             =>  2,
+			'URL_HTML_SUFFIX' => '',
+			'URL_DENY_SUFFIX' => 'html|shtml|xml|tml|hml|ico|png|gif|jpg' 
        // 'URL_HTML_SUFFIX' => 'html|shtml|xml|gif|tml|hml|',
    // 'SHOW_PAGE_TRACE'=>true,
 

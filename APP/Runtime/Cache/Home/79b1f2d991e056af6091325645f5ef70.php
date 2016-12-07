@@ -82,7 +82,7 @@
 		</div>
 		<ul class="squ_li clearFix">
 
-			<?php if(is_array($data)): $i = 0; $__LIST__ = array_slice($data,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$gc): $mod = ($i % 2 );++$i;?><li class="fl squ_first"><a href="/kedo/index.php/1001.html" target="_blank">
+			<?php if(is_array($data)): $i = 0; $__LIST__ = array_slice($data,0,1,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$gc): $mod = ($i % 2 );++$i;?><li class="fl squ_first"><a href="/kedo/1001.html" target="_blank">
 					<em class="sprite_big_box biankuang-blue"></em>
 				<img src="<?php echo ($gc["image"]); ?>&w=133&amp;h=194" alt="小蜜桃">
 				<span class="sprite_l pic_liverlevel_L_<?php echo ($gc["totalpoint"]); ?>"></span>

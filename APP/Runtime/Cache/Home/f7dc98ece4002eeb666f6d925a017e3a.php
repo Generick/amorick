@@ -82,10 +82,10 @@
 				<a href="#" class="mselect"> 守护</a>
 			</div>
 			<div class="mall-top-title">
-				<a href="/kedo/index.php/Home/Mall/mall_prop" class=""> 道具</a>
+				<a href="/kedo/Home/Mall/mall_prop" class=""> 道具</a>
 			</div>
 			<div class="mall-top-title">
-				<a href="/kedo/index.php/Home/Mall/mall_ride" class=""> 座驾</a>
+				<a href="/kedo/Home/Mall/mall_ride" class=""> 座驾</a>
 			</div>
 		</div>
 		<div class="clear"></div>
